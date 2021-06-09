@@ -438,6 +438,22 @@
     }
 
 
+@media (max-width: 1400px) {
+    .hero-building .container .forKids-pin  {
+        bottom: 20%;
+    }
+
+    .social-text {
+
+        p {
+            font-size: 16px !important;
+        }
+        h4 {
+            font-size: 22px !important;
+        }   
+    }
+}
+
 
 
 </style>
