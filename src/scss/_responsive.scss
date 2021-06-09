@@ -48,8 +48,8 @@
         bottom: 22% ;
     }
 
-    .road {
-        top: -360px !important;
+    .home .land .road {
+        top: -360px;
     }
 }
 
@@ -74,5 +74,142 @@
     .bg-left-section {
         left: -100px;
         background-position: unset;
+    }
+}
+
+@media (max-width: 1400px) {
+    .hero-building .container .forKids-pin  {
+        bottom: 20%;
+    }
+
+    .social-text {
+
+        p {
+            font-size: 16px !important;
+        }
+        h4 {
+            font-size: 22px !important;
+        }   
+    }
+}
+
+@media (max-width: 1200px) {
+    .hero-building .container .forKids-pin  {
+        bottom: 38%;
+        animation-name: forKids-animation;
+    }
+    
+    @keyframes forKids-animation {
+        from {
+            transform: translateY(-10px)                        translateX(-10px);
+            -webkit-transform: translateY(-10px)                        translateX(-10px);
+            -moz-transform: translateY(-10px)                        translateX(-10px);
+            -ms-transform: translateY(-10px)                        translateX(-10px);
+            -o-transform: translateY(-10px)                        translateX(-10px);
+}
+
+        70% {
+            transform: translateY(-5px)
+                        translateX(-10px); 
+        }
+        
+        to {
+            transform: translateY(-10px)                        translateX(-10px);
+            -webkit-transform: translateY(-10px)                        translateX(-10px);
+            -moz-transform: translateY(-10px)                        translateX(-10px);
+            -ms-transform: translateY(-10px)                        translateX(-10px);
+            -o-transform: translateY(-10px)                        translateX(-10px);
+}
+    }
+
+    .hero-building .column-50 .presentation-pin img,
+    .hero-building .column-50 .science-pin img,
+    .hero-building .column-50 .culture-pin img,
+    .hero-building .column-50 .forKids-pin img,
+    .hero-building .column-50 .relax-pin img,
+    .land .sports-pin img {
+        max-width: 60px;
+    }
+
+    .home .land .sports-pin {
+        animation-name: sports-animation;
+        top: -55%;
+    }
+
+    @keyframes sports-animation {
+        from {
+            transform: translateX(-10px) 
+                        translateY(10px)
+                        rotate(-40deg);
+        }
+
+        70% {
+            transform: translateX(-10px) 
+                        translateY(15px)
+                        rotate(-40deg);
+        }
+
+        to {
+            transform: translateX(-10px) 
+                        translateY(10px)
+                        rotate(-40deg);
+        }
+    }
+
+    .home .land {
+        padding-top: 80px;
+
+        .title-servicing {
+            bottom: -210px;
+            left: 170px;
+
+            h2 {
+            font-size: 82px;
+
+                &::after {
+                    bottom: -29px;
+                }
+            }
+        }
+
+        &::before {
+            width: 100px;
+            height: 100px;
+            top: 40px;
+            left: -30px;
+        }
+
+        .bg-left-section {
+            background-size: 90%;
+            height: 410px;
+            left: -60px;
+    
+        }
+
+        .bg-right-section {
+
+            height: 300px;
+
+            .billboard {
+                width: 340px;
+                height: 360px;
+
+                 .billboard-content {
+                    width: 307px;
+                    height: 132px;
+                    top: 14px;
+                    left: 15px;
+                 }
+            }
+        }
+    }
+
+    .home .hero-building .container .relax-section {
+        max-width: 420px;
+        top: 80px;
+    }
+
+    .home .land .road {
+        top: -350px;
     }
 }
