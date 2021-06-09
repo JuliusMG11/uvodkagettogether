@@ -6,45 +6,47 @@
             <div class="container">
                 <section class="column-50">
 
-                    <div class="hero-text">
-                        <h1>Objavujte zabavu <br>spolu s nami </h1>
-                        <p>Prinášame ti novú aplikáciu s ktorou už žiadnu 
-                            zábavu nezmeškáš. Pridaj sa do nového sveta a 
-                            bav sa spolu s nami. Gettogether!</p>
-                    </div>
+                    <div class="hero-content">
 
-                    <div class="downloads-buttons">
-                        <div class="button-google">
-                            <a href="">
-
-                                <div class="google-image">
-                                    <img src="@/assets/svg/google-play.svg" alt="">
-                                </div>
-
-                                <div class="google-text">
-                                    <p>get it on</p>
-                                    <h4>downloads</h4>
-                                </div>
-
-                            </a>
-
+                        <div class="hero-text">
+                            <h1>Objavujte zabavu <br>spolu s nami </h1>
+                            <p>Prinášame ti novú aplikáciu s ktorou už žiadnu 
+                                zábavu nezmeškáš. Pridaj sa do nového sveta a 
+                                bav sa spolu <br> s nami. Gettogether!</p>
                         </div>
 
-                        <div class="button-google">
-                            <a href="">
+                        <div class="downloads-buttons">
+                            <div class="button-social">
+                                <button class="btn-hover color-1" href="#">
 
-                                <div class="google-image">
-                                    <img src="@/assets/svg/google-play.svg" alt="">
-                                </div>
+                                    <div class="social-image">
+                                        <img src="@/assets/svg/google-play.svg" alt="">
+                                    </div>
 
-                                <div class="google-text">
-                                    <p>get it on</p>
-                                    <h4>downloads</h4>
-                                </div>
+                                    <div class="social-text">
+                                        <p>Get it on</p>
+                                        <h4>Google play</h4>
+                                    </div>
 
-                            </a>
+                                </button>
 
-                        </div>
+                            </div>
+
+                            <div class="button-social">
+                                <button class="btn-hover color-1" href="#">
+
+                                    <div class="social-image">
+                                        <img src="@/assets/svg/app-store.svg" alt="">
+                                    </div>
+
+                                    <div class="social-text">
+                                        <p>Download on the</p>
+                                        <h4>App Store</h4>
+                                    </div>
+
+                                </button>
+                            </div>
+                            </div>
 
                     </div>
 
@@ -93,11 +95,12 @@
 
 <style lang="scss" scoped>
     
-
+    
+ 
     
     .hero-building {
         background: url('~@/assets/svg/first-part-building-test.svg');
-        background-size: 65%;
+        background-size: 60%;
         background-repeat: no-repeat;
         background-position: right;
         background-position-y: 30px;
@@ -124,21 +127,21 @@
             
             @keyframes presentation-animation {
                 from {
-                    transform: translateY(-45px) 
-                                translateX(-30px)
+                    transform: translateY(-40px) 
+                                translateX(-40px)
                                 rotate(-20deg);
                 
                 }
 
                 70% {
-                    transform: translateY(-50px) 
-                                translateX(-33px)
+                    transform: translateY(-45px) 
+                                translateX(-45px)
                                 rotate(-20deg);
                 }
 
                 to {
-                    transform: translateY(-45px) 
-                                translateX(-30px)
+                    transform: translateY(-40px) 
+                                translateX(-40px)
                                 rotate(-20deg);
                 }
             }
@@ -151,19 +154,19 @@
 
              @keyframes science-animation {
                 from {
-                    transform: translateX(-5px) 
+                    transform: translateX(30px) 
                                 translateY(0px)
                                 rotate(-20deg);
                 }
 
                 70% {
-                    transform: translateX(0px) 
+                    transform: translateX(33px) 
                                 translateY(10px)
                                 rotate(-20deg);
                 }
 
                 to {
-                    transform: translateX(-5px) 
+                    transform: translateX(30px) 
                                 translateY(0px)
                                 rotate(-20deg);
                 }
@@ -187,50 +190,52 @@
             @keyframes culture-animation {
                 from {
                     transform: translateX(0px) 
-                                translateY(-5px)
+                                translateY(-10px)
                 }
 
                 70% {
                     transform: translateX(0px) 
-                                translateY(0px)
+                                translateY(-5px)
                 }
 
                 to {
                     transform: translateX(0px) 
-                                translateY(-5px)
+                                translateY(-10px)
                 }
             }
         }
 
         .forKids-pin {
-            bottom: 140px;
+            bottom: 20%;
             position: absolute;
             animation: 2s ease-in-out infinite forKids-animation;
             
             @keyframes forKids-animation {
                 from {
                     transform: translateY(-5px)
-                                translateX(-80px);
+                                translateX(-18px);
                 }
 
                 70% {
                     transform: translateY(0px)
-                                translateX(-80px); 
+                                translateX(-18px); 
                 }
                 
                 to {
                     transform: translateY(-5px)
-                                translateX(-80px); 
+                                translateX(-18px); 
                 }
             }
+
+
         }
         
 
         .container {
 
-            padding-bottom: 150px;
+            padding-bottom: 100px;
 
-            .column-50 {
+            .column-50:first-child {
                 padding-right: 50px;
             }
         
@@ -248,45 +253,57 @@
             z-index: 4;
             left: 60px;
         }
-    
-        .hero-text {
-            text-align: left;
-            z-index: 10;
+
+        .hero-content {
+
             position: relative;
-            top: 50px;
+            top: 20px;
+    
+            .hero-text {
+                text-align: left;
+                z-index: 10;
+                position: relative;
+                top: 50px;
 
-            &::after {
-                content: "";
-                position: absolute;
-                background: url('~@/assets/svg/cloud-hero-title.svg') 100% no-repeat;
-                right: 210px;
-                top: -50px;
-                width: 160px;
-                height: 50px;
-            }
-            
-            h1 {
-                font-size: 62px;
-                margin-bottom: 10px;
+                &::after {
+                    content: "";
+                    position: absolute;
+                    background: url('~@/assets/svg/cloud-hero-title.svg') 100% no-repeat;
+                    right: 210px;
+                    top: -50px;
+                    width: 160px;
+                    height: 50px;
+                }
+                
+                h1 {
+                    font-size: 42px;
+                    margin-bottom: 10px;
+                    margin-top: 0px;
+                }
+
+                P {
+                    font-size: 22px;
+                    font-weight: 600;
+                }
             }
 
-            P {
-                font-size: 26px;
-                font-weight: 600;
-            }
         }
 
         .downloads-buttons {
             display: flex;
-            margin-top: 60px;
+            margin-top: 80px;
 
-            .button-google {
+            .button-social {
 
                 width: max-content;
+
+                &:nth-child(2) {
+                    margin-left: 20px;
+                }
                 
 
                 
-                a {
+                button {
                     text-decoration: none;
                     display: flex;
                     background-color: black;
@@ -296,17 +313,45 @@
                     padding: 10px 30px 10px 30px;
 
                 }
+
+                .btn-hover {
+                        background-size: 300% 100%;
+                        cursor: pointer;
+                         moz-transition: all .4s ease-in-out;
+                        -o-transition: all .4s ease-in-out;
+                        -webkit-transition: all .4s ease-in-out;
+                        transition: all .4s ease-in-out;
+                        border: none;
+                    }
+
+                     .btn-hover:hover {
+                            background-position: 100% 0;
+                            moz-transition: all .4s ease-in-out;
+                            -o-transition: all .4s ease-in-out;
+                            -webkit-transition: all .4s ease-in-out;
+                            transition: all .4s ease-in-out;
+                        }
+
+                        .btn-hover:focus {
+                            outline: none;
+                        }
+
+                        .btn-hover.color-1 {
+                            background-image: linear-gradient(to right, #25aae1, #40e495, #30dd8a, #2bb673);
+                            box-shadow: 0 4px 15px 0 rgba(49, 196, 190, 0.75);
+                        }
                 
-                .google-text {
+                .social-text {
 
                     text-align: left;
 
                     h4 {
                         text-decoration: none;
-                        text-transform: uppercase;
-                        margin-top: 10px;
+                        margin-top: 0px;
                         margin-bottom: 0px;
                         color: white;
+                        font-size: 24px;
+                        font-weight: 500;
                     }
                     
                     p {
@@ -317,7 +362,7 @@
                    
                 }
 
-                .google-image {
+                .social-image {
                         padding-right: 20px;
                     img {
                         max-width: 50px;
@@ -393,11 +438,6 @@
     }
 
 
-   
-
-
-
-    
 
 
 </style>

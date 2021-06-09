@@ -57,6 +57,11 @@
         </div>
         
         <div class="mountain">
+
+            <div class="mountain-pin">
+                <img src="@/assets/svg/category-pins/tourist-pin.svg" alt="">
+            </div>
+
             <img src="@/assets/svg/mountain.svg" alt="">
         </div>
 
@@ -74,7 +79,7 @@ export default {
 <style lang="scss" scoped>
 .land3 {
     position: relative;
-    background-image: url('~@/assets/svg/land3.svg');
+    background-image: url('~@/assets/svg/land3-new.svg');
     background-size: 101%;
     background-repeat: no-repeat;
     width: 100%;
@@ -82,8 +87,21 @@ export default {
     background-position: bottom;
     padding-bottom: 150px;
     padding-top: 200px;
-    top: 90px;
-    background-position-y: 90px;
+    top: 80px;
+    background-position-y: 80px;
+
+
+    &::before {
+        position: absolute;
+        content: "";
+        background: radial-gradient(circle, rgba(249, 217, 14, 0.857656) 27%, rgba(249, 217, 14, 0.532726) 52%, rgba(249, 217, 14, 0) 74%, rgba(249, 217, 14, 0) 84%);
+        width: 150px;
+        height: 150px;
+        top: 50px;
+        right: -60px;
+        border-radius: 50%;
+        filter: blur(10px);
+    }
     
     .mountain {
         position: absolute;
@@ -91,6 +109,29 @@ export default {
         bottom: 100px;
         max-width: 760px;
         z-index: 10;
+
+        .mountain-pin {
+            max-width: 70px;
+            right: 10%;
+            top: -70px;
+            position: absolute;
+            animation: 2s ease-in-out infinite tourist-animation;
+
+            @keyframes tourist-animation {
+                from {
+                    transform: translateY(-15px);
+                }
+
+                70% {
+                    transform: translateY(-10px);
+                }
+
+                to {
+                    transform: translateY(-15px);
+                }
+            }
+
+        }
     }
 
 
@@ -196,7 +237,7 @@ export default {
         object-fit: cover;
         width: 100%;
         left: 0px;
-        top: -170px;
+        top: -150px;
         z-index: 9;
         left: -20px;
         max-width: 1330px;

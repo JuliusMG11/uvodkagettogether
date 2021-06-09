@@ -44,7 +44,18 @@
           </div>
 
           <div class="column-50">
+              <div class="footer">
 
+                  <div class="footer-content">
+                       <h2>S nami už nič nezmeškáte!</h2>
+                        <p>Podporte nás, aby sme pre Vás <br>mohli vyvýjať ďalšie funkcie</p>
+                  </div>
+
+                  <div class="buttons-group">
+                      <button class="donate">Contact</button>
+                      <button class="contact">Donate</button>
+                  </div>
+              </div>
           </div>
       </div>
   </div>
@@ -59,7 +70,7 @@ export default {
 <style lang="scss" scoped>
 .land4 {
     position: relative;
-    background-image: url('~@/assets/svg/land4.svg');
+    background-image: url('~@/assets/svg/land4-new.svg');
     background-size: 104%;
     background-repeat: no-repeat;
     width: 100%;
@@ -77,7 +88,7 @@ export default {
                 z-index: 20;
                 position: relative;
                 top: 0px;
-                transform: translateX(180px);
+                transform: translateX(30px);
 
                 .billboard-content {
                     width: 454px;
@@ -135,6 +146,31 @@ export default {
                        position: relative;
                     }
                 }
+        }
+
+        .footer-content {
+            display: flex;
+            justify-content: start;
+            text-align: left;
+            flex-direction: column;
+            padding-top: 50px;
+
+            h2 {
+                font-size: 32px;
+                font-weight: 800;
+                margin-bottom: 0px;
+            }
+            p {
+                font-size: 22px;
+                font-weight: 600;
+                line-height: 30px;
+            }
+        }
+
+        .buttons-group {
+            display: flex;
+
+            
         }
   
 }

@@ -48,31 +48,35 @@
                                 </video>
                             <div class="container">
 
-                                <section class="column-70">
+                                <section class="column-50">
                                     
                                         <div class="billboard-qrcode">
                                             <img src="@/assets/svg/qr-code.svg" alt="">
                                         </div>
 
                                         <div class="billboard-first-section">
-                                            <div class="billboard-title">
-                        
-                                                <h2>Stahuj na</h2> 
-
-                                                <div class="logo-downloads">
-
-                                                    <img src="@/assets/svg/logo-downloads.svg" alt="">
-                                                </div>
-
-                                            </div>
+                                            
                                          </div>
 
                                 </section>
 
-                                <section class="column-30">
+                                <section class="column-50">
                                     <div class="billboard-mobile">
                 
-                                        <img src="" href="">
+                                       <div class="billboard-title">
+
+                                                <div class="logo-downloads">
+
+                                                    <div class="logo-play">
+                                                        <img src="@/assets/svg/google-play.svg" alt="">
+                                                    </div>
+
+                                                    <div class="logo-itunes">
+                                                        <img src="@/assets/svg/app-store.svg" alt="">
+                                                    </div>
+                                                </div>
+
+                                            </div>
 
                                     </div>
 
@@ -165,6 +169,18 @@ export default {
             top: -400px;
             z-index: 9;
             left: -20px;
+
+            &::after {
+                content: "";
+                position: absolute;
+                background-image: url('~@/assets/svg/cycling-man.svg');
+                background-size: 100%;
+                background-repeat: no-repeat;
+                bottom: 10%;
+                left: 15%;
+                width: 230px;
+                height: 230px;
+            }
 
         }
 
@@ -267,6 +283,18 @@ export default {
                 top: -70px;
                 right: 40px;
 
+                &::after {
+                    content: "";
+                    position: absolute;
+                    background-image: url('~@/assets/svg/billboard-cloud.svg');
+                    background-size: 100%;
+                    background-repeat: no-repeat;
+                    width: 200px;
+                    height: 100px;
+                    top: -100px;
+                    right: 0px;
+                }
+
                 .billboard-content {
                     width: 379px;
                     height: 162px;
@@ -278,8 +306,45 @@ export default {
                     top: 18px;
                     left: 19px;
                     border-radius: 2px;
-                    padding-left: 40px;
+                    padding-left: 20px;
+                    padding-right: 20px;
                     padding-top: 20px;
+                    overflow: hidden;
+
+                    &::before {
+                        content: "STAHUJ NA";
+                        position: absolute;
+                        text-transform: uppercase;
+                        font-size: 42px;
+                        font-weight: 900;
+                        top: -5px;
+                        right: 0px;
+                        z-index: 7;
+                        color: white;
+                        opacity: 0.2;
+                        text-shadow: 0px 34px white, 
+                                    0px 65px white, 
+                                    0px 96px white,
+                                    0px 126px white,
+                                    0px 156px white,
+                                    0px 186px white,
+                                    0px 216px white,
+                                    0px 236px white,
+                                    0px 266px white,
+                                    0px 296px white,
+                                    0px 326px white;
+                        animation: 4s infinite  text-animation;
+
+                        @keyframes text-animation {
+                            from {
+                                transform: translateY(-180px);
+                            }
+
+                            to {
+                                transform: translateY(0px);
+                            }
+                        }
+                    }
 
                     video {
                         object-fit: cover;
@@ -290,10 +355,28 @@ export default {
                         left: 0;
                         }
 
-                    .billboard-title {
-                        z-index: 8;
+                    .billboard-mobile {
+
+                        display: flex;
+                        justify-content: end;
                         position: relative;
+                        top: 90px;
+                        
+
+                        .billboard-title {
+                            z-index: 8;
+                            position: relative;
+                            
+                            .logo-downloads {
+                                display: flex;
+
+                                .logo-itunes {
+                                    margin-left: 20px;
+                                }
+                            }
+                        }
                     }
+
 
                     &::after {
                         background: linear-gradient(90deg, rgba(43,218,209,1) 0%, rgba(43,218,209,0.7484127440038515) 43%, rgba(43,218,209,0.3422502790178571) 72%, rgba(255,255,255,0) 100%);

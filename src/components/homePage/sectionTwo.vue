@@ -84,10 +84,10 @@ export default {
     width: 100%;
     height: 100%;
     background-position: bottom;
-    padding-bottom: 150px;
-    padding-top: 150px;
-    top: 300px;
-    background-position-y: 160px;
+    padding-bottom: 0px;
+    padding-top: 300px;
+    top: 180px;
+    background-position-y: -80px;
 
     
  
