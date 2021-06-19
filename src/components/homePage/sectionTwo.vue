@@ -15,7 +15,7 @@
                 <section class="mobile-column">
 
                     <div class="mobile-image">
-                        <img src="@/assets/svg/mobile-category.svg" alt="">
+                        <img src="@/assets/mobile-menu.png" alt="">
                     </div>
                 </section>
           </div>

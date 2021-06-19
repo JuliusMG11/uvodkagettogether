@@ -1,56 +1,609 @@
-@media (min-width: 1800px) {
-    .hero-building .container .forKids-pin  {
-        bottom: 7%;
-    }
-}
+@media (max-width: 1900px) {
 
+        .home {
+            .land2 {
+                padding-bottom: 110px;
+            }
+        }
+    }
+
+
+
+@media (max-width: 1800px) {
+
+        .home {
+            .land {
+
+                .road {
+                    top: -310px;
+                }
+
+                
+                    .title-servicing {
+                        bottom: -410px;
+                    }
+
+                    .concert-pin {
+                        left: 32.4%;
+                        top: 42%;
+                    }
+
+                    .party-pin {
+                        left: 17%;
+                    }
+                
+            }
+
+            .land2 {
+                padding-bottom: 100px;
+            }
+        }
+    }
 
 @media (min-width: 1750px) {
-    .hero-building .container .forKids-pin  {
-        bottom: 10%;
+    .home { 
+        .hero-building {
+            .container { 
+                .forKids-pin  {
+                    bottom: 8%;
+                    left: 50.2%;
+                }
+
+                .culture-pin {
+                    top: 40px;
+                }
+            }
+        }
+
+        .land {
+            padding-top: 450px;
+
+            .concert-pin {
+                left: 31.8%;
+                top: 42%;
+            }
+
+            .party-pin {
+                left: 15.5%;
+                top: 47%;
+            }
+
+            .sports-pin {
+                top: -30%;
+            }
+
+
+            &::before {
+                top: 150px;
+                left: 50px;
+            }
+
+            .road {
+                top: -280px;
+            }
+
+            .bg-left-section {
+                top: -140px;
+            }
+
+            .title-servicing {
+                bottom: -370px;
+            }
+
+            .bg-right-section {
+                top: 20px;
+                right: -100px;
+            }
+
+        }
+
+        .land2 {
+            padding-bottom: 60px;
+
+            .column-33 {
+                &:nth-child(1) {
+                    top: 110px;
+
+                    &::after {
+                        bottom: 120px;
+                    }
+                }
+
+                &:nth-child(2) {
+                    top: 30px;
+                }
+
+                &:nth-child(3) {
+                    top: -20px;
+                }
+            }
+        }
+
+        .land3 {
+            padding-top: 300px;
+            top: 90px;
+
+            .road2 {
+                top: -110px;
+
+                img {
+                    width: 115%;
+                }
+            }
+        }
+
+        .land4 {
+            padding-top: 300px;
+        }
+    }
+}
+
+
+@media (max-width: 1750px) {
+    .home {
+        .hero-building  {
+
+            .container 
+                .forKids-pin  {
+                    bottom: 10%;
+                    left: 50.2%;
+                }
+            }
+
+            .land {
+
+                .concert-pin {
+                    left: 31.4%;
+                    top: 36%;
+                }
+
+                .party-pin {
+                    left: 15%;
+                    top: 42%;
+                }
+
+                .sports-pin {
+                    top: -39%;
+                }
+
+                padding-top: 360px;
+
+                .bg-left-section {
+                    top: -140px;
+                }
+
+                .bg-right-section {
+                    right: -70px;
+                }
+
+                .title-servicing {
+                    bottom: -360px;
+                }
+
+                .road {
+                    top: -330px;
+                    left: -10px;
+                    width: 101%;
+                }
+            }
+
+            .land2 {
+                .column-33 {
+                    &:nth-child(1) {
+                        top: 90px;
+                    }
+
+                    &:nth-child(2) {
+                        top: 0px;
+                    }
+
+                    &:nth-child(3) {
+                        top: -80px;
+                    }
+                }
+            }
+
+            .land3 {
+                top: 80px;
+                padding-top: 280px;
+
+                .road2 {
+                    top:-140px;
+
+                    img {
+                        width: 108%;
+                    }
+                }
+            }
+
+            .land4 {
+                padding-top: 300px;
+            }
+
+        }
  
- 
+}
+
+
+
+@media (max-width: 1700px) {
+    .home {
+        .hero-building {
+                .container {
+                    .forKids-pin  {
+                        bottom: 14%;
+                        left: 50.2%;
+                    }
+            }
+        }
+
+        .land {
+            padding-top: 300px;
+
+            .road {
+                &::after {
+                    bottom: 12%;
+                }
+            }
+
+            .bg-left-section {
+                top: -130px;
+            }
+
+            .spors-pin {
+                top: -45%;
+            }
+
+            .concert-pin {
+                top: 33%;
+                left: 30.9%;
+            }
+
+            .party-pin {
+                left: 14%;
+                top: 38%;
+            }
+
+            .bg-left-section {
+                top: -130px;
+            }
+
+            .bg-right-section {
+                right: -90px;
+                top: 30px;
+            }
+
+            .title-servicing {
+                bottom: -350px
+            }
+        }
+
+        .land2 {
+            .column-33 {
+                &:nth-child(1) {
+                    top: 30px;
+
+                    &::after {
+                        bottom: 100px
+                    }
+                }
+
+                &:nth-child(2) {
+                    top: -30px;
+                }
+
+                &:nth-child(3) {
+                    top: -70px;
+                }
+            }
+        }
+
+        .land3 {
+            padding-top: 260px;
+            max-width: 100%;
+            top: 50px;
+
+            &::before {
+                top: 200px;
+            }
+
+            .road2 {
+                max-width: 1370px;
+            }
+        }
     }
 }
 
 
-@media (min-width: 1700px) {
-    .hero-building .container .forKids-pin  {
-        bottom: 12%;
-        left: 50.2%;
+@media (max-width: 1650px) {
+    
+    .home {
+        .hero-building { 
+            .container {
+                .forKids-pin  {
+                    bottom: 16%;
+                    left: 50.2%;
+                }
+            }
+        }
+
+        .land {
+            padding-top: 230px;
+
+            .title-servicing {
+                bottom: -350px;
+            }
+
+            .road {
+                top: -390px;
+                width: 102%;
+            }
+
+            .sports-pin {
+                top: -55%;
+            }
+            
+            .concert-pin {
+                top: 25%;
+                left: 30.2%;
+            }
+
+            .party-pin {
+                left: 13%;
+                top: 33%;
+            }
+
+            .bg-left-section {
+                top: -120px;
+            }
+        }
+
+        .land2 {
+            .column-33 {
+                &:nth-child(1) {
+                    top: 10px;
+
+                    &::after {
+                        bottom: 90px;
+                    }
+                }
+
+                &:nth-child(2) {
+                    top: -40px;
+                }
+
+                &:nth-child(3) {
+                    top: -90px;
+                }
+            }
+        }
+
+        .land3 {
+
+            padding-top: 230px;
+            
+
+            .road2 {
+                top: -170px;
+            }
+        }
     }
 }
 
 
-@media (min-width: 1650px) {
-    .hero-building .container .forKids-pin  {
-        bottom: 14%;
+@media (max-width: 1600px) {
+    .home { 
+        .hero-building { 
+            .container { 
+                .forKids-pin  {
+                    bottom: 18%;
+                }
+            }
+        }
+
+        .land {
+
+            padding-top: 220px;
+
+            .title-servicing {
+                bottom: -320px;
+            }
+
+            .concert-pin {
+                left: 29.7%;
+                top: 24%;
+            }
+
+            .party-pin {
+                left: 12%;
+            }
+
+            .road {
+                &::after {
+                    bottom: 11%;
+                }
+            }
+        }
+
+        .land2 {
+            .column-33 {
+                &:nth-child(1) {
+                    &::after {
+                        bottom: 110px; 
+                    }
+                }
+            }
+        }
+
+        .land3 {
+            padding-top: 250px;
+            top: 20px;
+            background-position-y: 120px;
+
+        }
+
+        .land4 {
+            padding-top: 270px;
+        }
     }
 }
 
+@media (max-width: 1550px) {
+    .home {
+    
+        .hero-building { 
+            .container { 
+                .forKids-pin  {
+                    bottom: 20%;
+                }
+            }
+        }
 
-@media (min-width: 1600px) {
-    .hero-building .container .forKids-pin  {
-        bottom: 16%;
-    }
-}
+        .land {
 
-@media (min-width: 1560px) {
-    .hero-building .container .forKids-pin  {
-        bottom: 18%;
+            .title-servicing {
+                bottom: -270px;
+            }
+
+            .road {
+                &::after {
+                    bottom: 13%;
+                }
+            }
+
+            .concert-pin {
+                left: 29.3%;
+                top: 25%;
+            }
+
+            .party-pin {
+                left: 11%;
+            }
+        }
+
+        .land2 {
+            .column-33 {
+                &:nth-child(1) {
+                    top: 0px;
+                }
+
+                &:nth-child(2) {
+                    top: -60px;
+                }
+
+                &:nth-child(3) {
+                    top: -110px;
+                }
+            }
+        }
+
+        .land3 {
+            padding-top: 220px;
+            background-position-y: 110px;
+            
+            .road2 {
+                top: -200px;
+            }
+        }
+
+        .land4 {
+            padding-top: 220px;
+        }
     }
 }
 
 
 
 @media (max-width: 1500px) {
-    .hero-building .container .forKids-pin  {
-        bottom: 22% ;
-    }
 
-    .home .land .road {
-        top: -360px;
-    }
+    .home {
+        .hero-building { 
+            .container { 
+                .forKids-pin  {
+                    bottom: 22%;
+                    left: 50%;
+                }
+            }
+        }
+    
+        .land {
+
+    
+
+            .concert-pin {
+                left: 28.5%;
+            }
+            
+            .title-servicing {
+                bottom: -300px;
+                left: 150px;
+
+                h2::after {
+                    bottom: -4px;
+                }
+            }
+        
+            .road {
+                top: -330px;
+
+                &::after {
+                    width: 210px;
+                    height: 220px;
+                    bottom: 10%;
+                }
+            }
+
+            .sports-pin {
+                right: 9%;
+                top: -53%;
+
+                img {
+                    width: 70px;
+                }
+            }
+
+            .bg-right-section {
+                top: 50px;
+                right: -40px;
+
+                .billboard {
+                    top: -90px;
+                }
+            }
+        }
+
+        .land2 {
+            .column-33 {
+                &:nth-child(1) {
+                    top: -40px;
+
+                    &::after {
+                        left: -60px;
+                    }
+                }
+
+                &:nth-child(2) {
+                    top: -80px;
+                }
+
+                &:nth-child(3) {
+                    top: -130px;
+                }
+            }
+        }
+
+        .land3 {
+            background-position-y: 110px;
+            padding-top: 200px;
+            top: -20px;
+
+            .road2 {
+                left: -6%;
+            }
+        }
+}   
+
+
 }
 
 
@@ -63,23 +616,242 @@
         margin-right: 30px;
     }
 
-    .hero-building .container .forKids-pin {
-        bottom: 30%;
+    .home 
+        .hero-building {
+            .container {
+                
+                .culture-pin {
+                    top: 25px;
+                }
+            
+                .forKids-pin {
+                    bottom: 24%;
+                    left: 49.8%;
+                }
+            
+            .downloads-buttons {
+                    .button-social {
+
+                        .social-image {
+                                
+                            img {
+                                    width: 30px;
+                            }  
+                         }
+
+                        .social-text {
+                            p {
+                                font-size: 18px;
+                            }
+
+                            h4 {
+                                font-size: 22px;
+                            }
+                        }
+                }
+            }
+
+        }
     }
 
-    .road {
-        top: -310px;
+    .home .land {
+
+        .sports-pin {
+            right: 10%;
+            top: -51%;
+        }
+    
+        .road {
+            top: -300px;
+        }
     }
 
     .bg-left-section {
         left: -100px;
         background-position: unset;
     }
+
+    .hero-building .container .forKids-pin  {
+        bottom: 24%;
+    }
+
+    .home .land { 
+        .title-servicing {
+            bottom: -270px;
+        }
+
+        .bg-left-section {
+            img {
+                top: 190px;
+            }
+        }
+
+        .concert-pin {
+            left: 27.8%;
+        }
+
+        .party-pin {
+            left: 8.5%;
+        }
+    }
+
+    .home .land2 {
+        .column-33 {
+
+            &:nth-child(1) {
+                .mobile-column {
+                    .mobile-image {
+                        max-width: 220px;
+                    }
+                }
+
+                &::after {
+                    width: 190px;
+                    bottom: 80px;
+                    left: -50px;
+                }
+            }
+
+            &:nth-child(2) {
+                .mobile-column {
+                    .mobile-image {
+                        max-width: 310px;
+                    }
+                }
+            }
+            
+            &:nth-child(3) {
+                .mobile-column {
+                    .mobile-image {
+                        max-width: 220px;
+                    }
+                }
+            }
+        }
+    }
+
+    .home .land3 {
+
+        background-size: 100%;
+
+        .column-33 {
+            &:nth-child(1) {
+      
+
+                .mobile-column {
+                    .mobile-image {
+                        max-width: 220px;
+                    }
+                }
+            }
+
+            &:nth-child(2) {
+              
+                    .mobile-column {
+                        .mobile-image {
+                            max-width: 220px;
+                        }
+                    }
+            }
+
+            &:nth-child(3) {
+                .mobile-column {
+                    .mobile-image {
+                        max-width: 300px;
+                    }
+                }
+            }
+        }
+
+        .road2 {
+            top: -150px;
+            max-width: 90%;
+        }
+    }
 }
 
+
 @media (max-width: 1400px) {
-    .hero-building .container .forKids-pin  {
-        bottom: 20%;
+    .home { 
+        
+        .hero-building { 
+            .container {
+                
+                
+                .forKids-pin  {
+                    bottom: 26%;
+                }
+
+                .presentation-pin {
+                    top: 16px;
+                }
+
+                .culture-pin {
+                    top: 25px;
+                }
+            }
+        }
+
+        .land {
+
+            padding-top: 170px;
+
+            .title-servicing {
+                bottom: -280px;
+            }
+
+            .bg-left-section {
+                img {
+                    top: 200px;
+                }
+            }
+
+            .concert-pin {
+                left: 27.6%;
+                top: 23%;
+            }
+
+            .party-pin {
+                top: 31%;
+            }
+
+            .sports-pin {
+                top: -46%;
+            }
+        }
+
+        .land2 {
+            .column-33 {
+                &:nth-child(1) {
+                    top: -50px;
+                }
+
+                &:nth-child(2) {
+                    top: -120px;
+                }
+
+                &:nth-child(3) {
+                    top: -160px;
+                }
+            }
+        }
+
+        .land3 {
+
+            padding-top: 180px;
+
+            .mountain {
+                right: -60px;
+            }
+
+            .road {
+                top: -180px;
+            }
+        }
+
+        .land4 {
+            padding-top: 170px;
+        }
     }
 
     .social-text {
@@ -93,19 +865,359 @@
     }
 }
 
+@media (max-width: 1350px) {
+    .home { 
+        
+        .hero-building { 
+            .container {
+                
+                
+                .forKids-pin  {
+                    bottom: 29%;
+                }
+            }
+        }
+
+        .land {
+            .road {
+                top: -300px;
+            }
+
+            .sports-pin {
+                top: -46%;
+            }
+
+            .bg-left-section {
+                img {
+                    top: 220px;
+                }
+            }
+
+            .title-servicing {
+                bottom: -230px;
+            }
+
+            .concert-pin {
+                top: 26%;
+                left: 27.4%;
+            }
+
+            .party-pin {
+                left: 8%;
+                top: 32%;
+            }
+        }
+        .land2 {
+            .column-33 {
+                &:nth-child(1) {
+
+                    top: -80px;
+
+                    &::after {
+                        width: 170px;
+                        bottom: 60px;
+                    }
+                }
+
+                &:nth-child(2) {
+                    top: -140px;
+                }
+
+                &:nth-child(3) {
+                    top: -180px;
+                }
+            }
+        }
+
+        .land3 {
+            padding-top: 160px;
+            background-position-y: 90px;
+
+            .road2 {
+                top: -200px;
+            }
+        }
+
+        .land4 {
+            padding-top: 100px;
+        }
+    }
+}
+
+@media (max-width: 1300px) {
+
+    .home {
+
+        .hero-building {
+
+            .container {
+
+                .forKids-pin {
+                    bottom: 35%;
+                }
+            }
+        }
+
+        .land {
+
+            .road {
+                top: -270px;
+            }
+            
+            .title-servicing {
+                bottom: -210px;
+            }
+
+            .concert-pin {
+                left: 27%;
+            }
+
+            .party-pin {
+                left: 8%;
+                top: 35%;
+            }
+
+            .bg-right-section {
+                right: -10px;
+            }
+        }
+
+
+        .land2 {
+            .column-33 {
+                &:nth-child(1) {
+
+                    &::after {
+                        width: 150px;
+                        bottom: 10px;
+                        left: -30px;
+                    }
+
+                    .mobile-column {
+                        .mobile-image {
+                            max-width: 200px;
+                        }
+                    }
+                }
+
+                &:nth-child(2) {
+                    .mobile-column {
+                        .mobile-image {
+                            max-width: 290px;
+                        }
+                    }
+                }
+
+                &:nth-child(3) {
+                    .mobile-column {
+                        .mobile-image {
+                            max-width: 200px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .land3 {
+            padding-bottom: 130px;
+            top: -50px;
+
+            &::before {
+                top: 0px;
+            }
+
+            .road2 {
+                top: -170px;
+            }
+
+        }
+
+    }
+
+}
+
+
+@media (max-width: 1250px) {
+
+    .home {
+         .hero-building {
+             
+                .container {
+                    
+                    .forKids-pin {
+                        bottom: 36%;
+                        animation-name: forKids-animation;
+                        
+                        img {
+                            max-width: 70px;
+                        }
+                        
+                        @keyframes forKids-animation {
+                            from {
+                                transform: translateY(-5px)
+                                            translateX(-13px);
+                            }
+            
+                            70% {
+                                transform: translateY(0px)
+                                            translateX(-13px); 
+                            }
+                            
+                            to {
+                                transform: translateY(-5px)
+                                            translateX(-13px); 
+                            }
+                        }
+                        
+                    }
+
+                    .relax-section {
+                        top: 70px;
+
+                        .relax-pin {
+                            img {
+                                max-width: 80px;
+                            }
+                        }
+                    }
+                }
+
+                .column-50 {
+                    .presentation-pin img,
+                    .science-pin img,
+                    .culture-pin img {
+                        max-width: 60px;
+                    }
+                    
+
+                }
+            }
+
+            .land {
+                padding-top: 100px;
+
+                &::before {
+                    width: 120px;
+                    height: 120px;
+                    top: 30px;
+                    left: -30px;
+                }
+
+                .road {
+                    top: -290px
+                }
+
+                .bg-left-section {
+                    top: -110px;
+
+                    img {
+                        top: 240px;
+                    }
+                }
+
+                .title-servicing {
+                    font-size: 62px;
+
+                    h2 {
+
+                        &::after {
+                            bottom: -18px;
+                            left: -17px;
+                        }
+                    }
+                }
+
+                .concert-pin {
+
+                    left: 27.4%;
+                    top: 26%;
+
+                    img {
+                        max-width: 70px
+                    }
+                }
+
+                .party-pin {
+                    top: 31%;
+
+                    img {
+                        max-width: 70px;
+                    }
+                }
+            }
+
+            .land2 {
+                top: 120px;
+                background-position-y: -70px;
+
+                .column-33 {
+                    &:nth-child(1) {
+                        top: -100px;
+                    }
+
+                    &:nth-child(2) {
+                        top: -160px;
+
+                        .mobile-title {
+                            top: -50px;
+                        }
+                    }
+
+                    &:nth-child(3) {
+                        top: -200px;
+                    }
+                }
+            }
+
+            .land3 {
+
+                &::before {
+                    top: -50px;
+                    z-index: 10;
+                }
+
+                padding-top: 40px;
+                background-position-y: 0px;
+
+                .road2 {
+                    top: -290px;
+                }
+            }
+
+            .land4 {
+                padding-top: 160px;
+            }
+    }
+
+}
+
+
 @media (max-width: 1200px) {
-    .hero-building .container .forKids-pin  {
-        bottom: 38%;
-        animation-name: forKids-animation;
+    .hero-building {
+    
+        .container {
+            
+            .relax-section {
+                &::after {
+                    bottom: -8px;
+                    left: -25px;
+                }
+            }
+    
+            .forKids-pin  {
+                bottom: 38%;
+                animation-name: forKids-animation;
+            
+            }
+    
+        }
+    
     }
     
     @keyframes forKids-animation {
         from {
-            transform: translateY(-10px)                        translateX(-10px);
-            -webkit-transform: translateY(-10px)                        translateX(-10px);
-            -moz-transform: translateY(-10px)                        translateX(-10px);
-            -ms-transform: translateY(-10px)                        translateX(-10px);
-            -o-transform: translateY(-10px)                        translateX(-10px);
+            transform: translateY(-10px) 
+                        translateX(-10px);
 }
 
         70% {
@@ -114,26 +1226,72 @@
         }
         
         to {
-            transform: translateY(-10px)                        translateX(-10px);
-            -webkit-transform: translateY(-10px)                        translateX(-10px);
-            -moz-transform: translateY(-10px)                        translateX(-10px);
-            -ms-transform: translateY(-10px)                        translateX(-10px);
-            -o-transform: translateY(-10px)                        translateX(-10px);
+            transform: translateY(-10px)
+                        translateX(-10px);
 }
     }
 
-    .hero-building .column-50 .presentation-pin img,
-    .hero-building .column-50 .science-pin img,
-    .hero-building .column-50 .culture-pin img,
-    .hero-building .column-50 .forKids-pin img,
-    .hero-building .column-50 .relax-pin img,
-    .land .sports-pin img {
-        max-width: 60px;
-    }
 
-    .home .land .sports-pin {
-        animation-name: sports-animation;
-        top: -55%;
+    .home { 
+        
+        .land { 
+            padding-top: 80px;
+    
+            .sports-pin {
+                animation-name: sports-animation;
+                top: -74%;
+                right: 9%;
+            }
+
+            .title-servicing {
+                bottom: -210px;
+                left: 170px;
+    
+                h2 {
+                font-size: 82px;
+    
+                    &::after {
+                        bottom: -29px;
+                    }
+                }
+            }
+    
+            &::before {
+                width: 100px;
+                height: 100px;
+                top: 40px;
+                left: -30px;
+            }
+    
+            .bg-left-section {
+                background-size: 90%;
+                height: 410px;
+                left: -60px;
+        
+            }
+    
+            .bg-right-section {
+    
+                height: 300px;
+    
+                .billboard {
+                    width: 340px;
+                    height: 360px;
+    
+                     .billboard-content {
+                        width: 307px;
+                        height: 132px;
+                        top: 14px;
+                        left: 15px;
+                     }
+                }
+            }
+
+            .road {
+                top: -350px;
+            }
+        }
+
     }
 
     @keyframes sports-animation {
@@ -156,60 +1314,10 @@
         }
     }
 
-    .home .land {
-        padding-top: 80px;
-
-        .title-servicing {
-            bottom: -210px;
-            left: 170px;
-
-            h2 {
-            font-size: 82px;
-
-                &::after {
-                    bottom: -29px;
-                }
-            }
-        }
-
-        &::before {
-            width: 100px;
-            height: 100px;
-            top: 40px;
-            left: -30px;
-        }
-
-        .bg-left-section {
-            background-size: 90%;
-            height: 410px;
-            left: -60px;
-    
-        }
-
-        .bg-right-section {
-
-            height: 300px;
-
-            .billboard {
-                width: 340px;
-                height: 360px;
-
-                 .billboard-content {
-                    width: 307px;
-                    height: 132px;
-                    top: 14px;
-                    left: 15px;
-                 }
-            }
-        }
-    }
+   
 
     .home .hero-building .container .relax-section {
         max-width: 420px;
         top: 80px;
-    }
-
-    .home .land .road {
-        top: -350px;
     }
 }
