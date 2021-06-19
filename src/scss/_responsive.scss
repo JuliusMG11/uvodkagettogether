@@ -1115,8 +1115,18 @@
                     }
                 }
 
+                .bg-right-section {
+                    .billboard {
+                        &::after {
+                            top: -50px;
+                            background-size: 80%;
+                        }
+                    }
+                }
+
                 .title-servicing {
                     font-size: 62px;
+                    bottom: -230px;
 
                     h2 {
 
@@ -1180,12 +1190,12 @@
                 background-position-y: 0px;
 
                 .road2 {
-                    top: -290px;
+                    top: -230px;
                 }
             }
 
             .land4 {
-                padding-top: 160px;
+                padding-top: 80px;
             }
     }
 
@@ -1243,6 +1253,16 @@
                 right: 9%;
             }
 
+            .party-pin {
+                top: 25%;
+                left: 11%;
+            }
+
+            .concert-pin {
+                left: 28.6%;
+                top: 14%;
+            }
+
             .title-servicing {
                 bottom: -210px;
                 left: 170px;
@@ -1266,7 +1286,11 @@
             .bg-left-section {
                 background-size: 90%;
                 height: 410px;
-                left: -60px;
+                left: -50px;
+
+                img {
+                    top: 180px;
+                }
         
             }
     
@@ -1289,6 +1313,26 @@
 
             .road {
                 top: -350px;
+            }
+        }
+
+        .land3 {
+            background-position-y: 20px;
+        }
+
+        .land4 {
+            padding-top: 18px;
+
+            .billboard {
+                width: 440px;
+                height: 460px;
+
+                 .billboard-content {
+                    width: 402px;
+                    height: 177px;
+                    top: 14px;
+                    left: 15px;
+                 }
             }
         }
 
