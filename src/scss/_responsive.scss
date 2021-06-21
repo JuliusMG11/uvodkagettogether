@@ -1215,30 +1215,13 @@
             }
     
             .forKids-pin  {
-                bottom: 38%;
-                animation-name: forKids-animation;
+                bottom: 34%;
+                left: 49.7%;
             
             }
     
         }
     
-    }
-    
-    @keyframes forKids-animation {
-        from {
-            transform: translateY(-10px) 
-                        translateX(-10px);
-}
-
-        70% {
-            transform: translateY(-5px)
-                        translateX(-10px); 
-        }
-        
-        to {
-            transform: translateY(-10px)
-                        translateX(-10px);
-}
     }
 
 
@@ -1255,11 +1238,11 @@
 
             .party-pin {
                 top: 25%;
-                left: 11%;
+                left: 12%;
             }
 
             .concert-pin {
-                left: 28.6%;
+                left: 29.6%;
                 top: 14%;
             }
 

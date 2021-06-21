@@ -21,7 +21,7 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss" scoped>
     button {
         text-decoration: none;
         display: flex;
@@ -60,5 +60,32 @@ export default {
             box-shadow: 0 4px 15px 0 rgba(49, 196, 190, 0.75);
         }
 
+    .social-text {
+
+                    text-align: left;
+
+                    h4 {
+                        text-decoration: none;
+                        margin-top: 0px;
+                        margin-bottom: 0px;
+                        color: white;
+                        font-size: 24px;
+                        font-weight: 500;
+                    }
+                    
+                    p {
+                        margin-top: 0px;
+                        margin-bottom: 0px;
+                        color: white;
+                    }
+                   
+                }
+
+                .social-image {
+                        padding-right: 20px;
+                    img {
+                        max-width: 50px;
+                    }
+                }
 
 </style>

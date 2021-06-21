@@ -17,18 +17,8 @@
 
                         <div class="downloads-buttons">
                             <div class="button-social">
-                                <button class="btn-hover color-1" href="#">
-
-                                    <div class="social-image">
-                                        <img src="@/assets/svg/google-play.svg" alt="">
-                                    </div>
-
-                                    <div class="social-text">
-                                        <p>Get it on</p>
-                                        <h4>Google play</h4>
-                                    </div>
-
-                                </button>
+                                
+                                 <downloads-button />
 
                             </div>
 
@@ -92,6 +82,16 @@
    
 </template>
 
+<script>
+import downloadsButton from '../UI/downloadsButton.vue'
+
+export default {
+    components: {
+        downloadsButton
+    }
+}
+
+</script>
 
 <style lang="scss" scoped>
     

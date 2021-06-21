@@ -9,7 +9,7 @@
             <div class="section-navigation">
 
                 <router-link to="/">Úvod</router-link>
-                <router-link to="/about">Naša služby</router-link>
+                <router-link to="/our-service">Naša služby</router-link>
                 <router-link to="#">O nás</router-link>
                 <router-link to="#">Kontakt</router-link>
             </div>
