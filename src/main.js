@@ -1,15 +1,13 @@
-import Vue from 'vue';
-import App from './App.vue';
-import router from "./router";
+import Vue from 'vue'
+import App from './App.vue'
+import router from './router'
 
-import "./scss/_variables.scss";
-import "./scss/_responsive.scss";
+import './scss/_variables.scss'
+import './scss/_responsive.scss'
 
-
-
-Vue.config.productionTip = false;
+Vue.config.productionTip = false
 
 new Vue({
   router,
   render: (h) => h(App),
-}).$mount("#app");
+}).$mount('#app')

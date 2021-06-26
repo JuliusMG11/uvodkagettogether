@@ -1,35 +1,33 @@
 <template>
   <div class="home">
-    
-      <section-hero />
+    <section-hero />
 
-      <section-one />
+    <section-one />
 
-      <section-two />
+    <section-two />
 
-      <section-three />
+    <section-three />
 
-      <section-footer />
-
+    <section-footer />
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import sectionHero from "@/components/homePage/sectionHero.vue";
-import sectionOne from "@/components/homePage/sectionOne.vue";
-import sectionTwo from "@/components/homePage/sectionTwo.vue";
-import sectionThree from "@/components/homePage/sectionThree.vue";
-import sectionFooter from "@/components/homePage/sectionFooter.vue";
+import sectionHero from '@/components/homePage/sectionHero.vue'
+import sectionOne from '@/components/homePage/sectionOne.vue'
+import sectionTwo from '@/components/homePage/sectionTwo.vue'
+import sectionThree from '@/components/homePage/sectionThree.vue'
+import sectionFooter from '@/components/homePage/sectionFooter.vue'
 
 export default {
-  name: "Home",
+  name: 'Home',
   components: {
     sectionHero,
     sectionOne,
     sectionTwo,
     sectionThree,
-    sectionFooter
+    sectionFooter,
   },
-};
+}
 </script>

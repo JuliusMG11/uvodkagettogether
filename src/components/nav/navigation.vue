@@ -1,40 +1,31 @@
 <template>
-      <div id="nav">
-          <div class="navigation">
-            
-            <div class="section-logo">
-              <img src="@/assets/svg/logo.svg" >
-            </div>
+  <div id="nav">
+    <div class="navigation">
+      <div class="section-logo">
+        <img src="@/assets/svg/logo.svg" />
+      </div>
 
-            <div class="section-navigation">
-
-                <router-link to="/">Úvod</router-link>
-                <router-link to="/our-service">Naša služby</router-link>
-                <router-link to="#">O nás</router-link>
-                <router-link to="#">Kontakt</router-link>
-            </div>
-          </div>
-        </div>
+      <div class="section-navigation">
+        <router-link to="/">Úvod</router-link>
+        <router-link to="/our-service">Naša služby</router-link>
+        <router-link to="/about">O nás</router-link>
+        <router-link to="/contact">Kontakt</router-link>
+      </div>
+    </div>
+  </div>
 </template>
 
 <script>
-
 export default {
-    components: {
-       
-
-    }
+  components: {},
 }
-
 </script>
-
 
 <style lang="scss" scoped>
 #nav {
   max-width: 1400px;
   margin: 0 auto;
   padding-top: 20px;
- 
 
   a {
     font-weight: bold;
@@ -55,10 +46,9 @@ export default {
     display: flex;
     justify-content: space-between;
     align-items: center;
-  
-    
+
     .section-navigation::after {
-      content: "";
+      content: '';
       position: absolute;
       background-image: url('~@/assets/svg/menu-cloud.svg');
       background-repeat: no-repeat;
@@ -68,14 +58,12 @@ export default {
       top: 70px;
       right: 20px;
     }
-  
-    .section-logo {
 
+    .section-logo {
       img {
-         max-width: 250px;
+        max-width: 250px;
       }
     }
-
   }
 }
 </style>

@@ -35,6 +35,7 @@ h1 {
     font-weight: 800;
 }
 
+
 p {
     font-family: $main-font;
     font-size: 22px;
@@ -51,6 +52,10 @@ img {
     display: flex;
 	flex-wrap: wrap;
 	margin: 0 auto;
+
+    .column-100 {
+        width: 100%;
+    }
 
     .column-70 {
         width: 70%;
