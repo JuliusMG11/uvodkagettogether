@@ -16,7 +16,7 @@
 
           <section class="mobile-column">
             <div class="mobile-image">
-              <img src="@/assets/svg/mobile-registration.svg" alt="" />
+              <img src="@/assets/png/home/register-category.png" alt="" />
             </div>
           </section>
         </div>
@@ -24,7 +24,7 @@
         <div class="column-33">
           <section class="mobile-column">
             <div class="mobile-image">
-              <img src="@/assets/svg/mobile-registration-2.svg" alt="" />
+              <img src="@/assets/png/home/register.png" alt="" />
             </div>
           </section>
         </div>
@@ -40,7 +40,7 @@
 
           <section class="mobile-column">
             <div class="mobile-image">
-              <img src="@/assets/svg/mobile-competition.svg" alt="" />
+              <img src="@/assets/png/home/missions.png" alt="" />
             </div>
           </section>
         </div>
@@ -194,7 +194,7 @@ export default {}
 
       .mobile-column {
         .mobile-image {
-          max-width: 340px;
+          max-width: 260px;
         }
       }
     }

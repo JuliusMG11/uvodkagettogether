@@ -7,7 +7,7 @@
             <h1>Objavujte zabavu <br />spolu s nami</h1>
             <p>
               Prinášame ti novú aplikáciu s ktorou už žiadnu zábavu nezmeškáš.
-              Pridaj sa do nového sveta a bav sa spolu <br />
+              Pridaj sa do nového sveta a bav sa spolu 
               s nami. Gettogether!
             </p>
           </div>
@@ -92,6 +92,8 @@ export default {
   height: 100%;
   z-index: 10;
   position: relative;
+
+  
 
   .presentation-pin,
   .science-pin,
@@ -218,6 +220,7 @@ export default {
         z-index: 10;
         position: relative;
         top: 50px;
+        padding-right: 40px;
 
         &::after {
           content: '';
@@ -230,13 +233,14 @@ export default {
         }
 
         h1 {
-          font-size: 42px;
+          font-size: 52px;
           margin-bottom: 10px;
           margin-top: 0px;
+          font-weight: 1000;
         }
 
         P {
-          font-size: 22px;
+          font-size: 20px;
           font-weight: 600;
         }
       }

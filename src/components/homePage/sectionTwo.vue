@@ -13,7 +13,7 @@
 
           <section class="mobile-column">
             <div class="mobile-image">
-              <img src="@/assets/mobile-menu.png" alt="" />
+              <img src="@/assets/png/home/category-menu.png" alt="" />
             </div>
           </section>
         </div>
@@ -29,7 +29,7 @@
 
           <section class="mobile-column">
             <div class="mobile-image">
-              <img src="@/assets/svg/mobile-liked.svg" alt="" />
+              <img src="@/assets/png/home/liked.png" alt="" />
             </div>
           </section>
         </div>
@@ -45,7 +45,7 @@
 
           <section class="mobile-column">
             <div class="mobile-image">
-              <img src="@/assets/svg/mobile-calendar.svg" alt="" />
+              <img src="@/assets/png/home/calendar.png" alt="" />
             </div>
           </section>
         </div>

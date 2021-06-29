@@ -51,8 +51,8 @@
           </div>
 
           <div class="buttons-group">
-            <button class="donate">Contact</button>
-            <button class="contact">Donate</button>
+            <default-button title="Contact" class="first-button"> </default-button>
+            <default-button title="Donate"> </default-button>
           </div>
         </div>
       </div>
@@ -61,7 +61,15 @@
 </template>
 
 <script>
-export default {}
+import defaultButton from '../UI/defaultButton.vue';
+
+export default {
+  name: 'FooterSection',
+  components: {
+    defaultButton
+  }
+
+}
 </script>
 
 <style lang="scss" scoped>
@@ -160,6 +168,8 @@ export default {}
       font-size: 32px;
       font-weight: 800;
       margin-bottom: 0px;
+      font-weight: 1000;
+      color: #121212;
     }
     p {
       font-size: 22px;
@@ -170,6 +180,10 @@ export default {}
 
   .buttons-group {
     display: flex;
+  }
+
+  .first-button {
+    margin-right: 20px;
   }
 }
 </style>

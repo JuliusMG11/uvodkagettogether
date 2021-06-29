@@ -31,14 +31,14 @@ export default {
     font-weight: bold;
     color: #2c3e50;
     text-decoration: none;
-    margin-right: 20px;
+    margin-right: 30px;
 
     &:last-child {
       margin-right: 0px;
     }
 
     &.router-link-exact-active {
-      color: #42b983;
+      color: #0CBFAC;
     }
   }
 
@@ -46,6 +46,10 @@ export default {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    a {
+      font-size: 20px;
+    }
 
     .section-navigation::after {
       content: '';

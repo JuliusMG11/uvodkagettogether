@@ -22,11 +22,11 @@
         <div class="column-50">
           <div class="service-image">
             <div class="after-image">
-              <img src="@/assets/svg/mobile-registration.svg" alt="" />
+              <img src="@/assets/png/home/register-category.png" alt="" />
             </div>
 
             <div class="before-image">
-              <img src="@/assets/svg/mobile-registration-2.svg" alt="" />
+              <img src="@/assets/png/home/register.png" alt="" />
             </div>
           </div>
         </div>
@@ -97,11 +97,11 @@
         <div class="column-50">
           <div class="service-image">
             <div class="after-image">
-              <img src="@/assets/svg/mobile-registration.svg" alt="" />
+              <img src="@/assets/png/home/register-category.png" alt="" />
             </div>
 
             <div class="before-image">
-              <img src="@/assets/svg/mobile-registration-2.svg" alt="" />
+              <img src="@/assets/png/home/register.png" alt="" />
             </div>
           </div>
         </div>
@@ -178,6 +178,7 @@ export default {
       font-size: 62px;
       margin-top: 0px;
       margin-bottom: 10px;
+      font-weight: 1000;
     }
 
     p {
