@@ -21,42 +21,51 @@
         </div>
       </div>
 
-        <div class="profile-section">
-          
-        <div class="column-30">
-
-          <div class="profile-image">
-            <img src="@/assets/profile-picture.jpg" alt="">
-          </div>
-
-          <h3>Roman</h3>
-          <p>
-            Naša hlava, ktorá ma na všetko odpoveď. Stará sa hlavne o programovanie celej aplikácie od backendu pro frontend
-          </p>
-        </div> 
-         <div class="column-30">
-            <div class="profile-image">
-            <img src="@/assets/profile-picture.jpg" alt="">
-          </div>
-
-          <h3>Simona</h3>
-          <p>
-            Jedina zenska ruka v tyme, ktora nam pomaha so vsetkym co potrebujeme.
-          </p>
-        </div>
-         <div class="column-30">
-
-            <div class="profile-image">
-            <img src="@/assets/profile-picture.jpg" alt="">
-          </div>
-          <h3>Julius</h3>
-          <p>
-            Julo sa stara a dizajnovu cast a snazi sa Romanovy pomahat s frontendom.
-          </p>
-        </div>
-        </div>
-
     </div>
+
+        <div class="profile-section">
+
+          <div class="container">
+          
+            <div class="column-30">
+
+              <div class="team-content">
+
+                <div class="profile-image">
+                  <img src="@/assets/svg/about/roman-avatar.svg" alt="">
+                </div>
+
+              </div>
+
+              <h3>Roman</h3> 
+
+            </div>
+
+            <div class="column-30">
+
+             <div class="team-content">
+
+                <div class="profile-image">
+                  <img src="@/assets/svg/about/simona-avatar.svg" alt="">
+                </div>
+
+              </div>
+
+              <h3>Simona</h3>
+
+            </div>
+
+            <div class="column-30">
+
+              <div class="profile-image">
+                <img src="" alt="">
+              </div>
+              
+              <h3>Julius</h3>
+          
+          </div>
+        </div>
+      </div>
 
     <footer-section />
   </div>
@@ -76,6 +85,7 @@ export default {
 
 .container {
   align-items: center;
+  justify-content: center;
   
  .hero-title {
     position:relative;
@@ -106,42 +116,61 @@ export default {
 }
 
 .profile-section {
-  display: flex;
-  justify-content: center;
+  background-image: url('~@/assets/png/about/team-land.png');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  padding-bottom: 100px;
+  padding-top: 100px;
 
   .column-30 {
-    padding: 30px;
-    margin-right: 30px;
-    box-shadow:  5px 5px 10px #d9d9d9,
-             -5px -5px 10px #ffffff;
+    justify-content: center;
+    position: relative;
 
              &:nth-child(1) {
-                border-radius: 50% 20% 20% 20%;
+                top: -40px;
+
+                 .profile-image {
+                   max-width: 200px;
+                }
              }
 
              &:nth-child(2) {
-               border-radius: 20% 20% 20% 20%;
+
+               left: 20px;
+               top: -30px;
+
+                .profile-image {
+                  max-width: 320px;
+                  position: relative;
+                  z-index: 6;
+                }
+
+                h3 {
+                  z-index: 5;
+                }
              }
 
              &:nth-child(3) {
-               border-radius: 20% 50% 20% 20%;
+               
              }
 
-    .profile-image {
-
-      
-      img {
-        border-radius: 50%;
-        height: 150px;
-        width: 150px;
-
-        box-shadow: 3px 1px 20px #1f999398;
-      }
+    h3 {
+      top: -70px;
+      position: relative;
+      font-size: 102px;
+      margin-top: 0px;
+      margin-bottom: 0px;
+      font-weight: 1000;
     }
 
-    &:last-child {
-      margin-right: 0px;
-    }
+    .team-content {
+
+        display: flex;
+        justify-content: center;
+        position: relative;
+        bottom: -20px;
+
+    }         
   }
 }
 </style>
