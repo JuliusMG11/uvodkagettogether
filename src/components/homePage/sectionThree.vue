@@ -11,12 +11,12 @@
           </div>
 
           <div class="mobile-title">
-            <h3>Registrácia</h3>
+            <h3>Registration</h3>
           </div>
 
           <section class="mobile-column">
             <div class="mobile-image">
-              <img src="@/assets/png/home/register-category.png" alt="" />
+              <img src="@/assets/png/home/registration-category.png" alt="" />
             </div>
           </section>
         </div>
@@ -35,7 +35,7 @@
           </div>
 
           <div class="mobile-title">
-            <h3>Súťaže</h3>
+            <h3>Treasure hunt</h3>
           </div>
 
           <section class="mobile-column">

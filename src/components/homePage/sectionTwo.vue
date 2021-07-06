@@ -8,7 +8,7 @@
           </div>
 
           <div class="mobile-title">
-            <h3>Kategorie</h3>
+            <h3>Category</h3>
           </div>
 
           <section class="mobile-column">
@@ -24,7 +24,7 @@
               <img src="@/assets/svg/cloud-liked.svg" alt="" />
             </div>
 
-            <h3>Obľúbené lokácie a eventy</h3>
+            <h3>Liked event and location</h3>
           </div>
 
           <section class="mobile-column">
@@ -40,7 +40,7 @@
           </div>
 
           <div class="mobile-title">
-            <h3>Kalendár</h3>
+            <h3>Calendar</h3>
           </div>
 
           <section class="mobile-column">

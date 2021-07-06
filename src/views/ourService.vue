@@ -4,16 +4,18 @@
       <div class="hero-section">
         <div class="column-30">
           <div class="hero-text">
-            <h2>Pozrite si, co vsetko u nas najdete</h2>
+            <h2>See what you will find in our new app Gettogether</h2>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat
-              repellat quia ducimus odit voluptates. Explicabo odit in assumenda
+              In Gettogether you will find many interesting functions from 
+              registration through the calendar to an overview of events and 
+              many other interesting options. You will not get lost with us in 
+              he world of entertainment, sports or leisure activities.
             </p>
           </div>
         </div>
         <div class="column-70">
           <div class="right-hero-section">
-            <img src="@/assets/svg/our-service-hero-bg.png" alt="" />
+            <img src="@/assets/png/our-service/our-service-hero-bg.png" alt="" />
           </div>
         </div>
       </div>
@@ -22,7 +24,7 @@
         <div class="column-50">
           <div class="service-image">
             <div class="after-image">
-              <img src="@/assets/png/home/register-category.png" alt="" />
+              <img src="@/assets/png/home/registration-category.png" alt="" />
             </div>
 
             <div class="before-image">
@@ -47,13 +49,14 @@
           </div>
 
           <div class="service-title">
-            <h2>Registrácia</h2>
+            <h2>Registration</h2>
           </div>
 
           <div class="sevice-text">
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat
-              repellat quia ducimus odit voluptates. Explicabo odit in assumenda
+              When you register, use the opportunity to click and choose your range of interest such as the genre of music, 
+              different types of culture or sports to customize the display of events or places that you like or interest you.
+              Through your selected circuits, a map will be generated that will be specific to each user with his/her interests.
             </p>
           </div>
 
@@ -74,8 +77,9 @@
 
           <div class="sevice-text">
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat
-              repellat quia ducimus odit voluptates. Explicabo odit in assumenda
+              You will be able to add any event or permanent location as a gallery, cinema, or 
+              workout spot, to your favorites. So, you will never lose it and at the same 
+              time you can find it easy.
             </p>
           </div>
         </div>
@@ -113,8 +117,14 @@
 
           <div class="sevice-text">
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat
-              repellat quia ducimus odit voluptates. Explicabo odit in assumenda
+              In our app you will also find the game “treasure hunt”, in which you will be 
+              able to discover new and new treasures with the help of points 
+              (funcoins). The treasure contains different kinds of prize for example 
+              vouchers or discount coupons. The game starts by revealing the 
+              circuit on the map where the treasure is located and you 
+              will be able to search for it with using your camera in 
+              mobile phone. Based on your support and trust in the future, 
+              we are also planning many other interactive games to made your day. 
             </p>
           </div>
         </div>
@@ -128,20 +138,21 @@
 
           <div class="sevice-text">
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat
-              repellat quia ducimus odit voluptates. Explicabo odit in assumenda
+              You can plan your favorite events in the calendar thanks to which you will 
+              not miss anything. Simply said, when you click “like” 
+              button, the event will be marked into your calendar.
             </p>
           </div>
         </div>
 
         <div class="column-50">
           <div class="service-image">
-            <div class="after-image">
-              <img src="@/assets/png/our-service/detail-event.png" alt="" />
+            <div class="after-image-two">
+              <img src="@/assets/png/our-service/calendar-day.png" alt="" />
             </div>
 
-            <div class="before-image">
-              <img src="@/assets/png/our-service/liked.png" alt="" />
+            <div class="before-image-two">
+              <img src="@/assets/png/our-service/calendar-mounth.png" alt="" />
             </div>
           </div>
         </div>
@@ -163,6 +174,13 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+
+ p {
+   font-size: 20px;
+   line-height: 1.5;
+   font-weight: 500;
+ }
+
 .hero-section {
   display: flex;
   align-items: center;
@@ -183,6 +201,8 @@ export default {
 
     p {
       font-size: 18px;
+      line-height: 1.5;
+      font-weight: 500;
     }
   }
 
@@ -210,7 +230,7 @@ export default {
     }
 
     .service-image {
-      transform: skew(-5deg);
+      perspective: 1000px;
 
       img {
         width: 300px;
@@ -223,6 +243,7 @@ export default {
         position: relative;
         left: 120px;
         top: 20px;
+        transform: rotateY(-18deg) rotateZ(3deg);
       }
 
       .before-image {
@@ -230,10 +251,33 @@ export default {
         top: -20px;
         left: -100px;
         z-index: 5;
-        transform: skew(10deg);
+       transform: rotateY(18deg) rotateZ(-3deg);
 
         img {
           width: 380px;
+        }
+      }
+
+       .after-image-two {
+        z-index: 8;
+        position: relative;
+        left: 120px;
+        top: 20px;
+        transform: rotateY(-18deg) rotateZ(3deg);
+        img {
+          width: 320px;
+        }
+      }
+
+      .before-image-two {
+        position: absolute;
+        top: -20px;
+        left: -70px;
+        z-index: 5;
+       transform: rotateY(18deg) rotateZ(-3deg);
+
+        img {
+          width: 320px;
         }
       }
 
@@ -301,7 +345,7 @@ export default {
   }
 
   .service-image {
-    transform: skew(-5deg);
+    perspective: 1000px;
 
     img {
       width: 300px;
@@ -314,6 +358,7 @@ export default {
       position: relative;
       left: 120px;
       top: -20px;
+      transform: rotateY(-18deg) rotateZ(3deg);
     }
 
     .after-image {
@@ -321,7 +366,7 @@ export default {
       top: 20px;
       left: -80px;
       z-index: 8;
-      transform: skew(10deg);
+      transform: rotateY(18deg) rotateZ(-3deg);
     }
 
     &::before {
@@ -374,7 +419,7 @@ export default {
   }
 
   .culture-cinema-tag {
-    bottom: 20px;
+    bottom: -20px;
     width: 220px;
     transform: translateX(-90px);
 

@@ -22,6 +22,8 @@ textarea{overflow:auto;}
 
 /******************************/
 
+@import '../scss/variables';
+
 html{
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
@@ -32,6 +34,11 @@ html{
 *, *:before, *:after{
 	-webkit-box-sizing: inherit;
 	box-sizing: inherit;
+}
+
+body {
+    font-family: $main-font;
+    margin: 0px;
 }
 
 .group:before,
@@ -46,4 +53,55 @@ html{
 
 .group{
     *zoom: 1;
+}
+
+
+h1 {
+    color: $blacky-color;
+    font-family: $main-font;
+    font-size: 32px;
+    font-weight: 800;
+}
+
+
+p {
+    font-family: $main-font;
+    font-size: 18px;
+    color: $blacky-color;
+    line-height: 1.5;
+    font-weight: 500;
+}
+
+
+img {
+    width: 100%;
+}
+
+.container {
+    max-width: 1400px;
+    display: flex;
+	flex-wrap: wrap;
+	margin: 0 auto;
+
+    .column-100 {
+        width: 100%;
+    }
+
+    .column-70 {
+        width: 70%;
+    }
+    
+    .column-50 {
+        width: 50%;
+    }
+
+    .column-30 {
+        width: 30%;
+    }
+
+    .column-33 {
+        width: 33.3333%;
+    }
+
+
 }

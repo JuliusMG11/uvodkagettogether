@@ -6,9 +6,8 @@
           <div class="hero-text">
             <h1>Objavujte zabavu <br />spolu s nami</h1>
             <p>
-              Prinášame ti novú aplikáciu s ktorou už žiadnu zábavu nezmeškáš.
-              Pridaj sa do nového sveta a bav sa spolu 
-              s nami. Gettogether!
+              We bring you a new app that you can’t miss any entertainment with. 
+              Join the new world and let’s have a fun with Gettogether!
             </p>
           </div>
 

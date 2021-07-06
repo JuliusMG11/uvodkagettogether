@@ -250,7 +250,7 @@
                 top: -130px;
             }
 
-            .spors-pin {
+            .sports-pin {
                 top: -45%;
             }
 
@@ -616,66 +616,73 @@
         margin-right: 30px;
     }
 
-    .home 
-        .hero-building {
-            .container {
+    // 
+    // HOMEPAGE
+    //
+
+    .home {
+            .hero-building {
+                .container {
+                    
+                    .culture-pin {
+                        top: 25px;
+                    }
                 
-                .culture-pin {
-                    top: 25px;
-                }
-            
-                .forKids-pin {
-                    bottom: 24%;
-                    left: 49.8%;
-                }
-            
-            .downloads-buttons {
-                    .button-social {
+                    .forKids-pin {
+                        bottom: 25%;
+                    }
+                
+                .downloads-buttons {
+                        .button-social {
 
-                        .social-image {
-                                
-                            img {
-                                    width: 30px;
-                            }  
-                         }
-
-                        .social-text {
-                            p {
-                                font-size: 18px;
+                            .social-image {
+                                    
+                                img {
+                                        width: 30px;
+                                }  
                             }
 
-                            h4 {
-                                font-size: 22px;
+                            .social-text {
+                                p {
+                                    font-size: 18px;
+                                }
+
+                                h4 {
+                                    font-size: 22px;
+                                }
                             }
-                        }
+                    }
                 }
+
+            }
+        }
+        .land {
+
+            .concert-pin {
+                left: 27.8%;
+                top: 26%;
             }
 
+            .party-pin {
+                left: 9%;
+                top: 34%;
+            }
+
+            .sports-pin {
+                right: 9%;
+                top: -42%;
+            }
+        
+            .road {
+                top: -300px;
+            }
         }
-    }
 
-    .home .land {
-
-        .sports-pin {
-            right: 10%;
-            top: -51%;
+        .bg-left-section {
+            left: -100px;
+            background-position: unset;
         }
-    
-        .road {
-            top: -300px;
-        }
-    }
-
-    .bg-left-section {
-        left: -100px;
-        background-position: unset;
-    }
-
-    .hero-building .container .forKids-pin  {
-        bottom: 24%;
-    }
-
-    .home .land { 
+ 
         .title-servicing {
             bottom: -270px;
         }
@@ -693,79 +700,85 @@
         .party-pin {
             left: 8.5%;
         }
-    }
+    
 
-    .home .land2 {
-        .column-33 {
+        .land2 {
+            .column-33 {
 
-            &:nth-child(1) {
-                .mobile-column {
-                    .mobile-image {
-                        max-width: 220px;
-                    }
-                }
-
-                &::after {
-                    width: 190px;
-                    bottom: 80px;
-                    left: -50px;
-                }
-            }
-
-            &:nth-child(2) {
-                .mobile-column {
-                    .mobile-image {
-                        max-width: 310px;
-                    }
-                }
-            }
-            
-            &:nth-child(3) {
-                .mobile-column {
-                    .mobile-image {
-                        max-width: 220px;
-                    }
-                }
-            }
-        }
-    }
-
-    .home .land3 {
-
-        background-size: 100%;
-
-        .column-33 {
-            &:nth-child(1) {
-      
-
-                .mobile-column {
-                    .mobile-image {
-                        max-width: 220px;
-                    }
-                }
-            }
-
-            &:nth-child(2) {
-              
+                &:nth-child(1) {
                     .mobile-column {
                         .mobile-image {
                             max-width: 220px;
                         }
                     }
-            }
 
-            &:nth-child(3) {
-                .mobile-column {
-                    .mobile-image {
-                        max-width: 300px;
+                    &::after {
+                        width: 190px;
+                        bottom: 80px;
+                        left: -50px;
+                    }
+                }
+
+                &:nth-child(2) {
+                    .mobile-column {
+                        .mobile-image {
+                            max-width: 310px;
+                        }
+                    }
+                }
+                
+                &:nth-child(3) {
+                    .mobile-column {
+                        .mobile-image {
+                            max-width: 220px;
+                        }
                     }
                 }
             }
         }
 
-        .road2 {
-            top: -150px;
-            max-width: 90%;
+
+        .land3 {
+
+            background-size: 100%;
+
+            .column-33 {
+                &:nth-child(1) {
+        
+
+                    .mobile-column {
+                        .mobile-image {
+                            max-width: 220px;
+                        }
+                    }
+                }
+
+                &:nth-child(2) {
+                
+                        .mobile-column {
+                            .mobile-image {
+                                max-width: 220px;
+                            }
+                        }
+                }
+
+                &:nth-child(3) {
+                    .mobile-column {
+                        .mobile-image {
+                            max-width: 220px;
+                        }
+                    }
+                }
+            }
+
+            .road2 {
+                top: -150px;
+                max-width: 90%;
+            }
+        }
+
+        .land4 {
+            padding-top: 120px;
         }
     }
 }
@@ -779,7 +792,7 @@
                 
                 
                 .forKids-pin  {
-                    bottom: 26%;
+                    bottom: 28%;
                 }
 
                 .presentation-pin {
@@ -873,7 +886,8 @@
                 
                 
                 .forKids-pin  {
-                    bottom: 29%;
+                    bottom: 30%;
+                    left: 49.7%;
                 }
             }
         }
@@ -953,7 +967,7 @@
             .container {
 
                 .forKids-pin {
-                    bottom: 35%;
+                    bottom: 33%;
                 }
             }
         }
@@ -962,6 +976,10 @@
 
             .road {
                 top: -270px;
+            }
+
+            .sports-pin {
+                top: -42%;
             }
             
             .title-servicing {
@@ -973,8 +991,8 @@
             }
 
             .party-pin {
-                left: 8%;
-                top: 35%;
+                left: 7.6%;
+                top: 33%;
             }
 
             .bg-right-section {
@@ -1032,6 +1050,13 @@
 
         }
 
+        .land4 {
+            padding-top: 50px;
+
+            .footer-content {
+                padding-top: 100px;
+            }
+        }
     }
 
 }
@@ -1045,29 +1070,13 @@
                 .container {
                     
                     .forKids-pin {
-                        bottom: 36%;
-                        animation-name: forKids-animation;
+                        bottom: 35%;
+                        left: 50.4%;
                         
                         img {
                             max-width: 70px;
                         }
                         
-                        @keyframes forKids-animation {
-                            from {
-                                transform: translateY(-5px)
-                                            translateX(-13px);
-                            }
-            
-                            70% {
-                                transform: translateY(0px)
-                                            translateX(-13px); 
-                            }
-                            
-                            to {
-                                transform: translateY(-5px)
-                                            translateX(-13px); 
-                            }
-                        }
                         
                     }
 
@@ -1101,6 +1110,10 @@
                     height: 120px;
                     top: 30px;
                     left: -30px;
+                }
+
+                .sports-pin {
+                    top: -51%;
                 }
 
                 .road {
@@ -1186,6 +1199,10 @@
                     z-index: 10;
                 }
 
+                .mountain {
+                    max-width: 660px;
+                }
+
                 padding-top: 40px;
                 background-position-y: 0px;
 
@@ -1193,45 +1210,55 @@
                     top: -230px;
                 }
             }
-
-            .land4 {
-                padding-top: 80px;
-            }
     }
 
 }
 
 
 @media (max-width: 1200px) {
+       
+.home { 
+    
     .hero-building {
     
-        .container {
-            
-            .relax-section {
-                &::after {
-                    bottom: -8px;
-                    left: -25px;
+            .container {
+
+                .relax-section {
+                    max-width: 420px;
+                    top: 80px;
                 }
-            }
-    
-            .forKids-pin  {
-                bottom: 34%;
-                left: 49.7%;
-            
+                
+                .relax-section {
+                    &::after {
+                        bottom: -8px;
+                        left: -25px;
+                    }
+                }
+        
+                .forKids-pin  {
+                    bottom: 34%;
+                    left: 50.3%;
+                
+                }
+
+                .downloads-buttons {
+
+                    .button-social {
+                        
+                        button {
+                            padding: 10px 20px 10px 20px;
+                        }
+                    }
+                }
+        
             }
     
         }
-    
-    }
-
-
-    .home { 
         
         .land { 
             padding-top: 80px;
     
             .sports-pin {
-                animation-name: sports-animation;
                 top: -74%;
                 right: 9%;
             }
@@ -1247,7 +1274,7 @@
             }
 
             .title-servicing {
-                bottom: -210px;
+                bottom: -190px;
                 left: 170px;
     
                 h2 {
@@ -1321,30 +1348,40 @@
 
     }
 
-    @keyframes sports-animation {
-        from {
-            transform: translateX(-10px) 
-                        translateY(10px)
-                        rotate(-40deg);
+}
+
+
+@media (max-width: 1150px) {
+
+    .home {
+        .hero-building {
+            
+            .container {
+                
+                .forKids-pin {
+                    bottom: 36%;
+                }
+            }
         }
 
-        70% {
-            transform: translateX(-10px) 
-                        translateY(15px)
-                        rotate(-40deg);
-        }
+        .land {
+            .road {
+                top: -320px;
+            }
 
-        to {
-            transform: translateX(-10px) 
-                        translateY(10px)
-                        rotate(-40deg);
+            .sports-pin {
+                top: -70%;
+            }
+
+            .bg-left-section {
+                top: -100px;
+            }
+
+            .concert-pin {
+                left: 29.2%;
+                top: 17%;
+            }
         }
     }
 
-   
-
-    .home .hero-building .container .relax-section {
-        max-width: 420px;
-        top: 80px;
-    }
 }

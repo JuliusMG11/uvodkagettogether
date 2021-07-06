@@ -1,7 +1,7 @@
 <template>
   <div class="land">
     <div class="sports-pin">
-      <img src="@/assets/svg/category-pins/sports-pin.svg" alt="" />
+      <img src="@/assets/svg/category-pins/sport-pin.svg" alt="" />
     </div>
 
     <div class="road">

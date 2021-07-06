@@ -6,8 +6,12 @@
          <div class="hero-title">
             <h2>Our team</h2>
             <p>
-              Sme jednoduchy ludia, ktory prisli s myslienkou, ze kazdy ma pravo na zabavu. 
-              Chceme ludom poskytnut vsetky moznosti volnocasovych aktivit a vela dalsieho.
+              We are a great group of people who came up with the idea that everyone 
+              has the right to have a fun and even more idea is to have fun in one 
+              place. Whether it’s a party event, sport event, theatres or just a tip 
+              for a trip. We want to provide people with all the possibilities of 
+              leisure activities or just made somebody´s day when looking for a treasure with a 
+              certain prize. Our point is for everyone to find what they enjoy. 
             </p>
           </div>
       </div>
@@ -57,11 +61,16 @@
 
             <div class="column-30">
 
-              <div class="profile-image">
-                <img src="" alt="">
+               <div class="team-content">
+
+                <div class="profile-image">
+                  <img src="@/assets/svg/about/julius-avatar.svg" alt="">
+                </div>
+
               </div>
-              
+
               <h3>Julius</h3>
+
           
           </div>
         </div>
@@ -119,7 +128,6 @@ export default {
   background-image: url('~@/assets/png/about/team-land.png');
   background-size: 100%;
   background-repeat: no-repeat;
-  padding-bottom: 100px;
   padding-top: 100px;
 
   .column-30 {
@@ -127,7 +135,7 @@ export default {
     position: relative;
 
              &:nth-child(1) {
-                top: -40px;
+                top: -60px;
 
                  .profile-image {
                    max-width: 200px;
@@ -137,7 +145,7 @@ export default {
              &:nth-child(2) {
 
                left: 20px;
-               top: -30px;
+               top: -50px;
 
                 .profile-image {
                   max-width: 320px;
@@ -151,7 +159,7 @@ export default {
              }
 
              &:nth-child(3) {
-               
+                top: -140px;
              }
 
     h3 {
@@ -161,6 +169,7 @@ export default {
       margin-top: 0px;
       margin-bottom: 0px;
       font-weight: 1000;
+      color: white;
     }
 
     .team-content {

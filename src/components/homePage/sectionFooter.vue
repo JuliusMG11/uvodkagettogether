@@ -45,14 +45,15 @@
         <div class="footer">
           <div class="footer-content">
             <h2>S nami už nič nezmeškáte!</h2>
-            <p>
-              Podporte nás, aby sme pre Vás <br />mohli vyvýjať ďalšie funkcie
-            </p>
+          <!--  <p>
+              You can support us so we can develop other interesting functions 
+              <br>for you, which you will be able to use just 
+              with “one click” and make planning easier for you.
+            </p> -->
           </div>
 
           <div class="buttons-group">
             <default-button title="Contact" class="first-button"> </default-button>
-            <default-button title="Donate"> </default-button>
           </div>
         </div>
       </div>
@@ -180,10 +181,6 @@ export default {
 
   .buttons-group {
     display: flex;
-  }
-
-  .first-button {
-    margin-right: 20px;
   }
 }
 </style>

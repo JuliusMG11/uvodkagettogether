@@ -51,8 +51,7 @@
           </div>
 
           <div class="buttons-group">
-            <button class="donate">Contact</button>
-            <button class="contact">Donate</button>
+            <base-button title="Contact"></base-button>
           </div>
         </div>
       </div>
@@ -61,7 +60,13 @@
 </template>
 
 <script>
-export default {}
+import BaseButton from '../components/UI/defaultButton.vue';
+
+export default {
+  components: {
+    BaseButton
+  }
+}
 </script>
 
 <style lang="scss" scoped>

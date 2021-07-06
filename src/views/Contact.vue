@@ -9,7 +9,10 @@
                     <div class="hero-text">
                         <h2>Nevahajte nas kontaktovat</h2>
                         <p>
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur, debitis
+                            Do you want to join the Dream Team and make a cooperation? Do you have 
+                            any tips or ideas how to improve our app? Contact us. Every opinion 
+                            counts and we will be happy for any feedback you 
+                            can give us. Let’s make the world of entertainment together. 
                         </p>
                     </div>
                     
