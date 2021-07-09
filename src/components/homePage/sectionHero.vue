@@ -193,8 +193,10 @@ export default {
   .container {
     padding-bottom: 100px;
 
-    .column-50:first-child {
-      padding-right: 50px;
+    .column-50 {
+        &:first-child {
+          padding-right: 50px;
+        }
     }
 
     .first-building {

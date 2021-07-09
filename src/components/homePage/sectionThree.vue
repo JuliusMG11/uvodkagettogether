@@ -62,6 +62,8 @@ export default {}
 </script>
 
 <style lang="scss" scoped>
+
+
 .land3 {
   position: relative;
   background-image: url('~@/assets/svg/land3-new.svg');
