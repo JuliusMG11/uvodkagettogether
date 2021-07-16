@@ -1,3 +1,31 @@
+@media (max-width: 2000px) {
+    // ABOUT PAGE
+    
+    .about {
+        .profile-section {
+            padding-bottom: 100px;
+
+            .column-30 {
+                &:nth-child(1) {
+                    top: 50px
+                }
+
+                &:nth-child(2) {
+                    top: 60px
+                }
+
+                &:nth-child(3) {
+                    top: -20px
+                }
+            }
+        }
+
+        .land4 {
+            padding-top: 230px;
+        }
+    }
+}
+
 @media (max-width: 1900px) {
 
     // HOMEPACE
@@ -40,6 +68,35 @@
             .land2 {
                 padding-bottom: 100px;
             }
+        }
+
+        // ABOUT PAGE
+
+        .about {
+
+            .profile-section {
+                padding-bottom: 100px;
+
+                .column-30 {
+                    
+                    &:nth-child(1) {
+                        top: 20px
+                    }
+
+                    &:nth-child(2) {
+                        top: 60px
+                    }
+
+                    &:nth-child(3) {
+                        top: -10px
+                    }
+
+                    h3 {
+                        font-size: 82px;
+                    }
+                }
+            }
+
         }
     }
 
@@ -324,6 +381,35 @@
             }
         }
     }
+
+    // ABOUT PAGE 
+
+    .about {
+        
+            .profile-section {
+
+                .container {
+                    .column-30 {
+                        &:nth-child(1) {
+                            top: -20px;
+                        }
+                        
+                        &:nth-child(2) {
+                            top: 20px;
+                        }
+
+                        &:nth-child(3) {
+                            top: -50px;
+                        }
+                    }
+                }
+            }
+
+        .land4 {
+            padding-top: 150px;
+        }
+    }
+
 }
 
 
@@ -464,6 +550,35 @@
             padding-top: 270px;
         }
     }
+
+
+    // ABOUT PAGE
+    .about {
+        
+        .profile-section {
+
+            .container {
+                .column-30 {
+                    &:nth-child(1) {
+                        top: -60px;
+                    }
+                    
+                    &:nth-child(2) {
+                        top: -20px;
+                    }
+
+                    &:nth-child(3) {
+                        top: -90px;
+                    }
+                }
+            }
+        }
+
+        .land4 {
+            padding-top: 100px;
+        }
+    }
+
 }
 
 @media (max-width: 1550px) {
@@ -624,7 +739,20 @@
                 left: -6%;
             }
         }
-}   
+    }
+    
+    // ABOUT PAGE
+    .about {
+        
+        .profile-section {
+            padding-top: 70px;
+            padding-bottom: 50px;
+        }
+
+        .land4 {
+            padding-top: 50px;
+        }
+    }
 
 
 }
@@ -806,6 +934,52 @@
             padding-top: 120px;
         }
     }
+
+     // ABOUT PAGE
+     .about {
+
+            .container {
+                padding-left: 30px;
+                padding-right: 30px;
+            }
+    }
+
+    .our-service {
+        .container {
+            padding-left: 30px;
+            padding-right: 30px;
+        
+            .hero-section {
+                .hero-text {
+
+                    h2 {
+                        font-size: 52px;
+                    }
+                }
+            }
+
+            .service-title {
+                font-size: 42px;
+            }
+
+
+            .right-section {
+                .service-title {
+                    h2 {
+                        
+                        &::before {
+                            top: -40px;
+                            left: 110px;
+                        }
+                    }
+                }
+
+                .like-image {
+                    left: 14%;
+                }
+            }
+        }
+    }
 }
 
 
@@ -910,9 +1084,40 @@
         }
     }
 
+    // ABOUT PAGE
+    .about {
+        
+        .profile-section {
+            margin-top: 50px;
+
+            .container {
+                .column-30 {
+                    &:nth-child(1) {
+                        top: -80px;
+                    }
+                    
+                    &:nth-child(2) {
+                        top: -40px;
+                    }
+
+                    &:nth-child(3) {
+                        top: -110px;
+                    }
+                }
+            }
+        }
+
+        .land4 {
+            padding-top: 0px;
+        }
+    }
+
 }
 
 @media (max-width: 1350px) {
+
+    // HOMEPAGE
+
     .home { 
         
         .hero-building { 
@@ -988,6 +1193,144 @@
 
         .land4 {
             padding-top: 100px;
+        }
+    }
+
+    // OUR SERVICE PAGE
+
+    .our-service {
+
+        .container {
+            .left-section {
+
+                p {
+                    font-size: 16px;
+                    padding-right: 50px;
+                
+                }
+
+                .culture-cinema-tag{
+                    bottom: 0px;
+                    width: 180px;
+
+                    &::before {
+                        width: 110px;
+                        height: 110px;
+                    }
+                }
+
+                .concert-pop-tag {
+                    width: 280px;
+                    &::before {
+                        width: 110px;
+                        height: 110px;
+                    }
+                }
+
+                .forkids-zoo-tag {
+                    width: 280px;
+
+                    &::before {
+                        width: 110px;
+                        height: 110px;
+                    }
+                }
+
+                .tresure-image {
+                    max-width: 130px;
+                    right: -3%;
+
+
+                    &::after {
+                        bottom: -9px;
+                        right: -100px;      
+                    }
+                }
+
+                
+
+                .service-image {
+                    img {
+                        width: 220px;
+                    }
+
+                    &::before {
+                        width: 500px;
+                        height: 160px;
+                        bottom: -50px;
+                        right: -170px;
+                    }
+
+                    .after-image {
+                        left: -50px;
+                    }
+
+                    .before-image {
+                        left: 100px;
+                    }
+
+                    .column-50 {
+                        .service-text {
+                            padding-right: 30px;
+                        }
+                    }
+                }
+            }
+
+            .right-section {
+
+                p {
+                    font-size: 16px;
+                    padding-left: 50px;
+                }
+                
+                .service-image {
+
+                    &::before {
+                        width: 500px;
+                        height: 160px;
+                        bottom: -50px;
+                        right: -170px;
+                    }
+
+                    .after-image {
+
+                        left: 100px;
+
+                        img {
+                            width: 250px;
+                        }
+                    }
+                    .before-image {
+                        
+                        left: -60px;
+
+                       img {
+                            width: 320px;
+                       }
+                    }
+
+                    .after-image-two {
+                        left: 100px;
+
+                        img {
+                            width: 250px;
+                        }   
+                    }
+
+                    .before-image-two {
+                        left: -50px;
+
+                        img {
+                            width: 240px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .land4 {
+            padding-top: 80px;
         }
     }
 }
@@ -1089,6 +1432,64 @@
 
             .footer-content {
                 padding-top: 100px;
+            }
+        }
+    }
+
+    // ABOUT PAGE
+    .about {
+
+        .container {
+            .hero-title {
+                font-size: 46px;
+            }
+        }
+        
+        .profile-section {
+            margin-top: 50px;
+            padding-top: 20px;
+
+            .container {
+                .column-30 {
+
+                    h3 {
+                        font-size: 72px;
+                        top: -50px;
+                    }
+                }
+            }
+        }
+
+        .land4 {
+            padding-top: 0px;
+        }
+    }
+
+    // OUR SERVICE PAGE 
+
+    .our-service {
+        .container {
+            .right-section {
+                .like-image {
+                    left: 5%;
+                }
+
+                .service-title {
+                    h2 {
+                        &::before {
+                            left: 70px;
+                        }
+                    }
+                }
+
+                .service-title-calendar {
+                    h2 {
+                        &::before {
+                            top: -30px;
+                            right: 46%;
+                        }
+                    }
+                }
             }
         }
     }
@@ -1391,6 +1792,57 @@
 
     }
 
+     // OUR SERVICE PAGE 
+
+     .our-service {
+            .container {
+                .hero-section {
+                    .hero-text {
+                        h2 {
+                            font-size: 42px;
+                        }
+
+                        p {
+                            font-size: 16px;
+                        }
+                    }
+                }
+
+                .right-section {
+                    .like-image{ 
+                        left: -2%;
+                    }
+
+                    .service-title {
+                        h2 {
+                            &::before {
+                                left: 10px;
+                            }
+                        }
+                    }
+
+                    .service-image {
+                        &::before {
+                            right: -140px;
+                        }
+
+                        .after-image,
+                        .after-image-two {
+                            left: 80px;
+                        }
+
+                        .before-image {
+                            left: -100px;
+                        }
+
+                        .before-image-two {
+                            left: -60px;
+                        }
+                    }
+                }
+            }
+    }
+
 }
 
 
@@ -1570,6 +2022,71 @@
                      }
                 }
             
+        }
+    }
+
+    // OUR SERVICE PAGE
+
+    .our-service {
+        .container {
+
+            h2 {
+                font-size: 48px;
+            }
+
+            .left-section {    
+                .service-image {
+                    &::before {
+                        width: 450px;
+                        right: -130px;
+                    }
+                }
+
+                .tresure-image {
+                    top: 70px;
+                }
+
+                .funcoins-image {
+                    top: 15%;
+                    right: 13%;
+                }
+
+            }
+            .right-section {
+                .service-image {
+                    &::before {
+                        width: 450px;
+                        right: -130px;
+                    }
+                }
+
+                .like-image {
+                    left: 11%;
+                }
+                .service-title {
+                    h2 {
+                        &::before {
+                            left: 70px;
+                            top: -60px;
+                        }
+                    }
+                }
+
+                .service-title-calendar {
+                    h2 {
+                        &::before {
+                            top: -62px;
+                            right: 29%;
+                        }
+                    }
+                }
+
+                h2 {
+                    &::before {
+                        bottom: -70px;
+                    }
+                }
+            }
         }
     }
 }
@@ -1767,6 +2284,20 @@
 
         .land4 {
             padding-top: 0px;
+        }
+    }
+
+    // OUR SERVICE PAGE
+
+    .our-service {
+        .container {
+            .hero-section {
+                .hero-text {
+                    h2 {
+                        font-size: 32px;
+                    }
+                }
+            }
         }
     }
 }
@@ -2070,6 +2601,241 @@
                     }
                 }
             }
+        }
+    }
+
+    // OUR SERVICE PAGE 
+
+    .our-service {
+        .container {
+            .hero-section {
+                flex-direction: column-reverse;
+                padding-top: 30px;
+
+
+                .hero-text {
+                    h2 {
+                        font-size: 42px;
+                    }
+                }
+
+                .column-70 {
+                    width: 100%;
+
+                    .right-hero-section {
+                        z-index: 5;
+                        display: flex;
+                        right: 0px;
+
+                        &::after {
+                            position: absolute;
+                            content: "";
+                            background: linear-gradient(0deg, 
+                                        rgba(255,255,255,1) 0%, 
+                                        rgba(255,255,255,0.8211485277704832) 48%, 
+                                        rgba(255,255,255,0) 100%);
+                            width: 100%;
+                            height: 270px;
+                            bottom: 0px;
+                            left: 0px;
+                        }
+                    }
+                }
+
+                .column-30 {
+                    width: 100%;
+
+                    .hero-text {
+                        padding-left: 80px;
+                        padding-right: 80px;
+                        text-align: center;
+                        z-index: 10;
+                        position: relative;
+                        margin-top: -180px;
+                    }
+                }
+            }
+
+            .left-section {
+
+                .column-50:nth-child(1) {
+                    .service-image {
+                        img {
+                            width: 220px;
+                        }
+
+                        &::before {
+                            bottom: -40px;
+                        }
+                    }
+                }
+
+                p {
+                    padding-right: 0px;
+                }
+
+                .service-image {
+
+                    &::before {
+                        width: 370px;
+                        right: -110px;
+                        height: 100px;
+                        bottom: -50px;
+                    }
+
+                    img {
+                        width: 200px;
+                    }
+
+                    .after-image {
+                        left: -30px;
+                    }
+
+                    .before-image {
+                        left: 80px;
+                        top: -10px;
+                    }
+                }
+
+                .concert-pop-tag {
+                    width: 240px;
+                    top: -50px;
+
+                    &::before {
+                        width: 80px;
+                        height: 80px;
+                    }
+                }
+
+                .forkids-zoo-tag {
+                    width: 230px;
+                    top: -10px;
+
+                    &::before {
+                        width: 80px;
+                        height: 80px;
+                    }
+                }
+
+                .culture-cinema-tag {
+                    width: 160px;
+                    bottom: -30px;
+
+                    &::before {
+                        width: 90px;
+                        height: 90px;
+                    }
+                }
+
+                .concert-pop-tag {
+                    width: 230px;
+                    top: -50px;
+                }
+
+                .service-title {
+
+                    h2 {
+
+
+                        font-size: 42px;
+
+                        &::before {
+                            width: 100px;
+                            height: 180px;
+                            bottom: -70px;
+                            left: -30px;
+                        }
+                    }
+                }
+
+                .tresure-image {
+                    top: 40px;
+                    max-width: 100px;
+
+                    &::after {
+                        width: 220px;
+                    }
+                }
+                .functions-image {
+                    width: 50px;
+
+                    &::after {
+                        width: 70px;
+                        height: 30px;
+                        bottom: -4px;
+                    }
+                }
+            }
+
+            .right-section {
+                p {
+                    padding-left: 0px;
+                }
+
+                .service-image {
+                    &::before {
+                        width: 370px;
+                        left: -90px;
+                        height: 100px;
+                        bottom: -40px;
+                    }
+
+                    .after-image {
+                        top: 10px;
+                        left: 50px;
+
+                        img {
+                            width: 210px;
+                        }
+                    }
+
+                    .before-image {
+                        left: -100px;
+                        top: 0px;
+
+                        img {
+                            width: 270px;
+                        }
+                    }
+
+                    .after-image-two {
+                        left: 20px;
+                        top: 10px;
+
+                        img {
+                            width: 230px;
+                        }
+                    }
+
+                    .before-image-two {
+                        left: -80px;
+                        top: -10px;
+
+                        img {
+                            width: 230px;
+                        }
+                    }
+                }
+
+                .service-title {
+                    h2 {
+
+                        font-size: 42px;
+
+                        &::before {
+                            left: 20px;
+                            top: -50px;
+                            width: 100px;
+                        }
+                    }
+                }
+
+                .like-image {
+                    left: -4%;
+                    top: -40px;
+                }
+            }
+
         }
     }
 
@@ -2394,6 +3160,131 @@
             }
         }
     }
+
+
+    // OUR SERVICE PAGE 
+
+    .our-service {
+
+        .container {
+
+            .right-section {
+                flex-direction: column-reverse;
+                padding-bottom: 60px;
+
+                .service-image {
+                    margin-bottom: 50px;
+                }
+
+                .service-title {
+                    h2 {
+                        &::before {
+                            left: 22%;
+                            top: -53px;
+                        }
+                    }
+                }
+
+                p {
+                    padding-left: 80px;
+                    padding-right: 80px;
+                }
+
+                .like-image {
+                    left: 14%;
+                    top: -20%;
+                    transform: rotate(-30deg);
+                }
+
+                .column-50 {
+                    width: 100%;
+                    text-align: center;
+                }
+
+                .service-title-calendar {
+                    h2 {
+                        &::before {
+                            right: 56%;
+                        }
+                    }
+                }
+            }
+
+            .left-section {
+                padding-bottom: 60px;
+                flex-direction: column;
+
+                .service-image {
+                    margin-bottom: 50px;
+                }
+
+                .forkids-zoo-tag {
+                    width: 230px;
+                    top: -50px;
+                    right: 60px;
+                }
+
+                .concert-pop-tag {
+                    top: 100px;
+                }
+
+                .culture-cinema-tag {
+                    bottom: 30%;
+                    right: 51%
+                }
+
+                .funcoins-image {
+                    top: 50%;
+                    right: 32%;
+                    width: 50px;
+
+                    &::after {
+                        width: 70px;
+                        bottom: -5px;
+                    }
+                }
+
+                .tresure-image {
+                    top: 50%;
+                    width: 120px;
+                    right: 11%;
+                    
+                    &::after {
+                        width: 140px;
+                        bottom: -9px;
+                        right: -27px;
+                        height: 50px;
+                    }
+                }
+
+                .column-50 {
+                    width: 100%;
+                    text-align: center;
+                }
+
+                .service-title {
+                    h2 {
+                        &::before {
+                            left: 27%;
+                            bottom: -75px;
+                        }
+
+                        &:nth-child(3) {
+                            &::before {
+                                left: 35%;
+                            }
+                        }
+                    }
+                }
+
+                p {
+                    padding-left: 80px;
+                    padding-right: 80px;
+                }
+            }
+        }
+    }
+
 }
 
 @media (max-width: 750px) {
@@ -2462,6 +3353,11 @@
 
             .container {
 
+
+                .forKids-pin {
+                    bottom: 39%;
+                }
+
                 .relax-section {
                     top: 32%;
                 }
@@ -2506,6 +3402,8 @@
         }
 
         .land2 {
+            background-size: 120%;
+
             .container {
                 .column-33 {
                     &:nth-child(1) {
@@ -2517,4 +3415,966 @@
             }
         }
     }
+
+    // OUR SERVICE PAGE
+
+    .our-service {
+        .container {
+            .hero-section {
+                .column-30 {
+                    .hero-text {
+                        padding-left: 30px;
+                        padding-right: 30px;
+                        margin-top: -120px;
+                    }
+                }
+
+                .column-70 {
+                    .right-hero-section {
+                        &::after {
+                            height: 180px;
+                        }
+                    }
+                }
+            }
+
+            .left-section {
+                p {
+                    padding-left: 30px;
+                    padding-right: 30px;
+                }
+
+                .culture-cinema-tag {
+                    bottom: 32%;
+                }
+            }
+
+            .right-section {
+                p {
+                    padding-left: 30px;
+                    padding-right: 30px;
+                }
+
+                .service-title {
+                    h2 {
+                        &::before {
+                            left: 16%;
+                        }
+                    }
+                }
+            }
+        }
+
+        .land4 {
+            padding-top: 40px;
+        }
+    }
+}
+
+
+@media (max-width: 650px) {
+    
+    // HOMEPAGE
+    
+    .home {
+
+        .hero-building {
+            .container {
+                .culture-pin {
+                    top: 20px;
+                    right: 21%;
+                }
+
+                .science-pin {
+                    top: -10px;
+                    right: 47%;
+                }
+            }
+        }
+
+        .land {
+
+            .road {
+                width: 125%;
+                top: -110px;
+                left: -140px;
+
+                &::after {
+                    left: 19%;
+                }
+            }
+
+            .concert-pin {
+                top: 5%;
+                left: 26%;
+            }
+
+            .party-pin {
+                display: none;
+            }
+
+            .sports-pin {
+                top: -36%;
+                right: 8%;
+            }
+
+            .container {
+                .column-70 {
+                    width: 100%;
+                }
+            }
+
+            .bg-left-section {
+                left: unset;
+                top: -60px;
+                z-index: 10;
+
+                img {
+                    top: 160px;
+                    left: unset;
+                    right: 20%;
+                }
+            }
+            
+            .bg-right-section {
+                position: absolute;
+                background-image: unset;
+
+                .billboard {
+                    left: 54%;
+                }
+            }
+
+            .title-servicing {
+                bottom: -190px;
+                left: -10px;
+
+                h2 {
+                    font-size: 62px;
+
+                    &::after {
+                        bottom: -13px;
+                        width: 390px;
+                    }
+                }
+            }
+        }
+
+        .land2 {
+            margin-top: 150px;
+
+            .container {
+
+                .column-33 {
+
+                    &:nth-child(2) {
+
+                        &::before {
+                            top: 100px;
+                            height: 420px;
+                        }
+                    }
+                }
+            }
+        }
+
+        
+        .land3 {
+
+            .mountain {
+                max-width: 400px;
+            }
+
+            .container {
+                .column-33 {
+                    &:nth-child(1) {
+                        margin-top: -100px;
+                    }
+                }
+            }
+        }
+    }
+    
+    // OUR SERVICE PAGE
+
+    .our-service {
+        .container {
+            .hero-section {
+                .column-30 {
+                    .hero-text { 
+                        padding-left: 0px;
+                        padding-right: 0px;
+                    }
+                }
+            }
+
+            .left-section {
+                p {
+                    padding-left: 0px;
+                    padding-right: 0px;
+                }
+
+                .service-title {
+                    h2 {
+                        &::before {
+                            left: 20%;
+                        }
+                    }
+                }
+
+                .forkids-zoo-tag {
+                    right: -10px;
+                }
+
+                .concert-pop-tag {
+                    left: -60px;
+                }
+            }
+
+            .right-section {
+
+                p {
+                padding-left: 0px;
+                padding-right: 0px;
+                }
+
+                .like-image {
+                    left: 9%;
+                    top: -50px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 600px) {
+
+    // HOMEPAGE
+
+    .home {
+
+        .hero-building {
+            .container { 
+                .relax-section {
+                    max-width: 300px;
+                    left: -10px;
+                }
+            }
+        }
+        
+        .land {
+            margin-top: -70px;
+
+            .road {
+                top: -80px;
+                width: 135%;
+                left: -180px;
+
+                &::after {
+                    left: 30%;
+                    bottom: 17%
+                }
+            }
+
+            .concert-pin {
+                top: 20%;
+                left: 25.3%;
+            }
+
+            .sports-pin {
+                top: -28%;
+            }
+
+            .bg-left-section {
+                top: -50px;
+
+                img {
+                    top: 210px;
+                    width: 50%;
+                }
+            }
+
+            .title-servicing {
+                bottom: -180px;
+                
+                h2 {
+                    &::after {
+                        bottom: -22px;
+                    }
+                }
+            }
+
+            .bg-right-section {
+
+                .billboard {
+                    width: 230px;
+                    height: 250px;
+                    top: 70px;
+
+                    .billboard-content {
+                        width: 206px;
+                        height: 89px;
+                        top: 10px;
+                        left: 11px;
+                    }
+                }
+            }
+        }
+
+        .land2 {
+            
+            .container {
+
+                .column-33 {
+
+                    &:nth-child(1) {
+
+                        &::after {
+                            left: 7%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // OUR SERVICE PAGE 
+
+    .our-service {
+        .container {
+            .hero-section {
+
+                .column-70 {
+                    .right-hero-section {
+                        &::after {
+                            height: 100px;
+                        }
+                    }
+                }
+
+                .column-30 {
+                    .hero-text {
+                        margin-top: -80px;
+                    }
+                }
+
+                .hero-text {
+                    h2 {
+                        font-size: 36px;
+                    }
+                }
+            }
+
+
+            .left-section {
+                .service-title {
+                    h2 {
+                        &::before {
+                            left: 15%;
+                        }
+
+                        &:nth-child(3) {
+                            &::before {
+                                left: 30%;
+                            }
+                        }
+                    }
+                }
+
+                .forkids-zoo-tag {
+                    right: -60px;
+                }
+            }
+
+            .right-section {
+                .service-title {
+                    h2 {
+                        &::before {
+                            left: 9%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+@media (max-width: 550px) {
+
+
+    // HOMEPAGE
+
+    .home {
+
+        .hero-building {
+
+            .container {
+
+                .forKids-pin {
+
+                    bottom: 50%;
+                    left: 17.5%;
+
+                    img {
+                        max-width: 60px;
+                    }
+                }
+
+                .downloads-buttons {
+
+                    .button-social {
+
+                        button {
+                            width: max-content;
+                        }
+                    }
+                }
+
+                .hero-content {
+
+                    top: 90px;
+
+                    .hero-text {
+                        
+                        p {
+                            padding-left: 30px;
+                            padding-right: 30px;
+                        }
+                    }
+                }
+            }
+        }
+        
+        .land {
+
+            .road {
+                width: 150%;
+                left: -230px;
+
+                &::after {
+                    left: 35%;
+                }
+            }
+
+            .sports-pin {
+                right: 11%;
+                top: -28%;
+
+                img {
+                    width: 60px;
+                }
+            }
+
+            .concert-pin {
+                top: 26%;
+                left: 24%;
+            }
+
+            .title-servicing {
+                bottom: -180px;
+                left: 0px;
+
+                h2 {
+                    font-size: 52px;
+
+                    &::after {
+                        display: none;
+                    }
+                }
+            }
+
+            .bg-left-section {
+
+                img {
+                    top: 230px;
+                }
+
+            }
+        }
+
+        .land2 {
+            background-position-y: 100px;
+
+            .container {
+
+                .column-33 {
+
+                    &:nth-child(2) {
+
+                        &::before {
+                            top: 80px;
+                            height: 450px;
+                            background-size: 90%;
+                        }
+                    }
+
+                    &:nth-child(3) {
+
+                        &::before {
+                            top: 10px;
+                            height: 420px;
+                            background-size: 80%;
+                        }
+                    }
+                }
+            }
+        }
+
+        .land3 {
+
+            background-position-y: 70px;
+
+            .road2 {
+                top: 20px;
+            }
+
+            .container {
+
+                .column-33 {
+
+                    &:nth-child(2) {
+
+                        &::before {
+                            top: -70px;
+                            height: 450px;
+                            background-size: 90%;
+                        }
+                    }
+
+                    &:nth-child(3) {
+
+                        &::before {
+                            top: 10px;
+                            height: 420px;
+                            background-size: 80%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+
+@media (max-width: 500px) {
+
+    .home {
+
+        .hero-building {
+
+            .container {
+
+                margin-top: 20px;
+
+                .forKids-pin {
+                    bottom: 57%;
+                }
+
+                .relax-section {
+                    left: -50px;
+                    top: 23%;
+                }
+
+                .hero-content {
+
+                    .hero-text {
+
+                        p {
+                            padding-left: 10px;
+                            padding-right: 10px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .land {
+            background-size: 120%;
+
+            .road {
+                top: -50px;
+                left: -210px;
+            }
+
+            .bg-right-section {
+
+                .billboard {
+                    left: 49%;
+                }
+            }
+
+            .bg-left-section {
+                background-size: 120%;
+
+                img {
+                    top: 240px;
+                }
+            }
+
+            .title-servicing {
+                bottom: -110px;
+
+                h2 {
+                    font-size: 42px;
+                }
+            }
+        }
+
+        .land2 {
+            margin-top: 100px;
+            background-position-x: -160px;
+            background-position-y: 70px;
+            background-size: 140%;
+
+            .container {
+
+                .column-33 {
+
+                    &:nth-child(1) {
+
+                        .mobile-column {
+
+                            .mobile-image {
+                                max-width: 160px;
+                            }
+                        }
+
+                        &::after {
+                            left: 12%;
+                            height: 170px;
+                            width: 100px;
+                            bottom: 0px;
+                        }
+                    }
+
+                    &:nth-child(2) {
+                        .mobile-column {
+
+                            .mobile-image {
+                                max-width: 250px;
+                            }
+                        }
+
+                        &::before {
+                            top: 50px;
+                        }
+                    }
+
+                    &:nth-child(3) {
+                        .mobile-column {
+
+                            .mobile-image {
+                                max-width: 190px;
+                            }
+                        }
+
+                    }
+                }
+            }
+        }
+
+        .land3 {
+            .mountain {
+                max-width: 330px;
+                right: -20px;
+
+                .mountain-pin {
+                    right: 5%;
+                }
+            }
+        }
+    }
+
+}
+
+
+@media (max-width: 450px) {
+ 
+        // HOMEPAGE
+
+        .home {
+
+            .hero-building {
+
+                .container {
+
+                    .culture-pin {
+                        top: 5px;
+                        right: 19%;
+                    }
+
+                    .science-pin {
+                        top: -20px;
+                        right: 48%;
+                    }
+
+                    .presentation-pin {
+                        top: 15px;
+                    }
+
+                    padding-bottom: 60px;
+
+                    .hero-content {
+                        top: 70px;
+
+                        .hero-text {
+                             p {
+                                 padding: 0px;
+                             }
+                        }
+                    }
+
+                    .downloads-buttons {
+
+                        .button-social {
+
+                            button {
+                                padding: 10px 15px 10px 15px;
+                            }
+
+                            .social-image {
+                                padding-right: 10px;
+                            }
+
+                            .social-text {
+                                h4 {
+                                    font-size: 18px;
+                                }
+                            }
+                        }
+                    }
+
+                    .relax-section {
+                        left: -100px;
+                    }
+                }
+            }
+
+            .land {
+                margin-top: 0px;
+
+                .concert-pin {
+                    top: 32%;
+                }
+
+
+                .sports-pin {
+                    right: 7%;
+                    top: -11%;
+                }
+
+                .road {
+                    top: -20px;
+                    left: -190px;
+
+                    &::after {
+                        width: 90px;
+                        height: 90px;
+                    }
+                }
+
+                .title-servicing {
+                    bottom: -130px;
+                }
+                
+                .bg-left-section {
+                    
+                    top: -30px;
+
+                    img {
+                        top: 250px;
+                    }
+                }
+
+                .bg-right-section {
+                    .billboard {
+                        left: 45%;
+                        top: 80px;
+                    }
+                }
+                
+            }
+
+            .land3 {
+                padding-top: 0px;
+                margin-top: 50px;
+                background-position-y: 100px;
+                background-position-x: -80px;
+                background-size: 110%;
+
+                .road2 {
+                    &::before {
+                        height: 140px;
+                    }
+                }
+
+                .mountain {
+                    top: 150px;
+                }
+            }
+        }
+
+}
+
+
+@media (max-width: 400px) {
+
+    // HOMEPAGE
+
+    .home {
+
+        .hero-building {
+            padding-bottom: 0px;
+
+            .container {
+
+                .hero-content {
+                    top: 40px;
+                }
+
+                .downloads-buttons {
+                    flex-direction: column;
+                    align-items: center;
+
+                    .button-social {
+
+                        button {
+                            width: 220px;
+                        }
+
+                        &:nth-child(2) {
+                            margin-left: 0px;
+                            margin-top: 20px;
+                        }
+                    }
+                }
+
+
+                .relax-section {
+                    top: 5%;
+                }
+            }
+        }
+
+        .land {
+            margin-top: -90px;
+
+            .sports-pin {
+                top: 2%;
+                right: 11%;
+            }
+
+            .concert-pin {
+                top: 34%;
+                left: 22%;
+                z-index: 15;            
+            }
+
+            .road {
+                top: 30px;
+                left: -210px;
+                width: 160%;
+            }
+
+            .title-servicing {
+                bottom: -140px;
+
+                h2 {
+                    font-size: 36px;
+                }
+            }
+
+            .bg-right-section {
+
+                .billboard {
+                    top: 120px;
+                    width: 200px;
+                    height: 220px;
+
+                    .billboard-content {
+                        width: 180px;
+                        height: 78px;
+                        top: 8px;
+                        left: 9px;
+                    }
+                }
+            }
+
+            .bg-left-section {
+                
+                img {
+                    width: 60%;
+                    top: 240px;
+                }
+            }
+        }
+
+        .land2 {
+            background-size: 145%;
+            background-position-y: 110px;
+
+            .container {
+                
+                .column-33 {
+
+                    &:nth-child(2) {
+                        &::before {
+                            top: 80px;
+                        }
+                    }
+
+                    &:nth-child(3) {
+                        &::before {
+                            top: 40px;
+                        }
+                    }
+
+                }
+            }
+        }
+
+        .land3 {
+
+            .container {
+                
+                .column-33 {
+
+                    &:nth-child(2) {
+                        &::before {
+                            top: -30px;
+                        }
+                    }
+
+                    &:nth-child(3) {
+                        &::before {
+                            top: 80px;
+                        }
+                    }
+
+                }
+            }
+
+            .mountain {
+                max-width: 270px;
+
+                .mountain-pin {
+                    right: 2%;   
+                }
+            }
+        }
+    }
+
+    // OUR SERVICE PAGE
+
+    .hero-section {
+        .right-hero-section {
+            width: 130% !important;
+            left: -50px;
+        }
+    }
+
+
 }

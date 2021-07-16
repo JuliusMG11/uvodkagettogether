@@ -152,6 +152,7 @@ export default {}
       width: 230px;
       height: 230px;
     }
+
   }
 
   .concert-pin {

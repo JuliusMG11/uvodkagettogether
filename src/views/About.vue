@@ -120,7 +120,7 @@ export default {
 
 
   .hero-image {
-    max-width: 80%;
+    max-width: 90%;
   }
 }
 

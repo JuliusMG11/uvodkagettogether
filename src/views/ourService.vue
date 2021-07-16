@@ -1,5 +1,5 @@
 <template>
-  <div class="">
+  <div class="our-service">
     <div class="container">
       <div class="hero-section">
         <div class="column-30">
@@ -68,6 +68,14 @@
 
       <div class="right-section">
         <div class="column-50">
+
+          <div class="like-image">
+             <img
+              src="@/assets/svg/our-service/like.svg"
+              alt=""
+            />
+          </div>
+
           <div class="service-title">
             <h2>
               Favorite location<br />
@@ -100,18 +108,28 @@
       <div class="left-section">
         <div class="column-50">
           <div class="service-image">
+
             <div class="after-image">
-              <img src="@/assets/png/home/register-category.png" alt="" />
+              <img src="@/assets/png/our-service/detail-mission.png" alt="" />
             </div>
 
             <div class="before-image">
-              <img src="@/assets/png/home/register.png" alt="" />
+              <img src="@/assets/png/our-service/map-mission.png" alt="" />
             </div>
           </div>
         </div>
 
         <div class="column-50">
           <div class="service-title">
+
+              <div class="tresure-image">
+                <img src="@/assets/svg/our-service/tresure.svg" alt="">
+              </div>
+
+                <div class="funcoins-image">
+                  <img src="@/assets/svg/our-service/funcoins.svg" alt="">
+              </div>
+
             <h2>Game</h2>
           </div>
 
@@ -132,7 +150,7 @@
 
       <div class="right-section">
         <div class="column-50">
-          <div class="service-title">
+          <div class="service-title-calendar">
             <h2>Calendar</h2>
           </div>
 
@@ -147,6 +165,7 @@
 
         <div class="column-50">
           <div class="service-image">
+
             <div class="after-image-two">
               <img src="@/assets/png/our-service/calendar-day.png" alt="" />
             </div>
@@ -174,6 +193,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+
+@import url('../scss/_animation.scss');
 
  p {
    font-size: 20px;
@@ -208,7 +229,7 @@ export default {
 
   .right-hero-section {
     max-width: 100%;
-    right: -80px;
+    right: -30px;
     position: relative;
   }
 }
@@ -221,16 +242,28 @@ export default {
   position: relative;
   align-items: center;
 
+    .like-image {
+      position:absolute;
+      top: -20px;
+      max-width: 30%;
+      transform: rotate(-20deg);
+    }
+  
+
   .column-50 {
     position: relative;
 
     &:nth-child(2) {
       display: flex;
       justify-content: center;
+      padding-left: 50px;
     }
 
     .service-image {
       perspective: 1000px;
+      animation: 4s ease-out infinite image-animation;
+      animation-direction: alternate;
+      animation-fill-mode: none;
 
       img {
         width: 300px;
@@ -312,19 +345,48 @@ export default {
       z-index: 6;
       position: relative;
 
-      &::before {
-        position: absolute;
-        content: '';
-        background-image: url('~@/assets/svg/our-service/funny-things.svg');
-        background-repeat: no-repeat;
-        background-size: 100%;
-        width: 110px;
-        height: 180px;
-        top: -20px;
-        left: 30px;
-        z-index: 5;
-        transform: rotate(50deg);
-      }
+       &::before {
+          position: absolute;
+          content: '';
+          background-image: url('~@/assets/svg/our-service/funny-things.svg');
+          background-repeat: no-repeat;
+          background-size: 100%;
+          width: 110px;
+          height: 180px;
+          top: -20px;
+          left: 30px;
+          z-index: 5;
+          transform: rotate(50deg);
+        }
+
+    }
+  }
+
+  .service-title-calendar {
+    font-size: 52px;
+    color: #121212;
+
+    h2 {
+      font-weight: 1000;
+      margin-bottom: 20px;
+      margin-top: 10px;
+      z-index: 6;
+      position: relative;
+
+       &::before {
+          position: absolute;
+          content: '';
+          background-image: url('~@/assets/svg/our-service/funny-things.svg');
+          background-repeat: no-repeat;
+          background-size: 100%;
+          width: 110px;
+          height: 180px;
+          top: -20px;
+          right: 40%;
+          z-index: 5;
+          transform: rotate(50deg);
+        }
+
     }
   }
 }
@@ -337,15 +399,23 @@ export default {
   position: relative;
   align-items: center;
 
+
+
+  
+
   .column-50 {
     &:nth-child(1) {
       display: flex;
       justify-content: center;
+      padding-right: 50px;
     }
   }
 
   .service-image {
     perspective: 1000px;
+    animation: 4s ease-out infinite image-animation;
+    animation-direction: alternate;
+    animation-fill-mode: none;
 
     img {
       width: 300px;
@@ -449,6 +519,49 @@ export default {
   .service-title {
     font-size: 62px;
     color: #121212;
+
+    .tresure-image {
+      position: absolute;
+      top: 120px;
+      max-width: 180px;
+      right: -6%;
+      transform: rotate(20deg);
+      z-index: 8;
+
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: -9px;
+        right: -40px;
+        border-radius: 50%;
+        width: 250px;
+        height: 60px;
+        background-color: rgba(0, 0, 0, 0.2);
+        z-index: -1;
+        filter: blur(11px);
+      }
+    }
+
+    .funcoins-image {
+      position: absolute;
+      top: 21%;
+      width: 70px;
+      right: 10%;
+      transform: rotate(-10deg);
+
+      &::after {
+        content: "";
+        position: absolute;
+        width: 100px;
+        height: 50px;
+        right: -10px;
+        bottom: -8px;
+        border-radius: 50%;
+        background-color: rgba(0, 0, 0, 0.2);
+        z-index: -1;
+        filter: blur(11px);
+      }
+    }
 
     h2 {
       font-weight: 1000;

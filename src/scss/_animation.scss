@@ -1,0 +1,13 @@
+@keyframes image-animation {
+    from {
+      transform: translateY(-40px);
+    }
+
+    50% {
+      transform: translateY(-50px);
+    }
+
+    to {
+      transform: translateY(-40px);
+    }
+  }
