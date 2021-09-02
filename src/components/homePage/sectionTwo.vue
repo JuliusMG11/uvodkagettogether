@@ -1,8 +1,6 @@
 <template>
-  <div>
-    <div class="land2">
-      <div class="container">
-        <div class="column-33">
+    <div class="container">
+        <article class="column-33">
           <div class="background-title">
             <img src="@/assets/svg/cloud-category.svg" alt="" />
           </div>
@@ -16,25 +14,25 @@
               <img src="@/assets/png/home/category-menu.png" alt="" />
             </div>
           </section>
-        </div>
+        </article>
 
-        <div class="column-33">
-          <div class="mobile-title">
+        <article class="column-33">
+          <section class="mobile-title">
             <div class="background-title">
               <img src="@/assets/svg/cloud-liked.svg" alt="" />
             </div>
 
             <h3>Liked event and location</h3>
-          </div>
+          </section>
 
           <section class="mobile-column">
             <div class="mobile-image">
               <img src="@/assets/png/home/liked.png" alt="" />
             </div>
           </section>
-        </div>
+        </article>
 
-        <div class="column-33">
+        <article class="column-33">
           <div class="background-title">
             <img src="@/assets/svg/cloud-category.svg" alt="" />
           </div>
@@ -48,10 +46,8 @@
               <img src="@/assets/png/home/calendar.png" alt="" />
             </div>
           </section>
-        </div>
+        </article>
       </div>
-    </div>
-  </div>
 </template>
 
 <script>
@@ -59,23 +55,17 @@ export default {}
 </script>
 
 <style scoped lang="scss">
-.land2 {
-  position: relative;
-  background-image: url('~@/assets/svg/land2.svg');
-  background-size: 104%;
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 100%;
-  background-position: bottom;
-  padding-bottom: 0px;
-  padding-top: 300px;
-  top: 180px;
-  background-position-y: -80px;
+
 
   .column-33 {
+
+
+
     h3 {
       z-index: 10;
       position: relative;
+      font-size: 1.375rem;
+      font-weight: 700;
     }
 
     .mobile-column {
@@ -83,6 +73,10 @@ export default {}
       justify-content: center;
       z-index: 12;
       position: relative;
+
+      .mobile-image {
+        max-width: 250px;
+      }
     }
 
     &:nth-child(1),
@@ -95,11 +89,11 @@ export default {}
 
     &:nth-child(1) {
       position: relative;
-      top: -30px;
+      top: -50px;
 
       .mobile-title {
         position: relative;
-        top: -30px;
+        top: -20px;
       }
 
       .background-title {
@@ -118,21 +112,16 @@ export default {}
         background-size: 80%;
         width: 200px;
         height: 337px;
-        left: -90px;
-        bottom: 150px;
+        left: -20px;
+        bottom: 60px;
         z-index: 10;
       }
 
-      .mobile-column {
-        .mobile-image {
-          max-width: 250px;
-        }
-      }
     }
 
     &:nth-child(2) {
       position: relative;
-      top: -80px;
+      top: -120px;
 
       .mobile-title {
         position: relative;
@@ -142,7 +131,7 @@ export default {}
           object-fit: cover;
           z-index: 6;
           position: relative;
-          top: 60px;
+          top: 50px;
           max-width: 350px;
         }
       }
@@ -156,15 +145,11 @@ export default {}
 
     &:nth-child(3) {
       position: relative;
-      top: -120px;
-
-      img {
-        max-width: 250px;
-      }
+      top: -160px;
 
       .mobile-title {
         position: relative;
-        top: -60px;
+        top: -50px;
 
         .background-title {
           object-fit: cover;
@@ -175,5 +160,4 @@ export default {}
       }
     }
   }
-}
 </style>

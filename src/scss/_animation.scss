@@ -1,4 +1,158 @@
-@keyframes image-animation {
+  /* 
+    Homepage
+    presentation-pin 
+  */
+
+  @keyframes presentation-animation {
+    from {
+      transform: translateY(-40px) translateX(-40px) rotate(-20deg);
+    }
+
+    70% {
+      transform: translateY(-45px) translateX(-45px) rotate(-20deg);
+    }
+
+    to {
+      transform: translateY(-40px) translateX(-40px) rotate(-20deg);
+    }
+  }
+
+  /* 
+    science-pin 
+  */
+ 
+  @keyframes science-animation {
+    from {
+      transform: translateX(30px) translateY(0px) rotate(-20deg);
+    }
+
+    70% {
+      transform: translateX(33px) translateY(10px) rotate(-20deg);
+    }
+
+    to {
+      transform: translateX(30px) translateY(0px) rotate(-20deg);
+    }
+  }
+
+    /* 
+    culture-pin 
+  */
+ 
+
+  @keyframes culture-animation {
+    from {
+      transform: translateX(0px) translateY(-10px);
+    }
+
+    70% {
+      transform: translateX(0px) translateY(-5px);
+    }
+
+    to {
+      transform: translateX(0px) translateY(-10px);
+    }
+  }
+
+
+    /* 
+    forKids-pin 
+  */
+
+  @keyframes forKids-animation {
+    from {
+      transform: translateY(-5px) translateX(-18px);
+    }
+
+    70% {
+      transform: translateY(0px) translateX(-18px);
+    }
+
+    to {
+      transform: translateY(-5px) translateX(-18px);
+    }
+  }
+
+   /* 
+    relaxation-pin 
+  */
+
+  @keyframes relax-animation {
+    from {
+      transform: translateY(-5px) translateX(-5px) rotate(-30deg);
+    }
+
+    70% {
+      transform: translateY(0px) translateX(0px) rotate(-30deg);
+    }
+
+    to {
+      transform: translateY(-5px) translateX(-5px) rotate(-30deg);
+    }
+  }
+
+
+  @keyframes sports-animation {
+    from {
+      transform: translateX(-5px) translateY(-5px) rotate(-40deg);
+    }
+
+    70% {
+      transform: translateX(0px) translateY(0px) rotate(-40deg);
+    }
+
+    to {
+      transform: translateX(-5px) translateY(-5px) rotate(-40deg);
+    }
+  }
+
+  
+  /* 
+    concert-pin 
+  */
+
+  @keyframes concert-animation {
+    from {
+      transform: translateY(-5px);
+    }
+
+    70% {
+      transform: translateY(0px);
+    }
+
+    to {
+      transform: translateY(-5px);
+    }
+  }
+
+   
+  /* 
+    party-pin 
+  */
+
+  @keyframes party-animation {
+    from {
+      transform: translateY(-5px) translateX(-5px) rotate(-30deg);
+    }
+
+    70% {
+      transform: translateY(0px) translateX(0px) rotate(-30deg);
+    }
+
+    to {
+      transform: translateY(-5px) translateX(-5px) rotate(-30deg);
+    }
+  }
+
+
+
+
+    /* 
+    Our-service
+    image-animation
+  */
+
+  @keyframes image-animation {
     from {
       transform: translateY(-40px);
     }
@@ -9,5 +163,21 @@
 
     to {
       transform: translateY(-40px);
+    }
+  }
+
+
+
+
+  /* Home paage
+    billboard section one
+  */
+  @keyframes text-animation {
+    from {
+      transform: translateY(-180px);
+    }
+
+    to {
+      transform: translateY(0px);
     }
   }

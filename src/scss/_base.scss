@@ -34,11 +34,13 @@ html{
 *, *:before, *:after{
 	-webkit-box-sizing: inherit;
 	box-sizing: inherit;
+    font-size: 16px;
 }
 
 body {
     font-family: $main-font;
     margin: 0px;
+    font-size: 1rem; //
 }
 
 .group:before,
@@ -59,17 +61,31 @@ body {
 h1 {
     color: $blacky-color;
     font-family: $main-font;
-    font-size: 32px;
+    font-size: 3.25rem; // 52px
+    font-weight: 800;
+}
+
+h2 {
+    font-size: 2.625rem; //42px
+    font-weight: 900;
+}
+
+h3 {
+    font-size: 3rem; // 48px
+    margin-bottom: 10px;
+    margin-top: 10px;
+    color: $blacky-color;
     font-weight: 800;
 }
 
 
 p {
     font-family: $main-font;
-    font-size: 18px;
+    font-size: $body-font-size;
     color: $blacky-color;
     line-height: 1.5;
     font-weight: 500;
+    font-size: 1rem;
 }
 
 
@@ -81,7 +97,8 @@ img {
     max-width: 1400px;
     display: flex;
 	flex-wrap: wrap;
-	margin: 0 auto;
+    margin: 0 auto;
+
 
     .column-100 {
         width: 100%;
@@ -106,3 +123,16 @@ img {
 
 }
 
+
+
+/* title settings */
+
+.hero-text {
+    text-align: left;
+    color: #121212;
+    
+    h2 {
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+}

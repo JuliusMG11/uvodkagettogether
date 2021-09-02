@@ -43,14 +43,14 @@
 
       <div class="column-50">
         <div class="footer">
-          <div class="footer-content">
+          <article class="footer-content">
             <h2>S nami už nič nezmeškáte!</h2>
           <!--  <p>
               You can support us so we can develop other interesting functions 
               <br>for you, which you will be able to use just 
               with “one click” and make planning easier for you.
             </p> -->
-          </div>
+          </article>
 
           <div class="buttons-group">
             <default-button title="Contact" class="first-button"> </default-button>

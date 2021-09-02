@@ -1,9 +1,5 @@
 <template>
-  <div>
-    <div class="land3">
-      <div class="road2">
-        <img src="@/assets/svg/road-part-2.svg" alt="" />
-      </div>
+<div>
       <div class="container">
         <div class="column-33">
           <div class="background-title">
@@ -53,8 +49,7 @@
 
         <img src="@/assets/svg/mountain.svg" alt="" />
       </div>
-    </div>
-  </div>
+      </div>
 </template>
 
 <script>
@@ -64,41 +59,10 @@ export default {}
 <style lang="scss" scoped>
 
 
-.land3 {
-  position: relative;
-  background-image: url('~@/assets/svg/land3-new.svg');
-  background-size: 101%;
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 100%;
-  background-position: bottom;
-  padding-bottom: 150px;
-  padding-top: 200px;
-  top: 80px;
-  background-position-y: 80px;
-
-  &::before {
-    position: absolute;
-    content: '';
-    background: radial-gradient(
-      circle,
-      rgba(249, 217, 14, 0.857656) 27%,
-      rgba(249, 217, 14, 0.532726) 52%,
-      rgba(249, 217, 14, 0) 74%,
-      rgba(249, 217, 14, 0) 84%
-    );
-    width: 150px;
-    height: 150px;
-    top: 50px;
-    right: -60px;
-    border-radius: 50%;
-    filter: blur(10px);
-  }
-
   .mountain {
     position: absolute;
     right: 0px;
-    bottom: 100px;
+    bottom: 60px;
     max-width: 760px;
     z-index: 10;
 
@@ -126,6 +90,14 @@ export default {}
   }
 
   .column-33 {
+
+     h3 {
+      z-index: 10;
+      position: relative;
+      font-size: 1.375rem;
+      font-weight: 700;
+    }
+
     &:nth-child(1),
     &:nth-child(2),
     &:nth-child(3) {
@@ -142,13 +114,7 @@ export default {}
 
       .mobile-title {
         position: relative;
-        top: -55px;
-      }
-
-      .mobile-column {
-        .mobile-image {
-          max-width: 260px;
-        }
+        top: -45px;
       }
     }
 
@@ -191,13 +157,7 @@ export default {}
 
       .mobile-title {
         position: relative;
-        top: -55px;
-      }
-
-      .mobile-column {
-        .mobile-image {
-          max-width: 260px;
-        }
+        top: -45px;
       }
     }
 
@@ -211,16 +171,4 @@ export default {}
       }
     }
   }
-}
-
-.road2 {
-  position: absolute;
-  object-fit: cover;
-  width: 100%;
-  left: 0px;
-  top: -150px;
-  z-index: 9;
-  left: -20px;
-  max-width: 1330px;
-}
 </style>

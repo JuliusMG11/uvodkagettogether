@@ -1,26 +1,29 @@
 <template>
   <div class="about">
     <div class="container">
+
+      <div class="content-section">
       
-      <div class="column-30">
-         <div class="hero-title">
-            <h2>Our team</h2>
-            <p>
-              We are a great group of people who came up with the idea that everyone 
-              has the right to have a fun and even more idea is to have fun in one 
-              place. Whether it’s a party event, sport event, theatres or just a tip 
-              for a trip. We want to provide people with all the possibilities of 
-              leisure activities or just made somebody´s day when looking for a treasure with a 
-              certain prize. Our point is for everyone to find what they enjoy. 
-            </p>
-          </div>
-      </div>
+        <div class="column-30">
+          <div class="hero-text">
+              <h2>Our team</h2>
+              <p>
+                We are a great group of people who came up with the idea that everyone 
+                has the right to have a fun and even more idea is to have fun in one 
+                place. Whether it’s a party event, sport event, theatres or just a tip 
+                for a trip. We want to provide people with all the possibilities of 
+                leisure activities or just made somebody´s day when looking for a treasure with a 
+                certain prize. Our point is for everyone to find what they enjoy. 
+              </p>
+            </div>
+        </div>
 
-      <div class="column-70">
-        <div class="hero-section">
+        <div class="column-70">
+          <div class="hero-section">
 
-          <div class="hero-image">
-            <img src="@/assets/png/about/hero-image.png" alt="" />
+            <div class="hero-image">
+              <img src="@/assets/png/about/hero-image.png" alt="" />
+            </div>
           </div>
         </div>
       </div>
@@ -91,21 +94,22 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import url('../scss/_variables.scss');
 
 .container {
   align-items: center;
   justify-content: center;
   
- .hero-title {
-    position:relative;
-    text-align: left;
-    font-size: 52px;
+  .content-section {
 
-    h2 {
-      font-weight: 900;
-      margin-top: 0px;
-      margin-bottom: 10px;
-      color: #121212;
+    display: flex;
+    align-items: center;
+
+     .hero-title {
+        h2 {
+          margin-top: 0px;
+          margin-bottom: 10px;
+      }
     }
   }
 }
@@ -134,12 +138,14 @@ export default {
     justify-content: center;
     position: relative;
 
+    .profile-image {
+      max-width: 100%;
+      width: 200px
+    }
+
              &:nth-child(1) {
                 top: -60px;
 
-                 .profile-image {
-                   max-width: 200px;
-                }
              }
 
              &:nth-child(2) {
@@ -148,9 +154,9 @@ export default {
                top: -50px;
 
                 .profile-image {
-                  max-width: 320px;
                   position: relative;
                   z-index: 6;
+                  width: 320px;
                 }
 
                 h3 {
@@ -165,7 +171,7 @@ export default {
     h3 {
       top: -70px;
       position: relative;
-      font-size: 102px;
+      font-size: 5.125rem; // 102px;
       margin-top: 0px;
       margin-bottom: 0px;
       font-weight: 1000;

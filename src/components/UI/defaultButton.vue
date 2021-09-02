@@ -3,13 +3,15 @@
 
     <div class="social-text">
       <h4>{{ title }}</h4>
+      <a :href="`mailto:${mailLink}`" >{{mailLink}}</a>
+      <a :href="`tel:${phoneLink}`" >{{phoneLink}}</a>
     </div>
   </button>
 </template>
 
 <script>
 export default {
-  props: ['title']
+  props: ['title', 'mailLink', 'phoneLink']
 
 }
 </script>
@@ -68,6 +70,13 @@ button {
     color: white;
     font-size: 24px;
     font-weight: 500;
+  }
+
+  a {
+    font-weight: 800;
+    font-size: 1.1rem;
+    text-decoration: none;
+    color: white;
   }
 
   p {

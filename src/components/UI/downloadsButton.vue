@@ -1,19 +1,19 @@
 <template>
   <button class="btn-hover color-1" href="#">
     <div class="social-image">
-      <img src="@/assets/svg/google-play.svg" alt="" />
+      <img :src="require(`../../assets/svg/${buttonLogo}`)" alt="" />
     </div>
 
     <div class="social-text">
-      <p>{{ title }}</p>
-      <h4>Google play</h4>
+      <p>{{ text }}</p>
+      <h4>{{ title }}</h4>
     </div>
   </button>
 </template>
 
 <script>
 export default {
-  props: ['title']
+  props: ['title', 'text', 'buttonLogo'],
 
 }
 </script>
@@ -32,7 +32,7 @@ button {
 .btn-hover {
   background-size: 300% 100%;
   cursor: pointer;
-  moz-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
   -o-transition: all 0.4s ease-in-out;
   -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
@@ -41,7 +41,7 @@ button {
 
 .btn-hover:hover {
   background-position: 100% 0;
-  moz-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
   -o-transition: all 0.4s ease-in-out;
   -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
@@ -74,6 +74,7 @@ button {
     font-weight: 500;
   }
 
+
   p {
     margin-top: 0px;
     margin-bottom: 0px;
@@ -87,4 +88,112 @@ button {
     max-width: 50px;
   }
 }
+
+
+
+// RESPONSIVE
+
+@media (max-width: 1450px) {
+
+   .social-image {                        
+          img {
+            width: 30px;
+        }  
+    }
+
+
+     .social-text {
+      
+      p {
+        font-size: 18px;
+      }
+
+      h4 {
+        font-size: 22px;
+      }
+    }
+}
+
+@media (max-width: 1400px) {
+  
+  .social-text {
+    p {
+      font-size: 16px;
+    } 
+  }
+}
+
+@media (max-width: 1200px) {
+  
+  button {
+    padding: 10px 20px 10px 20px;
+  }
+}
+
+
+@media (max-width: 1100px) {
+  
+  .social-text {
+    p {
+      font-size: 14px;
+    }
+  }
+}
+
+
+@media (max-width: 1050px) {
+  
+  .social-text {
+    p {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 900px) {
+   
+   button {
+      width: 240px;
+    }
+
+    .social-text {
+       p {
+          display: block;
+      }
+  }
+}
+
+@media (max-width: 550px) {
+   button {
+      width: max-content;
+  }
+}
+
+@media (max-width: 450px) { 
+    button {
+      padding: 10px 15px 10px 15px;
+    }
+
+    .social-image {
+      padding-right: 10px;
+    }
+
+    .social-text {
+      h4 {
+        font-size: 18px;  
+    }
+  }
+
+}
+
+
+@media (max-width: 400px) {
+     button {
+        width: 220px;
+      }
+}
+
+
+
+
 </style>

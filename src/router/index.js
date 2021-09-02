@@ -5,6 +5,7 @@ import Home from '../views/Home.vue'
 import ourService from '../views/ourService.vue'
 import About from '../views/About.vue';
 import Contact from '../views/Contact.vue';
+import Test from '../views/Test.vue'
 
 Vue.use(VueRouter)
 
@@ -28,6 +29,11 @@ const routes = [
     path: '/contact',
     name: 'Contact',
     component: Contact,
+  },
+  {
+    path: '/test',
+    name: 'Test',
+    component: Test,
   },
 ]
 

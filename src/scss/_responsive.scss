@@ -1,74 +1,440 @@
-@media (max-width: 2000px) {
-    // ABOUT PAGE
-    
-    .about {
-        .profile-section {
-            padding-bottom: 100px;
+@media (min-width: 2500px) {
+    .home {
+        .hero-building {
+            padding-bottom: 300px;
+        }
 
-            .column-30 {
-                &:nth-child(1) {
-                    top: 50px
+        .bg-left-section {
+            width: 110%;
+            left: -220px;
+        }
+
+        .bg-right-section {
+            right: -60px;
+        }
+
+        .title-servicing {
+            left: 210px;
+            bottom: -550px;
+            transform:rotate(-5deg);
+            -webkit-transform:rotate(-5deg);
+            -moz-transform:rotate(-5deg);
+            -ms-transform:rotate(-5deg);
+            -o-transform:rotate(-5deg);
+                
+                
+                h2 {
+
+                        
+                    &::after {
+
+                        width: 770px;
+                        height: 250px;
+                        bottom: 20px;
+                        left: -30px;
+                    }
+                }
+            }
+        
+
+            .land {
+                .road {
+                    top: -640px;
+                    transform: rotate(13deg);
+                    -webkit-transform: rotate(13deg);
+                    -moz-transform: rotate(13deg);
+                    -ms-transform: rotate(13deg);
+                    -o-transform: rotate(13deg);
+                }
+            }
+
+            .land2 {
+                .column-33 {
+                    .mobile-column {
+                        .mobile-image {
+                            max-width: 100%;
+                        }
+                    }
+
+                    &:nth-child(1) {
+
+                        top: 50px;
+
+                        &::after {
+                            left: -190px;
+                            width: 230px;
+                            height: 390px
+                        }
+                    }
+
+                    &:nth-child(2) {
+                        top: -20px;
+                    }
+
+                    &:nth-child(3) {
+                        top: -70px;
+                    }
                 }
 
-                &:nth-child(2) {
-                    top: 60px
+                .road2 {
+                    width: 80%;
+                }
+            }
+
+            .land3 {
+
+                .road2 {
+                    width: 80%;
                 }
 
-                &:nth-child(3) {
-                    top: -20px
+                .column-33 {
+                    .mobile-column {
+                        .mobile-image {
+                            max-width: 100%;
+                        }
+                    }
+                }
+
+                .mountain {
+                    bottom: 40px;
                 }
             }
         }
+    }
 
-        .land4 {
-            padding-top: 230px;
+    @media (min-width: 2400px) {
+        .home {
+            .land2 {
+                margin-top: 150px;
+                top: 180px;
+                padding-bottom: 160px;
+            }
+
+            .land3 {
+                margin-bottom: 100px;
+                padding-bottom: 150px;
+                margin-top: 100px;
+                background-position-x: -80px;
+            }
+        }
+    }
+
+@media (min-width: 2300px) {
+    
+    .home {
+        .land {
+            .road {
+                top: -600px;
+                left: -30px;
+            }
+            
+        }
+
+        .land2 {
+            padding-top: 500px;
+        }
+
+        .land3 {
+            padding-top: 500px;
+
+            .road2 {
+                left: -40px;
+                top: -240px;
+            }
         }
     }
 }
 
-@media (max-width: 1900px) {
 
-    // HOMEPACE
+@media (min-width: 2350px) and (max-width: 2500px) {
+    .home {
+        .title-servicing {
+            left: 210px;
+            bottom: -400px;
+        }
+    }
+}
+
+@media (min-width: 2150px) and (max-width: 2400px) {
+    .home {
+        .land2 {
+            margin-top: 50px;
+            top: 200px;
+            padding-bottom: 100px;
+        }
+    }
+}
+
+
+@media (min-width: 2150px) and (max-width: 2350px) {
+    .home {
+        .title-servicing {
+            left: 210px;
+            bottom: -440px;
+        }
+    }
+}
+
+
+
+@media (min-width: 2000px) and (max-width: 2500px) {
+    .home {
+        .hero-building {
+            padding-bottom: 300px;
+        }
+
+        .bg-left-section {
+            width: 110%;
+            left: -220px;
+        }
+
+        .bg-right-section {
+            right: -100px;
+        }
+
+        .title-servicing {
+            transform:rotate(-5deg);
+            -webkit-transform:rotate(-5deg);
+            -moz-transform:rotate(-5deg);
+            -ms-transform:rotate(-5deg);
+            -o-transform:rotate(-5deg);
+
+                h2 {
+                
+                    &::after {
+
+                        width: 770px;
+                        height: 250px;
+                        bottom: 20px;
+                        left: -30px;
+                    }
+                }
+            }
+    }
+}
+
+
+
+@media (min-width: 2000px) and (max-width: 2300px) {
+    .home {
+        .hero-building {
+            padding-bottom: 200px;
+        }
+
+        .land {
+            .road {
+                top: -460px;
+                left: -30px;
+                width: 100%;
+            }
+
+
+            &::after {
+                    bottom: 14%;
+                }
+            }
+
+            .land3 {
+                padding-top: 400px;
+
+                .road2 {
+                    left: -40px;
+                    top: -200px;
+                }
+            }
+
+
+                .bg-left-section {
+                    
+                    width: 110%;
+                    left: -220px;
+                }
+        }
+    }
+    
+
+    @media (min-width: 2000px) and (max-width: 2150px) {
         .home {
-            .land2 {
-                padding-bottom: 110px;
+            .title-servicing {
+                left: 210px;
+                bottom: -320px;
+            }
+        }
+    }    
+
+@media (min-width: 2000px) {
+
+    .home {
+        .land {
+            .road {
+                transform: rotate(13deg);
+                -webkit-transform: rotate(13deg);
+                -moz-transform: rotate(13deg);
+                -ms-transform: rotate(13deg);
+                -o-transform: rotate(13deg);
+            }
+        }
+
+        .land2 {
+            background-position: bottom;
+        }
+        .land3 {
+
+            margin-bottom: 100px;
+            padding-bottom: 150px;
+            margin-top: 100px;
+
+            .mountain {
+                width: 100%;
+                max-width: 1200px;
+            }
+        }
+    }
+}
+
+
+@media (min-width: 1850px) and (max-width: 2150px) {
+    .home {
+        .land2 {
+            padding-bottom: 100px;
+            padding-top: 350px;
+            margin-bottom: 100px;
+            margin-top: 40px;
+        }
+    }
+}
+
+@media (min-width: 1850px) and (max-width: 2000px) {
+    .home {
+        .hero-building {
+                padding-bottom: 240px;
+            }
+                .container {
+                    .forKids-pin  {
+                        bottom: 4%;
+                        left: 50.2%;
+                    }
+            }
+
+            .land {
+
+                .road {
+                    top: -410px;
+                    left: -10px;
+
+                    &::after {
+                        bottom: 14%;
+                    }
+                }
+
+                .title-servicing {
+                    bottom: -460px;
+                    
+                    h2 {
+
+                        &::after {
+                            bottom: -10px;
+                            width: 790px;
+                            height: 270px;
+                            bottom: 0px;
+                        }
+                    }
+                }
             }
         }
     }
 
+@media (min-width: 1800px) and (max-width: 2500px) {
+    // HOMEPAGE
+
+    .home {
+
+        .land2 {
+            .column-33 {
+                .mobile-column {
+                    .mobile-image {
+                        max-width: 420px;
+                    }
+                }
+            }
+        }
+
+        .column-33 {
+            .mobile-column {
+                .mobile-image{
+                    max-width: 300px;
+                }
+            }
+
+            &:nth-child(1) {
+                top: 70px;
+            }
+
+            &:nth-child(2) {
+
+                top: 0px;
+            }
+
+            &:nth-child(3) {
+                top: -50px;
+            }
+        }
+
+        .land3 {
+
+            .road2 {
+                width: 90%;
+            }
+
+            .mountain {
+                bottom: 60px;
+            }
+
+        }
+    }
+}    
+
+@media (min-width: 1800px) and (max-width: 2300px) {
+    .land2 {
+        padding-bottom: 200px;
+    }
+}
+
+@media (min-width: 1800px) and (max-width: 2000px) {
+
+    // HOMEPAGE 
+
+    .home {
+        .land3 {
+            padding-top: 300px;
+            margin-bottom: 100px;
+            padding-bottom: 150px;
+            
+            .road2 {
+                left: -50px;
+                top: -180px;
+            }
+        }
+    }
+    
+    // CONTACT PAGE
+
+    .contact-page {
+
+        .hero-image {
+            .container {
+                .telephone-both {
+                    width: 100px;
+                    bottom: -80px;
+                }
+            }
+        }
+    }
+}
 
 
 @media (max-width: 1800px) {
 
-    // HOMEPAGE
-
-        .home {
-            .land {
-
-                .road {
-                    top: -310px;
-                }
-
-                
-                    .title-servicing {
-                        bottom: -410px;
-                    }
-
-                    .concert-pin {
-                        left: 32.4%;
-                        top: 42%;
-                    }
-
-                    .party-pin {
-                        left: 17%;
-                    }
-                
-            }
-
-            .land2 {
-                padding-bottom: 100px;
-            }
-        }
 
         // ABOUT PAGE
 
@@ -100,6 +466,7 @@
         }
     }
 
+
 @media (min-width: 1750px) {
 
     // HOMEPAGE
@@ -107,10 +474,6 @@
     .home { 
         .hero-building {
             .container { 
-                .forKids-pin  {
-                    bottom: 8%;
-                    left: 50.2%;
-                }
 
                 .culture-pin {
                     top: 40px;
@@ -119,85 +482,14 @@
         }
 
         .land {
-            padding-top: 450px;
-
-            .concert-pin {
-                left: 31.8%;
-                top: 42%;
-            }
-
-            .party-pin {
-                left: 15.5%;
-                top: 47%;
-            }
-
-            .sports-pin {
-                top: -30%;
-            }
-
 
             &::before {
                 top: 150px;
                 left: 50px;
             }
 
-            .road {
-                top: -280px;
-            }
-
-            .bg-left-section {
-                top: -140px;
-            }
-
-            .title-servicing {
-                bottom: -370px;
-            }
-
-            .bg-right-section {
-                top: 20px;
-                right: -100px;
-            }
-
         }
 
-        .land2 {
-            padding-bottom: 60px;
-
-            .column-33 {
-                &:nth-child(1) {
-                    top: 110px;
-
-                    &::after {
-                        bottom: 120px;
-                    }
-                }
-
-                &:nth-child(2) {
-                    top: 30px;
-                }
-
-                &:nth-child(3) {
-                    top: -20px;
-                }
-            }
-        }
-
-        .land3 {
-            padding-top: 300px;
-            top: 90px;
-
-            .road2 {
-                top: -110px;
-
-                img {
-                    width: 115%;
-                }
-            }
-        }
-
-        .land4 {
-            padding-top: 300px;
-        }
     }
 }
 
@@ -207,89 +499,151 @@
     // HOMEPAGE
 
     .home {
-        .hero-building  {
-
-            .container 
-                .forKids-pin  {
-                    bottom: 10%;
-                    left: 50.2%;
-                }
-            }
+    
 
             .land {
-
-                .concert-pin {
-                    left: 31.4%;
-                    top: 36%;
-                }
-
-                .party-pin {
-                    left: 15%;
-                    top: 42%;
-                }
-
-                .sports-pin {
-                    top: -39%;
-                }
-
-                padding-top: 360px;
-
-                .bg-left-section {
-                    top: -140px;
-                }
-
+s
                 .bg-right-section {
                     right: -70px;
                 }
 
-                .title-servicing {
-                    bottom: -360px;
-                }
-
-                .road {
-                    top: -330px;
-                    left: -10px;
-                    width: 101%;
-                }
-            }
-
-            .land2 {
-                .column-33 {
-                    &:nth-child(1) {
-                        top: 90px;
-                    }
-
-                    &:nth-child(2) {
-                        top: 0px;
-                    }
-
-                    &:nth-child(3) {
-                        top: -80px;
-                    }
-                }
-            }
-
-            .land3 {
-                top: 80px;
-                padding-top: 280px;
-
-                .road2 {
-                    top:-140px;
-
-                    img {
-                        width: 108%;
-                    }
-                }
-            }
-
-            .land4 {
-                padding-top: 300px;
             }
 
         }
  
 }
 
+
+@media (min-width: 1700px) and (max-width: 2500px) {
+    .home {
+        .land2 {
+            .column-33 {
+                 &:nth-child(1) {
+    
+                    &::after {
+                        left: -90px;
+                    }
+                }
+            }
+            
+        }
+    }
+}
+
+
+@media (min-width: 1700px) and (max-width: 2000px) {
+    .home {
+        .land {
+            .road {
+                width: 107%;
+                left: -50px;
+                top: -420px;
+
+                &::after {
+                    bottom: 14%;
+                }
+            }
+        }
+
+        .land2 {
+            background-position: center;
+        }
+
+    }
+}
+
+
+@media (min-width: 1700px) and (max-width: 1850px) {
+    .home {
+        .hero-building {
+            padding-bottom: 150px;
+                .container {
+                    .forKids-pin  {
+                        bottom: 11%;
+                        left: 50.2%;
+                    }
+            }
+        }
+
+        .land {
+            .title-servicing {
+                bottom: -380px;
+                
+                h2 {
+
+                    &::after {
+                        bottom: -10px;
+                        width: 790px;
+                        height: 270px;
+                        bottom: 0px;
+                    }
+                }
+            }
+        }
+
+        .land2 {
+            padding-bottom: 70px;
+            margin-top: 50px;
+        }
+
+        .land3 {
+            padding-bottom: 190px;
+            padding-top: 260px;
+            top: 100px;
+            margin-bottom: 100px;
+
+            .mountain {
+                bottom: 80px;
+            }
+        }
+
+    }
+}
+
+@media (min-width: 1700px) and (max-width: 1800px) {
+    .home {
+
+        .land2 {
+            .column-33 {
+                &:nth-child(1) {
+                    top: 100px;
+                }
+
+                &:nth-child(2) {
+                    top:50px
+                }
+
+                &:nth-child(3) {
+                    top: 10px;
+                }
+            }
+        }
+
+        .land3 {
+            .road2 {
+                width: 100%;
+                top: -140px;
+                left: -150px;
+            }
+        }
+    }
+}
+
+@media (min-width: 1700px) {
+    .home {
+        .title-servicing {
+            h2 {
+                font-size: 7.625rem; // 122px
+            }
+        }
+
+        .land3 {
+            .road2 {
+                max-width: unset;
+            }
+        }
+    }
+}
 
 
 @media (max-width: 1700px) {
@@ -306,191 +660,178 @@
             }
         }
 
-        .land {
-            padding-top: 300px;
-
-            .road {
-                &::after {
-                    bottom: 12%;
-                }
-            }
-
-            .bg-left-section {
-                top: -130px;
-            }
-
-            .sports-pin {
-                top: -45%;
-            }
-
-            .concert-pin {
-                top: 33%;
-                left: 30.9%;
-            }
-
-            .party-pin {
-                left: 14%;
-                top: 38%;
-            }
-
-            .bg-left-section {
-                top: -130px;
-            }
-
-            .bg-right-section {
-                right: -90px;
-                top: 30px;
-            }
-
-            .title-servicing {
-                bottom: -350px
-            }
-        }
-
-        .land2 {
-            .column-33 {
-                &:nth-child(1) {
-                    top: 30px;
-
-                    &::after {
-                        bottom: 100px
-                    }
-                }
-
-                &:nth-child(2) {
-                    top: -30px;
-                }
-
-                &:nth-child(3) {
-                    top: -70px;
-                }
-            }
-        }
-
-        .land3 {
-            padding-top: 260px;
-            max-width: 100%;
-            top: 50px;
-
-            &::before {
-                top: 200px;
-            }
-
-            .road2 {
-                max-width: 1370px;
-            }
-        }
     }
 
-    // ABOUT PAGE 
+}
 
-    .about {
-        
-            .profile-section {
-
-                .container {
-                    .column-30 {
-                        &:nth-child(1) {
-                            top: -20px;
-                        }
-                        
-                        &:nth-child(2) {
-                            top: 20px;
-                        }
-
-                        &:nth-child(3) {
-                            top: -50px;
-                        }
-                    }
-                }
-            }
-
-        .land4 {
-            padding-top: 150px;
+@media (min-width: 1650px) and (max-width: 2000px) {
+     // HOME PAGE
+    
+     .home {
+        .bg-right-section {
+            right: -100px;
         }
     }
 
 }
 
+@media (min-width: 1650px ) and ( max-width: 2000px) {
 
-@media (max-width: 1650px) {
 
     // HOMEPAGE
 
-    
     .home {
-        .hero-building { 
-            .container {
-                .forKids-pin  {
-                    bottom: 16%;
-                    left: 50.2%;
+        .bg-left-section {
+            left: -110px;
+        }
+    }
+
+    // ABOUT PAGE
+
+    .about {
+        .profile-section {
+            padding-bottom: 100px;
+
+            .column-30 {
+                &:nth-child(1) {
+                    top: 0px
+                }
+
+                &:nth-child(2) {
+                    top: 30px
+                }
+
+                &:nth-child(3) {
+                    top: 0px
                 }
             }
         }
+    }
 
-        .land {
-            padding-top: 230px;
 
-            .title-servicing {
-                bottom: -350px;
+    // CONTACT PAGE
+
+    .contact-page {
+        .contact-land {
+            padding-top: 150px;
+            padding-bottom: 150px;
+            background-position: unset;
+
+            .billboard {
+                top: -10px;
             }
+        }
+    }
+    
+}
+
+@media (min-width: 1650px ) and ( max-width: 1800px) {
+    .hero-image {
+        .container {
+            .telephone-both {
+                width: 100px;
+                bottom: -80px;
+            }
+        }
+    }
+}
+
+@media (min-width: 1650px) {
+    .home {
+        .land {
+            padding-bottom: 20px;
+        }
+    }
+}
+
+
+
+@media (min-width: 1600px) and (max-width: 2000px) {
+
+    
+    // CONTACT PAGE 
+
+    .contact-page {
+        
+
+        .contact-land {
+            padding-top: 150px;
+            padding-bottom: 150px;
+        }
+    
+    }
+}
+
+@media (min-width: 1600px) and (max-width: 1700px) {
+    
+    // HOMEPAGE
+    
+    .home {
+        .land {
 
             .road {
-                top: -390px;
-                width: 102%;
+                top: -350px;
+
+                &::after {
+                    bottom: 14%;
+                }
             }
 
-            .sports-pin {
-                top: -55%;
-            }
-            
-            .concert-pin {
-                top: 25%;
-                left: 30.2%;
-            }
+            .title-servicing {
+                bottom: -330px;
 
-            .party-pin {
-                left: 13%;
-                top: 33%;
-            }
-
-            .bg-left-section {
-                top: -120px;
+                h2 {
+                    &::after {
+                        bottom: -10px;
+                    }
+                }
             }
         }
 
         .land2 {
             .column-33 {
+
                 &:nth-child(1) {
                     top: 10px;
 
                     &::after {
-                        bottom: 90px;
+                        width: 190px;
+                        bottom: 50px;
+                        left: -50px;
                     }
                 }
 
                 &:nth-child(2) {
-                    top: -40px;
+                    top: -50px;
                 }
 
                 &:nth-child(3) {
                     top: -90px;
                 }
+            
             }
         }
-
+        
         .land3 {
-
-            padding-top: 230px;
-            
-
             .road2 {
                 top: -170px;
             }
+
         }
     }
 }
 
+@media (min-width: 1600px) {
+    .land3 {
+        .column-33 {
+            &:nth-child(3) {
+                &::after {
+                    display: none;
+                }
+            }
+        }
+    }
+}
 
 @media (max-width: 1600px) {
 
@@ -507,20 +848,6 @@
 
         .land {
 
-            padding-top: 220px;
-
-            .title-servicing {
-                bottom: -320px;
-            }
-
-            .concert-pin {
-                left: 29.7%;
-                top: 24%;
-            }
-
-            .party-pin {
-                left: 12%;
-            }
 
             .road {
                 &::after {
@@ -529,57 +856,36 @@
             }
         }
 
-        .land2 {
-            .column-33 {
-                &:nth-child(1) {
-                    &::after {
-                        bottom: 110px; 
-                    }
-                }
-            }
-        }
-
-        .land3 {
-            padding-top: 250px;
-            top: 20px;
-            background-position-y: 120px;
-
-        }
-
-        .land4 {
-            padding-top: 270px;
-        }
-    }
-
-
-    // ABOUT PAGE
-    .about {
-        
-        .profile-section {
-
-            .container {
-                .column-30 {
-                    &:nth-child(1) {
-                        top: -60px;
-                    }
-                    
-                    &:nth-child(2) {
-                        top: -20px;
-                    }
-
-                    &:nth-child(3) {
-                        top: -90px;
-                    }
-                }
-            }
-        }
-
-        .land4 {
-            padding-top: 100px;
-        }
     }
 
 }
+
+@media (min-width: 1550px) and (max-width: 1650px) {
+    
+    .home {
+        .bg-right-section {
+            right: -80px;
+        }
+    }
+}
+
+@media (min-width: 1550px) and (max-width: 1600px ) {
+    .home {
+        .road2 {
+            top: -130px;
+        }
+        
+    }
+}
+
+@media (min-width: 1550px) {
+    .home {
+        .land {
+            padding-top: 200px;
+        }
+    }
+}
+
 
 @media (max-width: 1550px) {
 
@@ -597,92 +903,98 @@
 
         .land {
 
-            .title-servicing {
-                bottom: -270px;
-            }
-
             .road {
                 &::after {
                     bottom: 13%;
                 }
             }
+        }
 
-            .concert-pin {
-                left: 29.3%;
-                top: 25%;
+    }
+}
+
+@media (min-width: 1500px) and (max-width: 1700px) {
+    
+    // HOMEPAGE 
+    
+    .home {
+        .land2 {
+            padding-bottom: 160px;
+            margin-top: 100px;
+        }
+        .land3 {
+
+            .road2 {
+                top: -220px;
+                left: -170px;
+            }
+        }
+    }
+}
+
+@media (min-width: 1500px) and (max-width: 1600px) {
+   
+     // HOMEPAGE
+
+   .home {
+        .hero-building { 
+            .container { 
+                .forKids-pin  {
+                    bottom: 12%;
+                    left: 50%;
+                }
+            }
+        }
+
+        .land {
+
+            .road {
+                top: -400px;
             }
 
-            .party-pin {
-                left: 11%;
+            .title-servicing {
+                bottom: -330px;
+
+                h2 {
+                    &::after {
+                        bottom: -10px;
+                    }
+                }
             }
         }
 
         .land2 {
             .column-33 {
+
                 &:nth-child(1) {
-                    top: 0px;
-                }
+                    
+                    top: -50px;
 
-                &:nth-child(2) {
-                    top: -60px;
+                    &::after {
+                        width: 190px;
+                        bottom: 50px;
+                        left: -50px;
+                    }
                 }
-
-                &:nth-child(3) {
-                    top: -110px;
-                }
+            
             }
         }
 
         .land3 {
-            padding-top: 220px;
-            background-position-y: 110px;
-            
-            .road2 {
-                top: -200px;
-            }
-        }
-
-        .land4 {
-            padding-top: 220px;
+            padding-top: 180px;
         }
     }
 }
-
-
 
 @media (max-width: 1500px) {
 
     // HOMEPAGE
 
     .home {
-        .hero-building { 
-            .container { 
-                .forKids-pin  {
-                    bottom: 22%;
-                    left: 50%;
-                }
-            }
-        }
     
         .land {
-
-    
-
-            .concert-pin {
-                left: 28.5%;
-            }
-            
-            .title-servicing {
-                bottom: -300px;
-                left: 150px;
-
-                h2::after {
-                    bottom: -4px;
-                }
-            }
         
             .road {
-                top: -330px;
 
                 &::after {
                     width: 210px;
@@ -699,45 +1011,6 @@
                     width: 70px;
                 }
             }
-
-            .bg-right-section {
-                top: 50px;
-                right: -40px;
-
-                .billboard {
-                    top: -90px;
-                }
-            }
-        }
-
-        .land2 {
-            .column-33 {
-                &:nth-child(1) {
-                    top: -40px;
-
-                    &::after {
-                        left: -60px;
-                    }
-                }
-
-                &:nth-child(2) {
-                    top: -80px;
-                }
-
-                &:nth-child(3) {
-                    top: -130px;
-                }
-            }
-        }
-
-        .land3 {
-            background-position-y: 110px;
-            padding-top: 200px;
-            top: -20px;
-
-            .road2 {
-                left: -6%;
-            }
         }
     }
     
@@ -749,13 +1022,11 @@
             padding-bottom: 50px;
         }
 
-        .land4 {
-            padding-top: 50px;
-        }
     }
 
 
 }
+
 
 
 
@@ -774,123 +1045,92 @@
     //
 
     .home {
-            .hero-building {
+    
                 .container {
                     
                     .culture-pin {
                         top: 25px;
                     }
-                
-                    .forKids-pin {
-                        bottom: 25%;
-                    }
-                
-                .downloads-buttons {
-                        .button-social {
-
-                            .social-image {
-                                    
-                                img {
-                                        width: 30px;
-                                }  
-                            }
-
-                            .social-text {
-                                p {
-                                    font-size: 18px;
-                                }
-
-                                h4 {
-                                    font-size: 22px;
-                                }
-                            }
-                    }
-                }
 
             }
-        }
+      
         .land {
-
-            .concert-pin {
-                left: 27.8%;
-                top: 26%;
-            }
-
-            .party-pin {
-                left: 9%;
-                top: 34%;
-            }
 
             .sports-pin {
                 right: 9%;
                 top: -42%;
             }
         
-            .road {
-                top: -300px;
+        }
+
+    }
+
+     // ABOUT PAGE
+     .about {
+
+            .container {
+                padding-left: 30px;
+                padding-right: 30px;
+            }
+    }
+
+
+
+    // OUR SERVICE PAGE
+
+    .our-service {
+        .container {
+            padding-left: 30px;
+            padding-right: 30px;
+        
+
+            .service-title {
+                font-size: 42px;
+            }
+
+
+            .right-section {
+                .service-title {
+                    h2 {
+                        
+                        &::before {
+                            top: -40px;
+                            left: 110px;
+                        }
+                    }
+                }
+
+               
             }
         }
+    }
 
-        .bg-left-section {
-            left: -100px;
-            background-position: unset;
-        }
- 
-        .title-servicing {
-            bottom: -270px;
-        }
+     // CONTACT PAGE
 
-        .bg-left-section {
-            img {
-                top: 190px;
+     .contact-page {
+         .hero-image {
+            .container {
+                padding-right: 30px;
+                padding-left: 30px;
             }
         }
+    }
+}
 
-        .concert-pin {
-            left: 27.8%;
-        }
 
-        .party-pin {
-            left: 8.5%;
-        }
+
+
+@media (min-width: 1400px ) and ( max-width: 1650px) {
     
+    // HOMEPAGE 
 
-        .land2 {
-            .column-33 {
-
-                &:nth-child(1) {
-                    .mobile-column {
-                        .mobile-image {
-                            max-width: 220px;
-                        }
-                    }
-
-                    &::after {
-                        width: 190px;
-                        bottom: 80px;
-                        left: -50px;
-                    }
-                }
-
-                &:nth-child(2) {
-                    .mobile-column {
-                        .mobile-image {
-                            max-width: 310px;
-                        }
-                    }
-                }
-                
-                &:nth-child(3) {
-                    .mobile-column {
-                        .mobile-image {
-                            max-width: 220px;
-                        }
-                    }
-                }
+    .home {
+        .land {  
+            .road {
+                top: -280px;        
             }
         }
-
-
+        
         .land3 {
 
             background-size: 100%;
@@ -922,65 +1162,94 @@
                         }
                     }
                 }
-            }
 
-            .road2 {
-                top: -150px;
-                max-width: 90%;
+                .mountain {
+                    right: -60px;
+                }
+    
+                .road {
+                    top: -180px;
+                }
             }
         }
+    }
 
-        .land4 {
+
+    // CONTACT PAGE
+
+    .contact-page {
+        .contact-land {
             padding-top: 120px;
+            padding-bottom: 120px;
+            background-position: unset;
+
+            .billboard {
+                top: -60px;
+            }
+        }
+
+        .hero-image {
+            .container {
+                .telephone-both {
+                    width: 80px;
+                    bottom: -40px;
+                }
+            }
         }
     }
 
-     // ABOUT PAGE
-     .about {
+    // ABOUT PAGE
 
-            .container {
-                padding-left: 30px;
-                padding-right: 30px;
-            }
-    }
+    .about {
+        .profile-section {
+            padding-bottom: 100px;
 
-    .our-service {
-        .container {
-            padding-left: 30px;
-            padding-right: 30px;
-        
-            .hero-section {
-                .hero-text {
-
-                    h2 {
-                        font-size: 52px;
-                    }
-                }
-            }
-
-            .service-title {
-                font-size: 42px;
-            }
-
-
-            .right-section {
-                .service-title {
-                    h2 {
-                        
-                        &::before {
-                            top: -40px;
-                            left: 110px;
-                        }
-                    }
+            .column-30 {
+                &:nth-child(1) {
+                    top: -40px
                 }
 
-                .like-image {
-                    left: 14%;
+                &:nth-child(2) {
+                    top: -10px
+                }
+
+                &:nth-child(3) {
+                    top: -40px
                 }
             }
         }
     }
 }
+
+
+@media (min-width: 1400px ) and ( max-width: 1500px) {
+    // HOME PAGE
+
+    .home { 
+        .hero-building {
+            .container { 
+                .forKids-pin  {
+                    bottom: 24%;
+                    left: 50%;
+                }
+            }
+        }
+
+        .land {
+
+            .road {
+
+                top: -280px;
+
+                &::after {
+                    bottom: 14%;
+                }
+            }
+        }
+    }
+}
+
+
 
 
 @media (max-width: 1400px) {
@@ -993,10 +1262,6 @@
                 padding-left: 30px;
                 padding-right: 30px;
 
-                
-                .forKids-pin  {
-                    bottom: 28%;
-                }
 
                 .presentation-pin {
                     top: 16px;
@@ -1006,81 +1271,11 @@
                     top: 25px;
                 }
 
-                .downloads-buttons {
-
-                    .button-social {
-
-                        .social-text {
-
-                            p {
-                                font-size: 16px;
-                            } 
-                        }
-
-                    }
+                .forKids-pin {
+                    bottom: 34%;
+                    left: 50%;
                 }
             }
-        }
-
-        .land {
-
-            padding-top: 170px;
-
-            .title-servicing {
-                bottom: -280px;
-            }
-
-            .bg-left-section {
-                img {
-                    top: 200px;
-                }
-            }
-
-            .concert-pin {
-                left: 27.6%;
-                top: 23%;
-            }
-
-            .party-pin {
-                top: 31%;
-            }
-
-            .sports-pin {
-                top: -46%;
-            }
-        }
-
-        .land2 {
-            .column-33 {
-                &:nth-child(1) {
-                    top: -50px;
-                }
-
-                &:nth-child(2) {
-                    top: -120px;
-                }
-
-                &:nth-child(3) {
-                    top: -160px;
-                }
-            }
-        }
-
-        .land3 {
-
-            padding-top: 180px;
-
-            .mountain {
-                right: -60px;
-            }
-
-            .road {
-                top: -180px;
-            }
-        }
-
-        .land4 {
-            padding-top: 170px;
         }
     }
 
@@ -1112,6 +1307,23 @@
         }
     }
 
+
+    // CONTACT PAGE
+
+    .contact-page {
+        .hero-image {
+            .container {
+                .telephone-both {
+                    width: 60px;
+                }
+            }
+        }
+
+        .land4 {
+            padding-top: 20px;
+        }
+    }
+
 }
 
 @media (max-width: 1350px) {
@@ -1119,75 +1331,11 @@
     // HOMEPAGE
 
     .home { 
-        
-        .hero-building { 
-            .container {
-                
-                
-                .forKids-pin  {
-                    bottom: 30%;
-                    left: 49.7%;
-                }
-            }
-        }
 
         .land {
-            .road {
-                top: -300px;
-            }
 
             .sports-pin {
                 top: -46%;
-            }
-
-            .bg-left-section {
-                img {
-                    top: 220px;
-                }
-            }
-
-            .title-servicing {
-                bottom: -230px;
-            }
-
-            .concert-pin {
-                top: 26%;
-                left: 27.4%;
-            }
-
-            .party-pin {
-                left: 8%;
-                top: 32%;
-            }
-        }
-        .land2 {
-            .column-33 {
-                &:nth-child(1) {
-
-                    top: -80px;
-
-                    &::after {
-                        width: 170px;
-                        bottom: 60px;
-                    }
-                }
-
-                &:nth-child(2) {
-                    top: -140px;
-                }
-
-                &:nth-child(3) {
-                    top: -180px;
-                }
-            }
-        }
-
-        .land3 {
-            padding-top: 160px;
-            background-position-y: 90px;
-
-            .road2 {
-                top: -200px;
             }
         }
 
@@ -1335,6 +1483,24 @@
     }
 }
 
+@media (min-width: 1300px) {
+    .home {
+
+       .bg-left-section {
+
+           .concert-pin {
+               top: -23%;
+               left: 44%;
+           }
+
+           .party-pin{
+               left: 17%;
+               top: -3%;
+           }
+       }
+    }
+}
+
 @media (max-width: 1300px) {
 
     .home {
@@ -1344,87 +1510,33 @@
             .container {
 
                 .forKids-pin {
-                    bottom: 33%;
+                    bottom: 36%;
+                    left: 49.8%;
                 }
             }
         }
 
         .land {
 
-            .road {
-                top: -270px;
+            &::before {
+                top: -210px;
             }
 
-            .sports-pin {
-                top: -42%;
-            }
+            padding-top: 80px;
             
-            .title-servicing {
-                bottom: -210px;
-            }
-
             .concert-pin {
-                left: 27%;
+                top: -18%;
+                left: 43%;
             }
 
             .party-pin {
-                left: 7.6%;
-                top: 33%;
+                left: 19%;
+                top: 10%;
             }
 
-            .bg-right-section {
-                right: -10px;
+            .road {
+                top: -360px;
             }
-        }
-
-
-        .land2 {
-            .column-33 {
-                &:nth-child(1) {
-
-                    &::after {
-                        width: 150px;
-                        bottom: 10px;
-                        left: -30px;
-                    }
-
-                    .mobile-column {
-                        .mobile-image {
-                            max-width: 200px;
-                        }
-                    }
-                }
-
-                &:nth-child(2) {
-                    .mobile-column {
-                        .mobile-image {
-                            max-width: 290px;
-                        }
-                    }
-                }
-
-                &:nth-child(3) {
-                    .mobile-column {
-                        .mobile-image {
-                            max-width: 200px;
-                        }
-                    }
-                }
-            }
-        }
-
-        .land3 {
-            padding-bottom: 130px;
-            top: -50px;
-
-            &::before {
-                top: 0px;
-            }
-
-            .road2 {
-                top: -170px;
-            }
-
         }
 
         .land4 {
@@ -1438,13 +1550,6 @@
 
     // ABOUT PAGE
     .about {
-
-        .container {
-            .hero-title {
-                font-size: 46px;
-            }
-        }
-        
         .profile-section {
             margin-top: 50px;
             padding-top: 20px;
@@ -1494,6 +1599,26 @@
         }
     }
 
+
+    // CONTACT PAGE
+
+    .contact-page {
+        .hero-image {
+            padding-bottom: 80px;
+
+            .container {
+
+                    .hero-text {
+                        padding-right: 0px;
+                        padding-top: 70px;
+                    }
+                }
+            }
+        }
+
+        .contact-land {
+            margin-bottom: 80px;
+        }
 }
 
 
@@ -1510,19 +1635,7 @@
                         
                         img {
                             max-width: 70px;
-                        }
-                        
-                        
-                    }
-
-                    .relax-section {
-                        top: 70px;
-
-                        .relax-pin {
-                            img {
-                                max-width: 80px;
-                            }
-                        }
+                        }   
                     }
                 }
 
@@ -1538,7 +1651,6 @@
             }
 
             .land {
-                padding-top: 100px;
 
                 &::before {
                     width: 120px;
@@ -1551,18 +1663,6 @@
                     top: -51%;
                 }
 
-                .road {
-                    top: -290px
-                }
-
-                .bg-left-section {
-                    top: -110px;
-
-                    img {
-                        top: 240px;
-                    }
-                }
-
                 .bg-right-section {
                     .billboard {
                         &::after {
@@ -1571,173 +1671,21 @@
                         }
                     }
                 }
-
-                .title-servicing {
-                    font-size: 62px;
-                    bottom: -230px;
-
-                    h2 {
-
-                        &::after {
-                            bottom: -18px;
-                            left: -17px;
-                        }
-                    }
-                }
-
-                .concert-pin {
-
-                    left: 27.4%;
-                    top: 26%;
-
-                    img {
-                        max-width: 70px
-                    }
-                }
-
-                .party-pin {
-                    top: 31%;
-
-                    img {
-                        max-width: 70px;
-                    }
-                }
-            }
-
-            .land2 {
-                top: 120px;
-                background-position-y: -70px;
-
-                .column-33 {
-                    &:nth-child(1) {
-                        top: -100px;
-                    }
-
-                    &:nth-child(2) {
-                        top: -160px;
-
-                        .mobile-title {
-                            top: -50px;
-                        }
-                    }
-
-                    &:nth-child(3) {
-                        top: -200px;
-                    }
-                }
-            }
-
-            .land3 {
-
-                &::before {
-                    top: -50px;
-                    z-index: 10;
-                }
-
-                .mountain {
-                    max-width: 660px;
-                }
-
-                padding-top: 40px;
-                background-position-y: 0px;
-
-                .road2 {
-                    top: -230px;
-                }
             }
     }
 
 }
 
 
+
 @media (max-width: 1200px) {
        
 .home { 
-    
-    .hero-building {
-    
-            .container {
-
-                .relax-section {
-                    max-width: 420px;
-                    top: 80px;
-                }
-                
-                .relax-section {
-                    &::after {
-                        bottom: -8px;
-                        left: -25px;
-                    }
-                }
-        
-                .forKids-pin  {
-                    bottom: 36%;
-                    left: 50.3%;
-                
-                }
-
-                .downloads-buttons {
-
-                    .button-social {
-                        
-                        button {
-                            padding: 10px 20px 10px 20px;
-                        }
-                    }
-                }
-        
-            }
-    
-        }
-        
-        .land { 
-            padding-top: 80px;
-    
-            .sports-pin {
-                top: -74%;
-                right: 9%;
-            }
-
-            .party-pin {
-                top: 23%;
-                left: 10%;
-            }
-
-            .concert-pin {
-                left: 28.6%;
-                top: 14%;
-            }
-
-            .title-servicing {
-                bottom: -190px;
-                left: 170px;
-    
-                h2 {
-                font-size: 82px;
-    
-                    &::after {
-                        bottom: -29px;
-                    }
-                }
-            }
-    
+        .land {
+                     
             &::before {
-                width: 100px;
-                height: 100px;
-                top: 40px;
-                left: -30px;
-            }
-    
-            .bg-left-section {
-                background-size: 90%;
-                height: 410px;
-                left: -50px;
-
-                img {
-                    top: 180px;
-                }
-        
-            }
+                top: -140px;
+            } 
     
             .bg-right-section {
     
@@ -1764,14 +1712,6 @@
                      }
                 }
             }
-
-            .road {
-                top: -350px;
-            }
-        }
-
-        .land3 {
-            background-position-y: 20px;
         }
 
         .land4 {
@@ -1791,6 +1731,61 @@
         }
 
     }
+
+
+    // ABOUT PAGE
+
+    .about {
+
+        .container {
+            .content-section {
+
+                .column-30 {
+                    width: 50%
+
+                }
+            }
+            
+
+            .column-70 {
+                width: 50%;
+            }
+
+            .hero-title {
+                p {
+                    font-size: 16px;
+                }
+            }
+        }
+
+        .profile-section {
+            .container {
+                .column-30 {
+                    .profile-image {
+                        width: 160px;
+                    }
+
+                    &:nth-child(1) {
+                        top: -40px;
+                    }
+
+                    &:nth-child(2) {
+
+                        top: -20px;
+
+                        .profile-image {
+                            width: 280px;
+                        }
+                    }
+
+                    &:nth-child(3) {
+                        top: -40px;
+                    }
+                }
+            }
+        }
+    }
+
 
      // OUR SERVICE PAGE 
 
@@ -1843,6 +1838,17 @@
             }
     }
 
+    .contact-page {
+        .hero-image{
+            .container {
+                .hero-text {
+                    padding-top: 40px;
+                    padding-right: 40px;
+                }
+            }
+        }
+    }
+
 }
 
 
@@ -1852,10 +1858,6 @@
         .hero-building {
             
             .container {
-                
-                .forKids-pin {
-                    bottom: 36%;
-                }
 
                 .social-text h4 {
                     font-size: 18px;
@@ -1876,61 +1878,8 @@
         }
 
         .land {
-            .road {
-                top: -300px;
-            }
-
             .sports-pin {
                 top: -64%;
-            }
-
-            .bg-left-section {
-                top: -100px;
-            }
-
-            .concert-pin {
-                left: 28.6%;
-                top: 17%;
-            }
-
-            .party-pin {
-                top: 26%;
-                left: 10%;
-            }
-
-            .title-servicing {
-                left: 170px;
-                bottom: -200px;
-            }
-        }
-
-        .land2 {
-
-            background-size: 110%;
-
-            .column-33 {
-                
-                &:nth-child(1) {
-                    top: -120px;
-                }
-
-                &:nth-child(2) {
-                    top: -180px;
-                }
-
-                &:nth-child(3) {
-                    top: -190px;
-                }
-                
-                
-            }
-        }
-
-        .land3 {
-            .column-33 {
-                &:nth-child(1) {
-                    top: 20px;
-                }
             }
         }
     }
@@ -1938,64 +1887,95 @@
 }
 
 
-@media (max-width: 1130px) {
+
+@media (min-width: 1100px) and (max-width: 1300px) {
+
+
+    // HOMEPAGE 
 
     .home {
+        .hero-building {
+            .container {
+                .relax-section {
+                    max-width: 460px;
+                }
+            }
+        }
+        
         .land {
             .title-servicing {
-                 bottom: -190px;   
+                bottom: -120px;
+            }
+
+            .bg-right-section {
+                bottom: 140px;
+            }
+    
+            .bg-left-section {
+                img {
+                    bottom: 100px;
+                }
+            }
+            
+        }
+
+        .land3 {
+            .road2 {
+                top: -280px;
             }
         }
     }
 
+    
+    // CONTACT
+    .contact-page {
+        .hero-image {
+            
+            .container {
+
+                .telephone-both {
+                    bottom: 0px;
+                    left: 5%;
+                }
+            }
+        }
+
+        .contact-land {
+ 
+            .contact-kid {
+                width: 130px;
+                bottom: -80px;
+            }
+        }
+    }
+}
+
+@media (min-width: 1100px) and (max-width: 1200px) {
+    .land2 {
+        padding-top: 180px;
+    }
 }
 
 @media (max-width: 1100px) {
     .home {
-        .hero-building {
-            .container {
-
-                .forKids-pin {
-                    bottom: 38%;
-                }
-
-                .downloads-buttons {
-                    .button-social {
-                        .social-text {
-                            p {
-                                font-size: 14px;
-                             }
-                        }
-                    }
-                }
-            }
-        }
 
         .land {
+
             .title-servicing {
-                bottom: -160px;
-                h2 {
-                    &::after {
-                        bottom: -26px;
-                        width: 550px;
-                        height: 210px;
-                    }
-                }
+                bottom: -90px;
             }
 
             .concert-pin {
-                left: 28%;
+                top: -18%;
+                left: 42%;
             }
 
             .party-pin {
-                top: 29%;
-                left: 9.5%;
+                left: 16%;
+                top: 4%;
             }
         }
 
-        .land3 {
-            padding-bottom: 40px;
-        }
 
         .land4 {
             padding-top: 0px;
@@ -2024,6 +2004,21 @@
             
         }
     }
+
+    // ABOUT PAGE
+
+    .about {
+        .profile-section {
+            .container {
+                .column-30 {
+                    h3 {
+                        font-size: 3.25rem; // 52px
+                    }
+                }
+            }
+        }
+    }
+
 
     // OUR SERVICE PAGE
 
@@ -2097,123 +2092,8 @@
             .container {
 
                 .forKids-pin {
-                    bottom: 40%;
+                    bottom: 42%;
                 }
-
-                .downloads-buttons {
-                    .button-social {
-                        .social-text {
-                            p {
-                                display: none;
-                             }
-                        }
-                    }
-                }
-            }
-        }
-
-        .land {
-            .road {
-                top: -240px;
-
-                &::after {
-                    bottom: 13%;
-                    width: 160px;
-                    height: 160px;
-                }
-            }
-
-            .sports-pin {
-                top: -54%;
-            }
-
-            .concert-pin {
-                top: 20%;
-            }
-
-            .bg-left-section {
-                img {
-                    top: 200px;
-                }
-            }
-        }
-
-        .land2 {
-            .column-33 {
-
-                h3 {
-                    font-size: 18px;
-                }
-
-                &:nth-child(1) {
-                    .mobile-column {
-                        .mobile-image {
-                            max-width: 180px;
-                        }
-                    }
-                }
-
-                &:nth-child(2) {
-
-                    .mobile-title {
-
-                        top: -30px;
-
-                        .background-title {
-                            top: 50px;
-                            max-width: 280px;
-                        }
-                    }
-
-                    .mobile-column {
-                        .mobile-image {
-                            max-width: 270px;
-                        }
-                    }
-                }
-
-                &:nth-child(3) {
-
-                    .mobile-title {
-                        top: -40px;
-                    }
-
-                    .background-title {
-
-                        position: relative;
-                        top: 10px;
-
-                        img {
-                            max-width: 180px;
-                        }
-                    }
-
-                    .mobile-column {
-                        .mobile-image {
-                            max-width: 200px;
-                        }
-                    }
-                }
-            }
-        }
-
-        .land3 {
-            .column-33 {
-
-                &:nth-child(1),
-                &:nth-child(2),
-                &:nth-child(3) {
-                    .mobile-column {
-                        .mobile-image {
-                            max-width: 190px;
-                        }
-                    }
-                }
-            }
-
-            .mountain {
-                max-width: 600px;
-                bottom: 30px;
             }
         }
 
@@ -2223,46 +2103,67 @@
     }
 }
 
-@media (max-width: 1000px) {
+@media (min-width: 1000px) and (max-width: 1300px) {
+    // HOME APGE 
+    .home {
+        .land3 {
+            margin-top: 100px;
+        }
+    }
+}
+
+@media (min-width: 1000px) and (max-width: 1200px) {
+    
+    // HOMEPAGE
+    
     .home {
         .land {
-            .title-servicing {
-                bottom: -130px;
-                left: 130px;
+            .road {
+                top: -310px;
             }
-        
+
+            .bg-right-section {
+                bottom: 150px;
+            } 
         }
+    }
+}
 
-        .land2 {
+@media (min-width: 1000px) and (max-width: 1100px) {
+    
+    // HOMEPAGE
 
-            .column-33 {
-                
-                &:nth-child(1) {
-                    top: -190px;
+    .home {
+        .land3 {
+            .road2 {
+                top: -220px;
+            }
+        }
+    }
+}
 
-                    &::after {
-                        height: 270px;
+@media (max-width: 1000px) {
+    .home {
+
+        .hero-building {
+            .container {
+                .column-50 {
+                    &:first-child {
+                        padding-right: 10px;
                     }
                 }
-
-                &:nth-child(2) {
-                    top: -220px;
-                }
-
-                &:nth-child(3) {
-                    top: -220px;
-                }
-                
-                
             }
         }
+        
+        .land {
+            .title-servicing {
+                bottom: -40px;
+            }
+        }
+
+      
     
         .land3 {
-            top: -120px;
-
-            .road2 {
-                top: -180px;
-            }
 
             .mountain {
                 max-width: 530px;
@@ -2274,12 +2175,6 @@
                 }
             }
             
-            .column-33 {
-
-                &:nth-child(1) {
-                    top: 0px;
-                }
-            }
         }
 
         .land4 {
@@ -2305,30 +2200,17 @@
 
 @media (max-width: 950px) {
     .home {
+
         .hero-building {
             .container {
-                .column-50 {
-                    &:first-child {
-                        padding-right: 10px;
-                    }
+                .forKids-pin {
+                   bottom: 46%;
+                   left: 49.8%; 
                 }
             }
         }
 
         .land {
-            padding-top: 60px;
-
-            .road {
-                top: -200px;
-            }
-
-            .bg-left-section {
-                top: -80px;
-
-                img {
-                    top: 210px;
-                }
-            }
 
             .bg-right-section {
                 .billboard {
@@ -2336,16 +2218,6 @@
                         display: none;
                     }
                 }
-            }
-
-            .concert-pin {
-                top: 24%;
-                left: 27%;
-            }
-
-            .party-pin {
-                top: 34%;
-                left: 8%
             }
         }
     }
@@ -2355,7 +2227,132 @@
 
 
 
+@media (min-width: 900px) and (max-width: 1300px) {
+    
+
+    // HOMEPAGE 
+
+    .home {
+        .land {
+            margin-top: 250px;
+        }
+    }
+}
+
+
+
+@media (min-width: 900px) and (max-width: 1200px) {
+
+    // CONTACT PAGE
+
+    .contact-page {
+       .contact-land {
+
+           padding-top: 120px;
+
+           .billboard {
+               top: -90px;
+           }
+       }
+   }
+}
+
+@media (min-width: 900px) and (max-width: 1100px) {
+
+    // HOMEPAGE
+
+    .home {
+        
+        .hero-building {
+            padding-bottom: 60px;
+        }
+
+        .hero-building {
+            .container {
+                .relax-section {
+                    top: 60px;
+                }
+            }
+        }
+
+        .land {
+            padding-top: 60px;
+
+            .bg-right-section {
+
+                .billboard {
+                    top: -30px;
+                }
+            }
+        }
+    }
+
+    // CONTACT PAGE
+
+    .contact-page {
+
+        .contact-land {
+    
+            .contact-kid {
+                width: 100px;
+                bottom: -110px;
+            }
+        }
+
+        .hero-image {
+
+            background-size: 80%;
+            background-position-x: 150%;
+
+            &::after {
+                position: absolute;
+                content: "";
+
+            }
+            
+            .container {
+
+                .telephone-both {
+                    bottom: -10px;
+                    left: 5%;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 900px) and (max-width: 1000px) {
+    // HOMEPAGE
+
+    .home {
+        .land {
+            .road {
+                top: -320px;
+            }
+
+            .bg-right-section {
+                bottom: 170px;
+            }
+        }
+    }
+}
+
+@media (min-width: 900px) {
+    
+    #app {
+    #nav {
+        .mobile-section-navigation {
+            display: none;
+        }
+    }
+}
+}
+
 @media (max-width: 900px) {
+
+    .section-navigation {
+        display: none;
+    }
 
 
     .home {
@@ -2441,86 +2438,28 @@
                     }
                 }
 
-
-                .relax-section {
-                    max-width: 360px;
-                    top: 50%;
-                    left: -60px;
-
-                    &:after {
-                        width: 400px;
-                        height: 90px;
-                    }
-
-                    .relax-pin {
-                        left: 30%;
-                        max-width: 70px;
-                    }
-                }
-
                 .downloads-buttons {
                     justify-content: center;
                     z-index: 6;
                     margin-top: 60px;
-
-                    .button-social  {
-                        button {
-                            width: 240px;
-                        }
-
-                        .social-text {
-                            p {
-                                display: block;
-                            }
-                        }
-                    }
                 }
             }
         }
 
         .land {
-            padding-top: 150px;
-
-            &::before {
-                top: 120px;
-            }
-
-            .road {
-                top: -130px;
-
-                &::after {
-                    width: 120px;
-                    height: 120px;
-                }
-            }
-
-            .sports-pin {
-                top: -27%;
-            }
-
-            .concert-pin {
-                top: 32%;
-                left: 26%;
-            }
-
-            .party-pin {
-                top: 41%;
-            }
 
             .bg-left-section {
-                top: -100px;
-                height: 380px;
-
-                img {
-                    top: 200px;
+                .concert-pin {
+                    top: -25%;
+                    left: 40%;
+                }
+    
+                .party-pin {
+                    left: 15%;
                 }
             }
 
             .bg-right-section {
-
-
-                top: 20px;
-                
 
                 .billboard {
                     width: 270px;
@@ -2554,50 +2493,90 @@
                     }
                 }
             }
-
-            .title-servicing {
-                bottom: -120px;
-                left: 100px;
-
-                h2 {
-                    font-size: 72px;
-
-                    &::after {
-                        bottom: -1px;
-                        width: 450px;
-                        height: 160px;
-                    }
-                }
-            }
             
         }
 
-        .land2 {
-            padding-top: 200px;
-        }
-
         .land3 {
-            padding-bottom: 0px;
-
 
             &::before {
                 width: 100px;
                 height: 100px;
                 top: 0px;
             }
+        }
+    }
 
-            .mountain {
-                bottom: -10px;
+    // ABOUT PAGE 
+
+    .about {
+        .container {
+
+            .content-section {
+                flex-direction: column-reverse;
+
+                .hero-title {
+                    z-index: 6;
+                    margin-top: -90px;
+                    padding-left: 80px;
+                    padding-right: 80px;
+                }
+
+                .column-30 {
+                    width: 100%;
+                }
+
+                .column-70 {
+                    width: 100%;
+
+                    &::before {
+                        position: absolute;
+                        content: "";
+                        background: linear-gradient(0deg, white 0%, rgba(255, 255, 255, 0.821149) 48%, rgba(255, 255, 255, 0) 100%);
+                        width: 100%;
+                        height: 270px;
+                        top: 42%;
+                        left: 0px;
+                        z-index: 5;
+                    }
+
+                    .hero-section {
+                        
+                        padding-bottom: 0px;
+                        
+                        .hero-image {
+                            max-width: 100%;
+                        }
+                    }
+                }
             }
+        }
 
-            .road2 {
-                top: -130px;
-            }
+        .profile-section {
 
-            .column-33 {
-                &:nth-child(2) {
-                    &::after {
-                        display: none;
+            background-size: 120%;
+            background-position-x: -10px;
+            padding-top:  60px;
+
+            .container {
+                .column-30 {
+                    .profile-image {
+                        width: 130px;
+                    }
+                    
+                    &:nth-child(1) {
+                        top: 0px;
+                    }
+                    
+                    &:nth-child(2) {
+                        top: 0px;
+
+                        .profile-image {
+                            width: 220px;
+                        }
+                    } 
+
+                    &:nth-child(3) {
+                        top: -10px;
                     }
                 }
             }
@@ -2839,6 +2818,51 @@
         }
     }
 
+    
+    // CONTACT PAGE
+    
+    .contact-page {
+
+        .hero-image {
+            background-size: 90%;
+            &::after {
+                position: absolute;
+                content: "";
+                background: linear-gradient(0deg, 
+                            rgba(255,255,255,1) 0%, 
+                            rgba(255,255,255,0.8211485277704832) 48%, 
+                            rgba(255,255,255,0) 100%);
+                width: 100%;
+                height: 270px;
+                top: 30%;
+                left: 0px;
+                z-index: 2;
+            }
+        }
+
+        .container {
+            .column-50 {
+                width: 100%;
+            
+                .hero-text {
+                    text-align: center;
+                    padding-right: 0px;
+                    padding-top: 180px;
+                    z-index: 4;
+                    position: relative;
+                    padding-left: 80px;
+                    padding-right: 80px;
+                }
+            }
+
+            .downloads-buttons {
+                justify-content: center;
+                z-index: 4;
+                position: relative;
+            }
+        }
+    }
+
 }
 
 
@@ -2857,56 +2881,17 @@
         }
 
         .land {
-           .road {
-               width: 105%;
-           }
-
            .sports-pin {
                top: -29%;
                right: 6%;
            }
 
-           .party-pin {
-               top: 39%;
-               left: 5%;
-           }
 
            .bg-left-section {
                background-size: 100%;
            }
-
-           .bg-right-section {
-               top: 10px;
-           }
-
-           .title-servicing {
-               bottom: -100px;
-           }
         }
 
-        .land2 {
-            background-position-y: -40px;
-        }
-
-        .land3 {
-
-            background-position-y: 60px;
-            
-            .column-33 {
-                 &:nth-child(1) {
-                     top: -30px;
-                 }
-
-
-                 &:nth-child(2) {
-                     top: -80px;
-                 }
-
-                 &:nth-child(3) {
-                     top: -100px;
-                 }
-            }
-        }
 
         .land4 {
             margin-top: -30px;
@@ -2914,6 +2899,251 @@
     }
 }
 
+@media (min-width: 800px) and (max-width: 1300px) {
+    
+    // HOMEPAGE
+    
+    .home {
+        .hero-building {
+
+            .container {
+                .relax-section {
+                    left: -60px;
+
+                    &:after {
+                        width: 400px;
+                        height: 90px;
+                    }
+
+
+                    .relax-pin {
+                        left: 22%;
+                        max-width: 70px;
+                    }
+                }
+            }
+        }
+
+        .land {
+            background-position: center;
+            background-size: 101%;
+
+
+            .title-servicing {
+                left: 100px;
+
+                h2 {
+                    font-size: 4.5rem; // 72px;
+
+                    &::after {
+                        bottom: -1px;
+                        width: 450px;
+                        height: 160px;
+                    }
+                }
+            }
+
+            .concert-pin,
+            .party-pin {
+                img {
+                    max-width: 70px;
+                }
+            }
+
+
+            .bg-right-section {
+                top: unset;
+            }
+
+            .bg-left-section {
+                height: unset;
+                right: 10px;
+                top: -80px;
+
+                img {
+                    width: 70%;
+
+                }
+            }
+
+            .road {
+                width: 105%;
+
+                &::after {
+                    bottom: 13%;
+                    width: 160px;
+                    height: 160px;
+                }
+            }
+        }
+        
+        .land2 {
+            background-position: center;
+            background-size: 103%;
+            top: 20px;
+
+            .column-33 {
+
+                &:nth-child(1) {
+
+                    &::after {
+
+                        z-index: 12;
+                    }
+                }
+            }
+        }
+
+        .land3 {
+            top: unset;
+            margin-bottom: 100px;
+            padding-top: 0px;
+            
+        }
+    }
+}
+
+@media (min-width: 800px) and (max-width: 1200px) {
+    
+    // HOMEPAGE 
+
+    .home {
+        .land2 {
+
+            padding-bottom: 100px;
+
+            .column-33 {
+
+                h3 {
+                    font-size: 1rem;
+                }
+
+                .mobile-column {
+                    .mobile-image {
+                        max-width: 180px;
+                    }
+                }
+
+                &:nth-child(1) {
+                    top: 20px;
+
+                    &::after {
+                        width: 130px;
+                        height: 226px;
+                        left: -20px;
+                        bottom: 0px;
+                        z-index: 12;
+                    }
+                }
+
+                &:nth-child(2) {
+                    top: 0px;
+
+                    .mobile-column {
+                        .mobile-image {
+                            max-width: 250px;
+                        }
+                    }
+                }
+
+                &:nth-child(3) {
+                    top: -20px;
+                }
+            }
+        }
+
+        .land3 {
+            .column-33 {
+                .mobile-column {
+                    .mobile-image {
+                        max-width: 180px;
+                    }
+                }
+
+                h3 {
+                    font-size: 1rem;
+                }
+
+                &:nth-child(1) {
+                    top: 90px;
+                }
+
+                &:nth-child(2) {
+                    top: 10px;
+                }
+
+                &:nth-child(3) {
+                    top: -40px;
+                }
+            }
+
+            .mountain {
+                max-width: 540px;
+                bottom: 10px;
+            }
+        }
+    }
+}
+
+@media (min-width: 800px) and (max-width: 1100px) {
+    .home {
+        .hero-building {
+            .relax-section {
+                max-width: 360px;
+            }
+        }
+
+        .land {
+            .bg-left-section {
+
+                img {
+                    width: 70%;
+                    bottom: 70px;
+                }
+            }
+        }
+
+        .land2 {
+            padding-top: 100px;
+        }
+    }
+}
+
+@media (min-width: 800px) and (max-width: 900px) {
+
+    // HOMEPAGE
+
+    .home {
+        .hero-building {
+            .container {
+                .relax-section {
+                    top: 250px;
+                }
+            }
+        }
+
+        .land {
+            margin-top: 90px;
+
+            .hero-building {
+                padding-bottom: 0px;
+            }
+
+
+            .road {
+                top: -260px;
+            }
+
+            .title-servicing {
+                bottom: -40px;
+            }
+
+            .bg-right-section {
+                bottom: 190px;
+            }
+        }
+    }
+}
 
 @media (max-width: 800px) {
 
@@ -2922,51 +3152,77 @@
     .home {
 
         .hero-building {
+
+            padding-bottom: 150px;
+
             .container {
+
                 .forKids-pin {
                     bottom: 30%;
                 }
 
-                .relax-section {
-                    top: 45%;
+                .relax-pin {
+                    max-width: 60px;
                 }
+
+             
+                .relax-section {
+                    max-width: 300px;
+                    left: -10px;
+                    top: 160px;
+    
+                    &::after {
+                        width: 400px;
+                        bottom: -20px;
+                        left: -20px;
+                    }
+                }
+                    
+                
             }
         }
 
         .land {
-            padding-top: 60px;
+
 
             .road {
                 top: -120px;
             }
 
-            .sports-pin {
-                top: -33%;
-            }
-
-
-            .concert-pin {
-                top: 30%;
-                left: 25%;
-            }
-
-            .party-pin {
-                top: 36%;
-                left: 4%;
-            }
 
             .bg-left-section {
-                top: -70px;
+                top: 30px;
 
-                img {
-                    top: 220px;
+                .concert-pin {
+                    top: -23%;
+                    left: 44%;
+                    width: 110px;
+                }
+    
+                .party-pin {
+                    left: 21%;
+                    top: -10%;
+                    width: 110px;
+                }
+            }
+
+            .bg-right-section {
+                position: absolute;
+                background-image: unset;
+                top: 40px;
+                right: -50px;
+
+                .billboard {
+                    left: 60%;
                 }
             }
 
             .title-servicing {
-                bottom: -130px;
+                bottom: -250px;
+                h2 {
+                    font-size: 3.25rem;
+                }
             }
-
         }
 
         .land2 {
@@ -3161,6 +3417,32 @@
         }
     }
 
+    // ABOUT PAGE 
+
+    .about {
+        .profile-section {
+            padding-top: 30px;
+            padding-bottom: 80px;
+            .container {
+                .colunm-30 {
+                    width: 100%;
+                    top: -40px;
+                }
+                
+            }
+        }
+
+        .container {
+            .content-section {
+                .column-70 {
+                    &::before {
+                        top: 40%;
+                    }
+                }
+            }
+        }
+    }
+
 
     // OUR SERVICE PAGE 
 
@@ -3296,52 +3578,6 @@
                     bottom: 34%;
                     left: 17.3%;
                 }
-
-                .relax-section {
-                    top: 40%;
-                }
-            }
-        }
-
-        .land {
-
-            padding-top: 30px;
-
-            .title-servicing {
-                bottom: -140px;
-                left: 50px;
-            }
-
-            .road {
-                top: -120px;
-            }
-
-            .concert-pin {
-                top: 27%;
-                left: 24.5%;
-            }
-
-            .party-pin {
-                top: 32%;
-                left: 3%;
-            }
-
-            .sports-pin {
-                top: -38%;
-            }
-
-            .bg-right-section {
-                top: 40px;
-
-                .billboard  {
-                    right: 60px;
-                }
-            }
-
-            .bg-left-section {
-                img {
-                    top: 230px;
-                }
             }
         }
     }
@@ -3351,58 +3587,47 @@
     .home {
         .hero-building {
 
+            padding-bottom: 100px;
+
             .container {
-
-
                 .forKids-pin {
                     bottom: 39%;
                 }
 
                 .relax-section {
-                    top: 32%;
+                    top: 90px;
                 }
             }
         }
 
         .land {
-            padding-top: 0px;
-
-            .road {
-                top: -120px;
-            }
-
-            .concert-pin {
-                top: 14%;
-                left: 24%;
-            }
-
-            .party-pin {
-                 top: 26%;
-                 left: 2%;
-            }
 
             .title-servicing {
-                bottom: -140px;
+                bottom: -200px;
             }
-        
-            .bg-left-section {
-                top: -80px;
-    
-                img {
-                    width: 60%;
-                    top: 210px;
-                }
+            
+            .billboard {
+                left: 55%;
+            }
+            
+            .bg-right-section {
+                top: 20px;
+                
             }
 
             .bg-left-section {
-                .billboard {
-                    right: 80px;
+                .party-pin {
+                    left: 20%;
+                    top: -15%;
+                }
+    
+                .concert-pin  {
+                    left: 42%;
                 }
             }
         }
 
         .land2 {
-            background-size: 120%;
 
             .container {
                 .column-33 {
@@ -3410,6 +3635,49 @@
                         &::after {
                             bottom: 20px;
                         }
+                    }
+                }
+            }
+        }
+    }
+
+    // ABOUT PAGE
+
+    .about {
+        .profile-section {
+            padding-top: 0px;
+            
+            .container {
+                .column-30 {
+                    h3 {
+                        font-size:2.25rem;
+                        top: -20px;
+                    }
+                    .profile-image {
+                        width: 120px;
+                    }
+
+                    &:nth-child(1) {
+                        top: -20px;
+                    }
+
+                    &:nth-child(3) {
+                        top: -20px;
+                    }
+
+                }
+            }
+        }
+
+        .container {
+            .content-section {
+                .hero-title {
+                    padding-left: 30px;
+                    padding-right: 30px;
+                }
+                .column-70 {
+                    &::before {
+                        top:38%;
                     }
                 }
             }
@@ -3494,74 +3762,13 @@
 
         .land {
 
-            .road {
-                width: 125%;
-                top: -110px;
-                left: -140px;
-
-                &::after {
-                    left: 19%;
-                }
-            }
-
-            .concert-pin {
-                top: 5%;
-                left: 26%;
-            }
-
-            .party-pin {
-                display: none;
-            }
-
-            .sports-pin {
-                top: -36%;
-                right: 8%;
-            }
-
-            .container {
-                .column-70 {
-                    width: 100%;
-                }
-            }
-
             .bg-left-section {
-                left: unset;
-                top: -60px;
-                z-index: 10;
-
-                img {
-                    top: 160px;
-                    left: unset;
-                    right: 20%;
-                }
-            }
-            
-            .bg-right-section {
-                position: absolute;
-                background-image: unset;
-
-                .billboard {
-                    left: 54%;
-                }
+                top: 20px;
             }
 
-            .title-servicing {
-                bottom: -190px;
-                left: -10px;
-
-                h2 {
-                    font-size: 62px;
-
-                    &::after {
-                        bottom: -13px;
-                        width: 390px;
-                    }
-                }
-            }
         }
 
         .land2 {
-            margin-top: 150px;
 
             .container {
 
@@ -3647,78 +3854,39 @@
     }
 }
 
+
 @media (max-width: 600px) {
 
     // HOMEPAGE
 
     .home {
-
-        .hero-building {
-            .container { 
-                .relax-section {
-                    max-width: 300px;
-                    left: -10px;
-                }
-            }
-        }
         
         .land {
-            margin-top: -70px;
 
-            .road {
-                top: -80px;
-                width: 135%;
-                left: -180px;
-
-                &::after {
-                    left: 30%;
-                    bottom: 17%
-                }
-            }
-
-            .concert-pin {
-                top: 20%;
-                left: 25.3%;
-            }
-
-            .sports-pin {
-                top: -28%;
-            }
-
-            .bg-left-section {
-                top: -50px;
-
-                img {
-                    top: 210px;
-                    width: 50%;
-                }
-            }
-
-            .title-servicing {
-                bottom: -180px;
-                
-                h2 {
-                    &::after {
-                        bottom: -22px;
-                    }
-                }
+            .title-servicing  {
+                bottom: -140px;
             }
 
             .bg-right-section {
+                top: -10px;
 
                 .billboard {
-                    width: 230px;
-                    height: 250px;
-                    top: 70px;
-
-                    .billboard-content {
-                        width: 206px;
-                        height: 89px;
-                        top: 10px;
-                        left: 11px;
-                    }
+                    left: 45%;
                 }
             }
+
+            .bg-left-section {
+                .party-pin {
+                    left: 19%;
+                    top: -17%;
+                }
+    
+                .concert-pin  {
+                    top: -28%;
+                    left: 42%;
+                }
+            }
+
         }
 
         .land2 {
@@ -3737,6 +3905,7 @@
             }
         }
     }
+    
 
     // OUR SERVICE PAGE 
 
@@ -3784,6 +3953,10 @@
                 .forkids-zoo-tag {
                     right: -60px;
                 }
+
+                .tresure-image {
+                    right: 4%;
+                }
             }
 
             .right-section {
@@ -3797,6 +3970,45 @@
             }
         }
     }
+
+    // ABOUT PAGE
+
+    .about {
+        .profile-section {
+            .container {
+                .column-30 {
+                    .profile-image {
+                        width: 100px;
+                    }
+
+                    &:nth-child(1){
+                        left: -10px;
+                    }
+                    &:nth-child(3) {
+                        right: -30px;
+                    }
+                }
+            }
+        }
+
+        .container {
+            .content-section {
+
+                .hero-title {
+                    margin-top: -70px;
+                    font-size: 42px;
+                }
+
+                .column-70 {
+                    &::before {
+                        top: 28%;
+                    }
+                }
+            }
+        }
+    }
+
+    
 }
 
 
@@ -3822,16 +4034,6 @@
                     }
                 }
 
-                .downloads-buttons {
-
-                    .button-social {
-
-                        button {
-                            width: max-content;
-                        }
-                    }
-                }
-
                 .hero-content {
 
                     top: 90px;
@@ -3846,56 +4048,9 @@
                 }
             }
         }
-        
-        .land {
 
-            .road {
-                width: 150%;
-                left: -230px;
-
-                &::after {
-                    left: 35%;
-                }
-            }
-
-            .sports-pin {
-                right: 11%;
-                top: -28%;
-
-                img {
-                    width: 60px;
-                }
-            }
-
-            .concert-pin {
-                top: 26%;
-                left: 24%;
-            }
-
-            .title-servicing {
-                bottom: -180px;
-                left: 0px;
-
-                h2 {
-                    font-size: 52px;
-
-                    &::after {
-                        display: none;
-                    }
-                }
-            }
-
-            .bg-left-section {
-
-                img {
-                    top: 230px;
-                }
-
-            }
-        }
 
         .land2 {
-            background-position-y: 100px;
 
             .container {
 
@@ -3959,6 +4114,94 @@
 }
 
 
+@media (min-width: 500px) and (max-width: 800px) {
+    .home {
+
+        .hero-building {
+
+            .container {
+                padding-bottom: 50px;
+
+                .relax-pin {
+                    left: 20%;
+                }
+            }
+        }
+        .land {
+
+            padding-top: 20px;
+            margin-top: 60px;
+
+            .container {
+                .column-70 {
+                    width: 100%;
+                }
+            }
+
+            &::before {
+                top: -20px;
+            }
+
+            .bg-left-section {
+
+                img {
+                    top: -20px;
+                    width: 55%;
+                    left: -40px;
+                }
+            }
+
+            .bg-right-section {
+                position: absolute;
+                background-image: unset;
+
+                .billboard {
+                    width: 230px;
+                    height: 250px;
+
+                    .billboard-content {
+                        width: 206px;
+                        height: 89px;
+                        top: 10px;
+                        left: 11px;
+                    }
+                }
+            }
+
+            .road {
+                top: -80px;
+                width: 107%;
+
+                &::after {
+                    left: 15%;
+                    width: 110px;
+                    height: 110px;
+                }
+            }
+
+            .title-servicing {
+                left: 10px;
+
+                h2 {
+                    
+                    &::after {
+                        width: 310px;
+                        height: 100px;
+                        bottom: 10px;
+                    }
+                }
+            }
+        }
+
+        .land2 {
+            background-position-y: 20px;
+            margin-top: 150px;
+            background-size: 170%;;
+        }
+    }
+}
+
+
 @media (max-width: 500px) {
 
     .home {
@@ -3974,8 +4217,8 @@
                 }
 
                 .relax-section {
-                    left: -50px;
-                    top: 23%;
+                    left: -80px;
+                    top: 100px;
                 }
 
                 .hero-content {
@@ -3992,33 +4235,10 @@
         }
 
         .land {
-            background-size: 120%;
-
-            .road {
-                top: -50px;
-                left: -210px;
-            }
-
             .bg-right-section {
-
                 .billboard {
-                    left: 49%;
-                }
-            }
-
-            .bg-left-section {
-                background-size: 120%;
-
-                img {
-                    top: 240px;
-                }
-            }
-
-            .title-servicing {
-                bottom: -110px;
-
-                h2 {
-                    font-size: 42px;
+                    left: 44%;
+                    top: 30px;
                 }
             }
         }
@@ -4088,6 +4308,104 @@
         }
     }
 
+    // OUR SERVICE PAGE
+
+    .our-service {
+        .container {
+            .hero-section {
+                .hero-text {
+                    h2 {
+                        font-size: 32px;
+                    }
+                }
+            }
+
+            .left-section {
+                .concert-pop-tag {
+                    left: -70px;
+                    width: 210px;
+                    &::before {
+                        top: 60px;
+                        left: 70px;
+                    }
+                }
+
+                .culture-cinema-tag {
+                    bottom: 35%;
+                    right: 45%;
+                    width: 140px;
+                    &::before {
+                        width: 80px;
+                        height: 80px;
+                        top: 20px;
+                        left: 30px;
+                    }
+                }
+
+                .tresure-image {
+                    right: -1%;
+                    top: 45%;
+                }
+
+                .service-title {
+                    h2 {
+                        &:nth-child(3) {
+                            &::before {
+                                left: 25%;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .right-section {
+                .like-image {
+                    left: 0%;
+                    top: -30px;
+                    width: 50px;
+                }
+
+                .service-title {
+                    h2 {
+                        &::before {
+                            left: 1%;
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+
+    // ABOUT PAGE
+
+    .about {
+        .profile-section {
+            .container {
+                .column-30 {
+                    .profile-image {
+                        width: 86px;
+                    }
+
+                    h3 {
+                        font-size: 1.75rem; // 28px;
+                        top: -15px;
+                    }
+                }
+            }
+        }
+
+        .container {
+            .content-section {
+                .column-70 {
+                    &::before {
+                        top: 22%;
+                    }
+                }
+            }
+        }
+    }
+
 }
 
 
@@ -4126,76 +4444,7 @@
                              }
                         }
                     }
-
-                    .downloads-buttons {
-
-                        .button-social {
-
-                            button {
-                                padding: 10px 15px 10px 15px;
-                            }
-
-                            .social-image {
-                                padding-right: 10px;
-                            }
-
-                            .social-text {
-                                h4 {
-                                    font-size: 18px;
-                                }
-                            }
-                        }
-                    }
-
-                    .relax-section {
-                        left: -100px;
-                    }
                 }
-            }
-
-            .land {
-                margin-top: 0px;
-
-                .concert-pin {
-                    top: 32%;
-                }
-
-
-                .sports-pin {
-                    right: 7%;
-                    top: -11%;
-                }
-
-                .road {
-                    top: -20px;
-                    left: -190px;
-
-                    &::after {
-                        width: 90px;
-                        height: 90px;
-                    }
-                }
-
-                .title-servicing {
-                    bottom: -130px;
-                }
-                
-                .bg-left-section {
-                    
-                    top: -30px;
-
-                    img {
-                        top: 250px;
-                    }
-                }
-
-                .bg-right-section {
-                    .billboard {
-                        left: 45%;
-                        top: 80px;
-                    }
-                }
-                
             }
 
             .land3 {
@@ -4227,12 +4476,22 @@
     .home {
 
         .hero-building {
-            padding-bottom: 0px;
 
             .container {
+                &::before {
+                    top: 4%;
+                    filter: none;
+                    -webkit-filter: none;
+}
 
                 .hero-content {
                     top: 40px;
+
+                    .hero-text {
+                        h1 {
+                            font-size: 36px;
+                        }
+                    }
                 }
 
                 .downloads-buttons {
@@ -4240,76 +4499,27 @@
                     align-items: center;
 
                     .button-social {
-
-                        button {
-                            width: 220px;
-                        }
-
                         &:nth-child(2) {
                             margin-left: 0px;
                             margin-top: 20px;
                         }
                     }
                 }
-
-
-                .relax-section {
-                    top: 5%;
-                }
             }
         }
 
         .land {
-            margin-top: -90px;
-
-            .sports-pin {
-                top: 2%;
-                right: 11%;
-            }
-
-            .concert-pin {
-                top: 34%;
-                left: 22%;
-                z-index: 15;            
-            }
-
-            .road {
-                top: 30px;
-                left: -210px;
-                width: 160%;
-            }
 
             .title-servicing {
-                bottom: -140px;
-
-                h2 {
-                    font-size: 36px;
-                }
+                bottom: -110px;
             }
 
             .bg-right-section {
-
                 .billboard {
-                    top: 120px;
-                    width: 200px;
-                    height: 220px;
-
-                    .billboard-content {
-                        width: 180px;
-                        height: 78px;
-                        top: 8px;
-                        left: 9px;
-                    }
+                    left: 32%;
                 }
             }
 
-            .bg-left-section {
-                
-                img {
-                    width: 60%;
-                    top: 240px;
-                }
-            }
         }
 
         .land2 {
@@ -4369,12 +4579,355 @@
 
     // OUR SERVICE PAGE
 
-    .hero-section {
-        .right-hero-section {
-            width: 130% !important;
-            left: -50px;
+  .our-service {
+      .container {
+          .hero-section {
+            &::before {
+                position: absolute;
+                content: "";
+                background: linear-gradient(0deg, white 0%, rgba(255, 255, 255, 0.821149) 48%, rgba(255, 255, 255, 0) 100%);
+                width: 100%;
+                height: 130px;
+                top: 40%;
+                left: 0px;
+                z-index: 10;
+              }
+              .column-70 {
+                  
+                  .right-hero-section {
+                      height: 300px;
+
+                      img {
+                         width: 440px;
+                       right: -25px;
+                          position: absolute;
+                      }
+                  }
+              }
+
+              .column-30 {
+                  margin-top: -50px;
+              }
+          }
+
+          .left-section {
+              
+              .culture-cinema-tag {
+                bottom: 45%;
+                right: -20%;
+              }
+
+              .forkids-zoo-tag {
+                  top: -80px;
+              }
+
+              .funcoins-image {
+                top: 45%;
+                right: 42%;
+            }
+
+            .concert-pop-tag {
+                left: -70px;
+                width: 180px;
+
+                &::before {
+                    top: 60px;
+                    left: 70px;
+                    height: 60px;
+                    width: 60px;
+                }
+            }
+
+            .funcoins-image {
+                top: 39%;
+                right: 46%;
+            }
+
+            .tresure-image {
+                top: 38%;
+            }
+
+              .service-title {
+                  h2 {
+
+                    font-size: 38px;
+
+                      &::before {
+                          left: 0%;
+                      }
+                  }
+              }
+              
+              .service-image {
+
+                margin-bottom: 20px;
+
+                &::before {
+                    right: -131px;
+                }
+
+                  .after-image {
+                      left: -30px;
+                      transform: none;
+                      -webkit-transform: none;
+                      -moz-transform: none;
+                      -ms-transform: none;
+                      -o-transform: none;
+                    }
+
+                    .before-image {
+                        left: 90px;
+                    }
+              }
+
+              .column-50 {
+                  &:nth-child(1) {
+                      .service-image {
+                          img {
+                              width: 160px;
+                          }
+                      }
+                  }
+              }
+          }
+
+          .right-section {
+
+            &:last-child {
+                .service-image {
+
+                    margin-bottom: 20px;
+
+                    &::before {
+                        left: -110px;
+                    }
+                }
+            }
+
+            .service-image {
+
+                margin-bottom: 20px;
+
+                &::before {
+                    left: -120px;
+                }
+
+                .after-image {
+                    transform: none;
+                    -webkit-transform: none;
+                    -moz-transform: none;
+                    -ms-transform: none;
+                    -o-transform: none;
+                    left: 40px;
+
+                    img {
+                        width: 180px;
+                    }
+                }
+
+                .before-image {
+                    left: -110px;
+                    img {
+                        width: 240px;
+                    }
+                }
+
+                .after-image-two img,
+                .before-image-two img {
+                        width: 200px;
+                }
+
+                .after-image-two {
+                    transform: none;
+                    -webkit-transform: none;
+                    -moz-transform: none;
+                    -ms-transform: none;
+                    -o-transform: none;
+}
+
+
+            }
+
+            .service-title {
+                h2 {
+                    font-size: 36px;
+
+                    &::before {
+                        left: -7%;
+                        top: -60px;
+                    }
+                }
+            }
+          }
+      }
+  }
+
+  // ABOUT PAGE 
+
+  .about {
+      .profile-section {
+          background-size: 130%;
+          background-position-x: -30px;
+
+          .container {
+              .column-30 {
+                  &:nth-child(1) {
+                      top: -40px;
+                  }
+
+                  &:nth-child(3) {
+                    top: -50px;
+                  }
+              }
+          }
+      }
+
+      .container {
+        .content-section {
+            .hero-title {
+                font-size: 32px;
+                margin-top: -54px;
+            }
         }
     }
+  }
+
+}
 
 
+
+@media (min-width: 320px) and (max-width: 500px) {
+    .home {
+        .land {
+
+            .road{
+                top: 10px;
+                width: 114%;
+
+                &::after {
+                    width: 80px;
+                    height: 80px;
+                    bottom: 10%;
+                    left: 10%;
+                }
+            }
+
+            .container {
+                .column-70 {
+                    width: 100%;
+                }
+            }
+
+            .title-servicing {
+                left: -10px;
+
+                h2 {
+                    font-size: 2.625rem; // 42px;
+
+                    &::after {
+                        width: 250px;
+                        height: 102px;
+                    }
+                }
+            }
+
+            .bg-right-section {
+
+                .billboard {
+                    top: 20px;
+                    width: 200px;
+                    height: 220px;
+
+                    .billboard-content {
+                        width: 180px;
+                        height: 78px;
+                        top: 8px;
+                        left: 9px;
+                    }
+                }
+            }
+
+            .bg-left-section {
+                z-index: 10;
+                background-size: 110%;
+                left: 0px;
+
+                img {
+                    bottom: 10px;
+                    left: -60px;
+                }
+
+                .concert-pin {
+                    top: -27%;
+                    left: 42%;
+                    z-index: 15;
+                    width: 80px;
+                }
+    
+                .party-pin {
+                    left: 26%;
+                    top: -31%;
+                    width: 80px;
+                }
+            }
+            
+        }
+
+        .land2 {
+            padding-bottom: 0px;
+
+            .container {
+                .column-33 {
+                    .mobile-column {
+                        .mobile-image {
+                            max-width: 160px;
+                        }
+                    }
+
+                    h3 {
+                        font-size: 1.125rem;
+                    }
+                }
+            }
+        }
+
+        .land3 {
+            .container {
+                .column-33 {
+                    .mobile-column {
+                        .mobile-image {
+                            max-width: 160px;
+                        }
+                    }
+
+                    h3 {
+                        font-size: 1.125rem;
+                    }
+
+                    &:nth-child(1) {
+                        .mobile-title {
+                            top: -15px;
+                        }
+                    }
+                }
+            }
+
+            .road2 {
+                display: none;
+            }
+        }
+    }
+}
+
+@media (min-width: 300px) and (max-width: 900px) {
+    
+    // CONTACT PAGE
+    
+    .contact-page {
+        .container {
+            .column-50 {
+                width: 100%;
+            }
+        }
+    }
 }

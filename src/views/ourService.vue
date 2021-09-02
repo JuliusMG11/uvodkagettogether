@@ -35,21 +35,15 @@
 
         <div class="column-50">
           <div class="concert-pop-tag">
-            <img
-              src="@/assets/svg/our-service/tags/concert-popmusic.svg"
-              alt=""
-            />
+            <p>Pop Music</p>
           </div>
 
           <div class="culture-cinema-tag">
-            <img
-              src="@/assets/svg/our-service/tags/culture-cinema.svg"
-              alt=""
-            />
+           <p>Cinema</p>
           </div>
 
           <div class="service-title">
-            <h2>Registration</h2>
+            <h3>Registration</h3>
           </div>
 
           <div class="sevice-text">
@@ -61,7 +55,7 @@
           </div>
 
           <div class="forkids-zoo-tag">
-            <img src="@/assets/svg/our-service/tags/forkids-zoo.svg" alt="" />
+           <p>Zoo</p>
           </div>
         </div>
       </div>
@@ -77,10 +71,10 @@
           </div>
 
           <div class="service-title">
-            <h2>
-              Favorite location<br />
+            <h3>
+              Favorite location
               and events
-            </h2>
+            </h3>
           </div>
 
           <div class="sevice-text">
@@ -130,7 +124,7 @@
                   <img src="@/assets/svg/our-service/funcoins.svg" alt="">
               </div>
 
-            <h2>Game</h2>
+            <h3>Game</h3>
           </div>
 
           <div class="sevice-text">
@@ -151,7 +145,7 @@
       <div class="right-section">
         <div class="column-50">
           <div class="service-title-calendar">
-            <h2>Calendar</h2>
+            <h3>Calendar</h3>
           </div>
 
           <div class="sevice-text">
@@ -209,15 +203,9 @@ export default {
   padding-bottom: 60px;
 
   .hero-text {
-    text-align: left;
-
-    h2 {
-      color: #121212;
-      font-weight: 800;
-      font-size: 62px;
+    h2 {     
       margin-top: 0px;
       margin-bottom: 10px;
-      font-weight: 1000;
     }
 
     p {
@@ -231,6 +219,7 @@ export default {
     max-width: 100%;
     right: -30px;
     position: relative;
+    height: auto;
   }
 }
 
@@ -246,7 +235,8 @@ export default {
       position:absolute;
       top: -20px;
       max-width: 30%;
-      transform: rotate(-20deg);
+       transform: rotate(-20deg);
+      max-width: 100%;
     }
   
 
@@ -277,6 +267,10 @@ export default {
         left: 120px;
         top: 20px;
         transform: rotateY(-18deg) rotateZ(3deg);
+        -webkit-transform: rotateY(-18deg) rotateZ(3deg);
+        -moz-transform: rotateY(-18deg) rotateZ(3deg);
+        -ms-transform: rotateY(-18deg) rotateZ(3deg);
+        -o-transform: rotateY(-18deg) rotateZ(3deg);
       }
 
       .before-image {
@@ -335,11 +329,8 @@ export default {
   }
 
   .service-title {
-    font-size: 52px;
-    color: #121212;
 
-    h2 {
-      font-weight: 1000;
+    h3 {
       margin-bottom: 20px;
       margin-top: 10px;
       z-index: 6;
@@ -351,10 +342,10 @@ export default {
           background-image: url('~@/assets/svg/our-service/funny-things.svg');
           background-repeat: no-repeat;
           background-size: 100%;
-          width: 110px;
+          width: 90px;
           height: 180px;
-          top: -20px;
-          left: 30px;
+          top: -50px;
+          left: -20px;
           z-index: 5;
           transform: rotate(50deg);
         }
@@ -363,15 +354,9 @@ export default {
   }
 
   .service-title-calendar {
-    font-size: 52px;
     color: #121212;
 
-    h2 {
-      font-weight: 1000;
-      margin-bottom: 20px;
-      margin-top: 10px;
-      z-index: 6;
-      position: relative;
+    h3 {
 
        &::before {
           position: absolute;
@@ -463,6 +448,18 @@ export default {
   .forkids-zoo-tag {
     position: absolute;
     z-index: 4;
+    background-size: 100%;
+    background-repeat: no-repeat; 
+    width: 140px;
+    height: 122px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+    p {
+      color: white;
+    }
   }
 
   .culture-cinema-tag::before,
@@ -477,42 +474,43 @@ export default {
 
   .concert-pop-tag {
     top: -20px;
-    width: 300px;
+    background-image: url('~@/assets/svg/our-service/tags/concert-popmusic-new.svg');
+  
 
     &::before {
       background: #0ec8ff;
       width: 130px;
       height: 130px;
-      top: 80px;
-      left: 90px;
+      top: 0px;
+      left: 10px;
     }
   }
 
   .culture-cinema-tag {
-    bottom: -20px;
-    width: 220px;
-    transform: translateX(-90px);
+    bottom: 20px;
+    transform: translateY(-20px);
+    background-image: url('~@/assets/svg/our-service/tags/culture-cinema.svg'); 
 
     &::before {
       background: #196dfc;
       width: 150px;
       height: 150px;
-      top: 30px;
-      left: 40px;
+      top: -10px;
+      left: 0px;
     }
   }
 
   .forkids-zoo-tag {
-    width: 320px;
+    background-image: url('~@/assets/svg/our-service/tags/forkids-zoo.svg');
     top: 50px;
-    right: -80px;
+    right: -20px;
 
     &::before {
       background: #feb426;
       width: 150px;
       height: 150px;
-      top: 70px;
-      left: 86px;
+      top: -10px;
+      left: 0px;
     }
   }
 
@@ -563,9 +561,7 @@ export default {
       }
     }
 
-    h2 {
-      font-weight: 1000;
-      margin-bottom: 20px;
+    h3 {
       margin-top: 0px;
       z-index: 6;
       position: relative;

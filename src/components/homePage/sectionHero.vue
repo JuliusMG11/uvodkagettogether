@@ -1,48 +1,45 @@
 <template>
-  <div class="hero-building">
-    <div class="container">
-      <section class="column-50">
+  <div>
+      <article class="column-50">
         <div class="hero-content">
-          <div class="hero-text">
+          <section class="hero-text">
             <h1>Objavujte zabavu <br />spolu s nami</h1>
             <p>
               We bring you a new app that you can’t miss any entertainment with. 
               Join the new world and let’s have a fun with Gettogether!
             </p>
-          </div>
+          </section>
 
-          <div class="downloads-buttons">
+          <section class="downloads-buttons">
             <div class="button-social">
               <downloads-button 
-                title="My journey with Vue" 
+                title="Google play"
+                text="Download on the" 
+                buttonLogo="google-play.svg"
               />
             </div>
 
             <div class="button-social">
-              <button class="btn-hover color-1" href="#">
-                <div class="social-image">
-                  <img src="@/assets/svg/app-store.svg" alt="" />
-                </div>
+              <downloads-button 
+                title="App store"
+                text="Download on the" 
+                buttonLogo="app-store.svg"
+              />
 
-                <div class="social-text">
-                  <p>Download on the</p>
-                  <h4>App Store</h4>
-                </div>
-              </button>
             </div>
-          </div>
+          </section>
         </div>
 
-        <div class="relax-section">
-          <div class="relax-pin">
+        <section class="relax-section">
+          <figure class="relax-pin">
             <img src="@/assets/svg/category-pins/relax-pin.svg" alt="" />
-          </div>
+          </figure>
 
           <img src="@/assets/svg/relax-section.svg" alt="" />
-        </div>
-      </section>
+        </section>
+      </article>
 
-      <section class="column-50">
+      <article class="column-50">
         <div class="presentation-pin">
           <img src="@/assets/svg/category-pins/presentation-pin.svg" alt="" />
         </div>
@@ -65,9 +62,8 @@
                     <div class="hero-people">
                         <img src="@/assets/svg/hero-people.svg" >
                     </div> -->
-      </section>
+      </article>
     </div>
-  </div>
 </template>
 
 <script>
@@ -81,113 +77,38 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.hero-building {
-  background: url('~@/assets/svg/first-part-building-test.svg');
-  background-size: 60%;
-  background-repeat: no-repeat;
-  background-position: right;
-  background-position-y: 30px;
-  width: 100%;
-  height: 100%;
-  z-index: 10;
-  position: relative;
 
+@import url('../../scss/_animation.scss');
+@import url('../../scss/_variables.scss');
   
 
   .presentation-pin,
   .science-pin,
   .culture-pin {
     position: absolute;
-
+    width: 70px;
     img {
-      max-width: 70px;
+      max-width: 100%;
+    
     }
   }
 
   .presentation-pin {
     top: 20px;
+    left: 50%;
     animation: 2s ease-in-out infinite presentation-animation;
-
-    @keyframes presentation-animation {
-      from {
-        transform: translateY(-40px) translateX(-40px) rotate(-20deg);
-      }
-
-      70% {
-        transform: translateY(-45px) translateX(-45px) rotate(-20deg);
-      }
-
-      to {
-        transform: translateY(-40px) translateX(-40px) rotate(-20deg);
-      }
-    }
   }
 
   .science-pin {
     top: -5px;
     animation: 2s ease-in-out infinite science-animation;
     right: 27.8%;
-
-    @keyframes science-animation {
-      from {
-        transform: translateX(30px) translateY(0px) rotate(-20deg);
-      }
-
-      70% {
-        transform: translateX(33px) translateY(10px) rotate(-20deg);
-      }
-
-      to {
-        transform: translateX(30px) translateY(0px) rotate(-20deg);
-      }
-    }
   }
 
   .culture-pin {
     top: 30px;
     right: 13%;
     animation: 2s ease-in-out infinite culture-animation;
-
-    &::before {
-      content: '';
-      background-image: url('');
-      background-size: 100%;
-      background-repeat: no-repeat;
-    }
-
-    @keyframes culture-animation {
-      from {
-        transform: translateX(0px) translateY(-10px);
-      }
-
-      70% {
-        transform: translateX(0px) translateY(-5px);
-      }
-
-      to {
-        transform: translateX(0px) translateY(-10px);
-      }
-    }
-  }
-
-  .forKids-pin {
-    bottom: 20%;
-    position: absolute;
-    animation: 2s ease-in-out infinite forKids-animation;
-
-    @keyframes forKids-animation {
-      from {
-        transform: translateY(-5px) translateX(-18px);
-      }
-
-      70% {
-        transform: translateY(0px) translateX(-18px);
-      }
-
-      to {
-        transform: translateY(-5px) translateX(-18px);
-      }
-    }
   }
 
   .container {
@@ -198,6 +119,13 @@ export default {
           padding-right: 50px;
         }
     }
+
+    .forKids-pin {
+    bottom: 34%;
+    left: 50%;
+    position: absolute;
+    animation: 2s ease-in-out infinite forKids-animation;
+  }
 
     .first-building {
       position: absolute;
@@ -234,7 +162,6 @@ export default {
         }
 
         h1 {
-          font-size: 52px;
           margin-bottom: 10px;
           margin-top: 0px;
           font-weight: 1000;
@@ -256,75 +183,6 @@ export default {
 
         &:nth-child(2) {
           margin-left: 20px;
-        }
-
-        button {
-          text-decoration: none;
-          display: flex;
-          background-color: black;
-          border-radius: 20px;
-          justify-content: center;
-          align-items: center;
-          padding: 10px 30px 10px 30px;
-        }
-
-        .btn-hover {
-          background-size: 300% 100%;
-          cursor: pointer;
-          moz-transition: all 0.4s ease-in-out;
-          -o-transition: all 0.4s ease-in-out;
-          -webkit-transition: all 0.4s ease-in-out;
-          transition: all 0.4s ease-in-out;
-          border: none;
-        }
-
-        .btn-hover:hover {
-          background-position: 100% 0;
-          moz-transition: all 0.4s ease-in-out;
-          -o-transition: all 0.4s ease-in-out;
-          -webkit-transition: all 0.4s ease-in-out;
-          transition: all 0.4s ease-in-out;
-        }
-
-        .btn-hover:focus {
-          outline: none;
-        }
-
-        .btn-hover.color-1 {
-          background-image: linear-gradient(
-            to right,
-            #25aae1,
-            #40e495,
-            #30dd8a,
-            #2bb673
-          );
-          box-shadow: 0 4px 15px 0 rgba(49, 196, 190, 0.75);
-        }
-
-        .social-text {
-          text-align: left;
-
-          h4 {
-            text-decoration: none;
-            margin-top: 0px;
-            margin-bottom: 0px;
-            color: white;
-            font-size: 24px;
-            font-weight: 500;
-          }
-
-          p {
-            margin-top: 0px;
-            margin-bottom: 0px;
-            color: white;
-          }
-        }
-
-        .social-image {
-          padding-right: 20px;
-          img {
-            max-width: 50px;
-          }
         }
       }
     }
@@ -372,22 +230,7 @@ export default {
         top: 10px;
         z-index: -1;
         animation: 2s ease-in-out infinite relax-animation;
-
-        @keyframes relax-animation {
-          from {
-            transform: translateY(-5px) translateX(-5px) rotate(-30deg);
-          }
-
-          70% {
-            transform: translateY(0px) translateX(0px) rotate(-30deg);
-          }
-
-          to {
-            transform: translateY(-5px) translateX(-5px) rotate(-30deg);
-          }
-        }
       }
     }
   }
-}
 </style>
