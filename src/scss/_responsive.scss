@@ -104,6 +104,14 @@
 
     @media (min-width: 2400px) {
         .home {
+
+            .hero-building {
+                .forKids-pin  {
+                    bottom: 6%;
+                    left: 50.5%;     
+                }
+            }
+
             .land2 {
                 margin-top: 150px;
                 top: 180px;
@@ -155,6 +163,20 @@
     }
 }
 
+
+@media (min-width: 2200px) and (max-width: 2400px) {
+    // HOMEPAGE
+    
+    .home {
+        .hero-building {
+            .forKids-pin  {
+                bottom: 6%;
+                left: 50.5%;
+            }
+        }
+    }
+}
+
 @media (min-width: 2150px) and (max-width: 2400px) {
     .home {
         .land2 {
@@ -181,6 +203,7 @@
     .home {
         .hero-building {
             padding-bottom: 300px;
+            
         }
 
         .bg-left-section {
@@ -251,9 +274,26 @@
                 }
         }
     }
+
+    @media (min-width: 2000px) and (max-width: 2200px) {
+        
+        // HOMEPAGE
+        
+        .home {
+            .hero-building {
+                .forKids-pin  {
+                    bottom: 12%;
+                    left: 50.5%;
+                }
+            }
+        }
+    }
     
 
     @media (min-width: 2000px) and (max-width: 2150px) {
+        
+        // HOMEPAGE
+        
         .home {
             .title-servicing {
                 left: 210px;
@@ -264,6 +304,8 @@
 
 @media (min-width: 2000px) {
 
+    // HOMEPAGE
+   
     .home {
         .land {
             .road {
@@ -294,6 +336,9 @@
 
 
 @media (min-width: 1850px) and (max-width: 2150px) {
+   
+    // HOMEPAGE
+   
     .home {
         .land2 {
             padding-bottom: 100px;
@@ -305,6 +350,9 @@
 }
 
 @media (min-width: 1850px) and (max-width: 2000px) {
+    
+    // HOMEPAGE
+ 
     .home {
         .hero-building {
                 padding-bottom: 240px;
@@ -533,6 +581,14 @@ s
 
 @media (min-width: 1700px) and (max-width: 2000px) {
     .home {
+
+        .hero-building {
+            .forKids-pin  {
+                bottom: 20%;
+                left: 50.2%;
+            }
+        }
+
         .land {
             .road {
                 width: 107%;
@@ -557,12 +613,6 @@ s
     .home {
         .hero-building {
             padding-bottom: 150px;
-                .container {
-                    .forKids-pin  {
-                        bottom: 11%;
-                        left: 50.2%;
-                    }
-            }
         }
 
         .land {
@@ -648,19 +698,7 @@ s
 
 @media (max-width: 1700px) {
 
-    // HOMEPAGE
-
-    .home {
-        .hero-building {
-                .container {
-                    .forKids-pin  {
-                        bottom: 14%;
-                        left: 50.2%;
-                    }
-            }
-        }
-
-    }
+   
 
 }
 
@@ -838,17 +876,8 @@ s
     // HOMEPAGE
 
     .home { 
-        .hero-building { 
-            .container { 
-                .forKids-pin  {
-                    bottom: 18%;
-                }
-            }
-        }
 
         .land {
-
-
             .road {
                 &::after {
                     bottom: 11%;
@@ -892,14 +921,6 @@ s
     // HOMEPAGE
 
     .home {
-    
-        .hero-building { 
-            .container { 
-                .forKids-pin  {
-                    bottom: 21%;
-                }
-            }
-        }
 
         .land {
 
@@ -918,6 +939,15 @@ s
     // HOMEPAGE 
     
     .home {
+
+            .hero-building { 
+                .container { 
+                    .forKids-pin  {
+                        bottom: 30%;
+                    }
+                }
+            }
+
         .land2 {
             padding-bottom: 160px;
             margin-top: 100px;
@@ -937,14 +967,6 @@ s
      // HOMEPAGE
 
    .home {
-        .hero-building { 
-            .container { 
-                .forKids-pin  {
-                    bottom: 12%;
-                    left: 50%;
-                }
-            }
-        }
 
         .land {
 
@@ -1033,8 +1055,6 @@ s
 @media (max-width: 1450px) {
 
     // HOMEPAGE
-    
-    .navigation,
     .container {
         margin-left: 30px;
         margin-right: 30px;
@@ -1226,14 +1246,6 @@ s
     // HOME PAGE
 
     .home { 
-        .hero-building {
-            .container { 
-                .forKids-pin  {
-                    bottom: 24%;
-                    left: 50%;
-                }
-            }
-        }
 
         .land {
 
@@ -1253,15 +1265,17 @@ s
 
 
 @media (max-width: 1400px) {
+    
+    // GLOBAL
+    .container {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    // HOMEPAGE
+    
     .home {
-        
         .hero-building { 
-            
-            .container {
-
-                padding-left: 30px;
-                padding-right: 30px;
-
 
                 .presentation-pin {
                     top: 16px;
@@ -1270,12 +1284,7 @@ s
                 .culture-pin {
                     top: 25px;
                 }
-
-                .forKids-pin {
-                    bottom: 34%;
-                    left: 50%;
-                }
-            }
+            
         }
     }
 
@@ -2340,17 +2349,17 @@ s
 @media (min-width: 900px) {
     
     #app {
-    #nav {
-        .mobile-section-navigation {
-            display: none;
+        #nav {
+            .mobile-section-navigation {
+                display: none;
+            }
         }
     }
-}
 }
 
 @media (max-width: 900px) {
 
-    .section-navigation {
+    .navigation {
         display: none;
     }
 
@@ -2362,8 +2371,6 @@ s
             background-size: 100%;
 
             .container {
-
-                padding-bottom: 200px;
                 margin-top: 40px;
 
                 &::before {
@@ -3147,14 +3154,14 @@ s
 
 @media (max-width: 800px) {
 
+
+
+
     // HOMEPAGE
 
     .home {
 
         .hero-building {
-
-            padding-bottom: 150px;
-
             .container {
 
                 .forKids-pin {
@@ -3177,7 +3184,6 @@ s
                         left: -20px;
                     }
                 }
-                    
                 
             }
         }
@@ -4041,8 +4047,8 @@ s
                     .hero-text {
                         
                         p {
-                            padding-left: 30px;
-                            padding-right: 30px;
+                            padding-left: 10px;
+                            padding-right: 10px;
                         }
                     }
                 }
@@ -4219,17 +4225,6 @@ s
                 .relax-section {
                     left: -80px;
                     top: 100px;
-                }
-
-                .hero-content {
-
-                    .hero-text {
-
-                        p {
-                            padding-left: 10px;
-                            padding-right: 10px;
-                        }
-                    }
                 }
             }
         }
