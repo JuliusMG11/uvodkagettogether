@@ -1,14 +1,16 @@
 <template>
   <div class="home">
-    <div class="hero-building">
+    <div class="hero-building relative z-10">
       <div class="container mx-auto px-4">
         <section-hero />
       </div>
     </div>
 
-    <div class="land relative bg-no-repeat">
-      <section class="road relative ">
-        <img src="@/assets/svg/road-part-1.svg" alt="" />
+    <div class="land relative bg-no-repeat bg-bottom pt-40">
+      <section class="road absolute -top-52 z-10">
+        <figure>
+          <img src="@/assets/svg/road-part-1.svg" alt="" />
+        </figure>
       </section>
       <section-one />
     </div>
@@ -58,10 +60,6 @@ export default {
   background-repeat: no-repeat;
   background-position: right;
   background-position-y: 30px;
-  width: 100%;
-  height: 100%;
-  z-index: 10;
-  position: relative;
   padding-bottom: 150px;
   margin-top: 100px;
 }
@@ -71,9 +69,6 @@ export default {
   background-size: 110%;
   width: 100%;
   height: 100%;
-  background-position: bottom;
-  padding-bottom: 0px;
-  padding-top: 150px;
 
   &::before {
     position: absolute;
@@ -94,12 +89,8 @@ export default {
   }
 
   .road {
-    position: absolute;
     width: 106%;
-    left: 0px;
-    top: -290px;
-    z-index: 9;
-    left: -70px;
+    left: -60px;
 
     &::after {
       content: '';

@@ -15,13 +15,13 @@
         </figure>
       </div>
 
-      <section class="title-servicing absolute z-10 font-bold text-7xl">
-        <h2>Naša služba</h2>
+      <section class="title-servicing absolute z-10 -bottom-52 left-44 font-bold text-7xl">
+        <h2 class="">Naša služba</h2>
       </section>
     </article>
 
     <article>
-      <section class="bg-right-section relative top-40 -right-44 bg-no-repeat ">
+      <section class="bg-right-section relative top-22 bg-no-repeat flex justify-end bg-right">
         <billboard-one-section />
       </section>
     </article>
@@ -83,18 +83,16 @@ export default {
 
 .bg-right-section {
   background-image: url('~@/assets/svg/billboard-bg.svg');
-  background-size: 100%;
-  width: 60%;
+  background-size: 70%;
 }
 
 .title-servicing {
-  left: 210px;
+
   transform: rotate(-18deg);
-  bottom: -120px;
 
   h2 {
     font-size: 6.375rem; // 102px
-    color: white;
+    color: white;  
 
     &::after {
       content: '';

@@ -116,12 +116,5 @@ article {
     }
   }
 
-  &:nth-child(3) {
-    .mobile-title {
-      .background-title {
-        top: 60px;
-      }
-    }
-  }
 }
 </style>
