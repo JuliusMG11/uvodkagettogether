@@ -60,12 +60,12 @@
 </template>
 
 <script>
-import BaseButton from '../components/UI/defaultButton.vue';
+import BaseButton from '../components/UI/defaultButton.vue'
 
 export default {
   components: {
-    BaseButton
-  }
+    BaseButton,
+  },
 }
 </script>
 

@@ -3,11 +3,14 @@ import App from './App.vue'
 import router from './router'
 
 // typical import
-import gsap from "gsap";
+import gsap from 'gsap'
 
 import './scss/_variables.scss'
 import './scss/_responsive.scss'
+import './scss/_animation.scss'
 import './scss/_base.scss'
+
+
 
 Vue.config.productionTip = false
 

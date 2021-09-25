@@ -1,137 +1,132 @@
 <template>
-    <div class="contact-page">
+  <div class="contact-page">
+    <div class="hero-image">
+      <div class="container">
+        <div class="column-50">
+          <div class="hero-text">
+            <h2>Nevahajte nas kontaktovat</h2>
+            <p>
+              Do you want to join the Dream Team and make a cooperation? Do you
+              have any tips or ideas how to improve our app? Contact us. Every
+              opinion counts and we will be happy for any feedback you can give
+              us. Let’s make the world of entertainment together.
+            </p>
+          </div>
 
-        <div class="hero-image">
-              
-            <div class="container">
-       
-                <div class="column-50">
-                    <div class="hero-text">
-                        <h2>Nevahajte nas kontaktovat</h2>
-                        <p>
-                            Do you want to join the Dream Team and make a cooperation? Do you have 
-                            any tips or ideas how to improve our app? Contact us. Every opinion 
-                            counts and we will be happy for any feedback you 
-                            can give us. Let’s make the world of entertainment together. 
-                        </p>
-                    </div>
-
-                    
           <div class="downloads-buttons">
             <div class="button-social">
-              <downloads-button 
+              <downloads-button
                 title="Google play"
-                text="Download on the" 
+                text="Download on the"
                 buttonLogo="google-play.svg"
               />
             </div>
 
             <div class="button-social">
-              <downloads-button 
+              <downloads-button
                 title="App store"
-                text="Download on the" 
+                text="Download on the"
                 buttonLogo="app-store.svg"
               />
-
             </div>
           </div>
-                    
-                </div>
-                <div class="column-50">
-                  <div class="telephone-both">
-                         <img src="@/assets/svg/contact/telephone-both.svg" alt="">
-                  </div>
-                </div>
-            
-
-            </div>
         </div>
-
-        <div class="contact-land">
-
-            <div class="container">
-                    
-                <div class="column-50">
-
-                </div>
-                <div class="column-50">
-                    <div class="billboard">
-                      <div class="billboard-content">
-                        <video
-                          playsinline
-                          autoplay
-                          muted
-                          loop
-                          poster="polina.jpg"
-                          id="bgvid"
-                        >
-                          <source src="@/assets/festival-video.mp4" type="video/mp4" />
-                        </video>
-                        <div class="container">
-                          <section class="column-100">
-                            <div class="billboard-contact">
-                                
-                                <div class="buttons-group">
-
-                                  <div class="contact-tel">
-                                     <a href="tel:+420200200">+420 300 300</a>
-                                  </div>
-
-                                  <div class="contact-mail">
-                                    <a href="mailto:info@gettogether.cz">info@gettogther.cz</a>
-                                  </div>
-                                  
-                                  
-                                </div>
-                            </div>
-
-                          </section>
-                        </div>
-                      </div>
-
-                      <div class="contact-kid">
-                        <img src="@/assets/svg/contact/contact-kid.svg" alt="">
-                      </div>
-                </div>
-            </div>
-
+        <div class="column-50">
+          <div class="right-image">
+            <img src="@/assets/svg/contact/hero-image-new.svg" alt="" />
+          </div>
         </div>
-        </div>
-
-        <footer-section />
-
+      </div>
     </div>
-    
+
+    <div class="contact-land">
+      <div class="container">
+        <div class="column-50"></div>
+        <div class="column-50">
+          <div class="billboard">
+            <div class="billboard-content">
+              <video
+                playsinline
+                autoplay
+                muted
+                loop
+                poster="polina.jpg"
+                id="bgvid"
+              >
+                <source src="@/assets/festival-video.mp4" type="video/mp4" />
+              </video>
+              <div class="container">
+                <section class="column-100">
+                  <div class="billboard-contact">
+                    <div class="buttons-group">
+                      <div class="contact-tel">
+                        <a href="tel:+420200200">+420 300 300</a>
+                      </div>
+
+                      <div class="contact-mail">
+                        <a href="mailto:info@gettogether.cz"
+                          >info@gettogther.cz</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </section>
+              </div>
+            </div>
+
+            <div class="contact-kid">
+              <img src="@/assets/svg/contact/contact-kid.svg" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer-section />
+  </div>
 </template>
 
 <script>
-import footerSection from '../components/homePage/sectionFooter.vue';
+import footerSection from '../components/homePage/sectionFooter.vue'
 import downloadsButton from '../components/UI/downloadsButton.vue'
 
-    export default {
-         components: {
-            footerSection,
-            downloadsButton
-        },
-    }
+export default {
+  components: {
+    footerSection,
+    downloadsButton,
+  },
+}
 </script>
 
 <style lang="scss" scoped>
-
-
 .hero-image {
-    background-image: url('~@/assets/svg/contact/hero-image-new.svg');
-    background-size: 60%;
-    background-repeat: no-repeat;
-    background-position-x: right;
-    padding-bottom: 150px;
-    padding-top: 150px;
+  padding-bottom: 150px;
+  padding-top: 150px;
 
-    .container {
-        display: flex;
-        align-items: center;
+  .container {
+    display: flex;
+    align-items: center;
 
-        .downloads-buttons {
+    .right-image {
+      position: relative;
+      max-width: 100%;
+      width: 800px;
+      right: -20px;
+
+      &::after {
+        content: '';
+        position: absolute;
+        background-image: url('~@/assets/svg/contact/telephone-both.svg');
+        background-repeat: no-repeat;
+        background-size: 100%;
+        width: 80px;
+        height: 200px;
+        top: 190px;
+        left: 2%;
+      }
+    }
+
+    .downloads-buttons {
       display: flex;
       margin-top: 40px;
 
@@ -143,42 +138,39 @@ import downloadsButton from '../components/UI/downloadsButton.vue'
         }
       }
     }
-        .hero-text {
-          h2 {
-                margin-bottom: 10px;
-            }
-        }
-
-        .telephone-both {
-          position: relative;
-          width: 70px;
-          height: 0px;
-          bottom: -60px;
-        }
+    .hero-text {
+      h2 {
+        margin-bottom: 10px;
+      }
     }
-}
 
-
-
-.contact-land {
-    position: relative;
-    background-image: url('~@/assets/svg/contact/contact-land.svg');
-    background-size: 100%;
-    background-repeat: no-repeat;
-    height: 100%;
-    left: -8px;
-    padding-top: 180px;
-    margin-bottom: 80px;
-    background-position: bottom;
-    
-
-    .contact-kid {
+    .telephone-both {
       position: relative;
-      width: 160px;
+      width: 70px;
+      height: 0px;
       bottom: -60px;
     }
+  }
+}
 
-    .billboard {
+.contact-land {
+  position: relative;
+  background-image: url('~@/assets/svg/contact/contact-land.svg');
+  background-size: 103%;
+  background-repeat: no-repeat;
+  height: 100%;
+  left: -1px;
+  padding-top: 180px;
+  margin-bottom: 80px;
+  background-position: bottom;
+
+  .contact-kid {
+    position: relative;
+    width: 160px;
+    bottom: -60px;
+  }
+
+  .billboard {
     background: url('~@/assets/svg/contact/contact-billboard.svg');
     background-size: 100%;
     background-repeat: no-repeat;
@@ -204,8 +196,13 @@ import downloadsButton from '../components/UI/downloadsButton.vue'
       padding-top: 10px;
       overflow: hidden;
 
+      .container {
+        padding-left: 10px;
+        padding-right: 10px;
+      }
+
       &::before {
-        content: "";
+        content: '';
         position: absolute;
         background-image: url('~@/assets/svg/contact/contact-logo.svg');
         background-repeat: no-repeat;
@@ -215,7 +212,7 @@ import downloadsButton from '../components/UI/downloadsButton.vue'
         height: 200px;
         width: 150px;
         z-index: 10;
-        opacity: .9;
+        opacity: 0.9;
         animation: 2s ease-in-out infinite zoom-logo;
 
         @keyframes zoom-logo {
@@ -228,7 +225,6 @@ import downloadsButton from '../components/UI/downloadsButton.vue'
         }
       }
 
-
       h2 {
         margin-top: 0px;
         margin-bottom: 10px;
@@ -236,28 +232,26 @@ import downloadsButton from '../components/UI/downloadsButton.vue'
         color: white;
       }
 
-
       .billboard-contact {
-          font-size: 32px;
-          z-index: 10;
-          position: relative;
-          display: flex;
-          text-align: left;
-          flex-direction: column;
-          margin-top: 40px;
+        font-size: 32px;
+        z-index: 10;
+        position: relative;
+        display: flex;
+        text-align: left;
+        flex-direction: column;
+        margin-top: 40px;
 
+        .buttons {
+          margin-top: 10px;
+        }
 
-          .buttons {
-            margin-top: 10px
-          }
-
-          a {
-            color: white;
-            padding-top: 10px;
-            font-weight: 900;
-            text-decoration: none;
-          }
-          
+        a {
+          color: white;
+          padding-top: 10px;
+          font-weight: 900;
+          text-decoration: none;
+          font-size: 2rem; // 32px
+        }
       }
 
       video {
@@ -307,9 +301,5 @@ import downloadsButton from '../components/UI/downloadsButton.vue'
       }
     }
   }
-
 }
-
-    
-
 </style>

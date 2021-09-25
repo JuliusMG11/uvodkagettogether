@@ -1,72 +1,75 @@
 <template>
-  <div id="nav">
-    <div class="navigation">
-      <div class="container">
-        <div class="column-30">
+  <div id="nav" class="flex justify-center">
+    <div class="navigation container mx-auto px-4 fixed z-20 bg-white">
+        <div class="grid grid-cols-3 gap-4">
+          
           <div class="section-logo">
             <img src="@/assets/svg/logo.svg" />
           </div>
-        </div>
-        <div class="column-70">
-          <div class="section-navigation">
+
+          <div class="section-navigation col-span-2">
             <router-link to="/">Úvod</router-link>
             <router-link to="/our-service">Naša služby</router-link>
             <router-link to="/about">O nás</router-link>
             <router-link to="/contact">Kontakt</router-link>
           </div>
+
+          <div class="open-button" @click="openMenu()">
+            <img src="@/assets/svg/navigation/menu.svg" alt="" />
+          </div>
+          
         </div>
       </div>
-    </div>
+   
 
     <div class="mobile-section-navigation" :class="{ active: isActive }">
-
-      <div class="exit-button">
-        <link-exit-icon 
-          @click="exitMenu()"
-        />
+      <div class="close-button" @click="closeMenu()">
+        <img src="@/assets/svg/navigation/back.svg" alt="" />
       </div>
 
       <div class="navigation-content">
-          <router-link to="/">Úvod</router-link>
-          <router-link to="/our-service">Naša služby</router-link>
-          <router-link to="/about">O nás</router-link>
-          <router-link to="/contact">Kontakt</router-link>
+        <router-link to="/">Úvod</router-link>
+        <router-link to="/our-service">Naša služby</router-link>
+        <router-link to="/about">O nás</router-link>
+        <router-link to="/contact">Kontakt</router-link>
       </div>
     </div>
-
   </div>
 </template>
 
 <script>
-import linkExitIcon from '../UI/linkExitIcon.vue';
-
 export default {
-  
   data() {
     return {
-       isActive: true
+      isActive: false,
     }
   },
 
-  components: {
-
-    linkExitIcon
-
-  },
+  components: {},
   methods: {
-    exitMenu() {
+    openMenu() {
+      this.isActive = true
+      // this.isActive = !this.isActive;
+      console.log('debil')
+    },
 
-
-      this.isActive = !this.isActive;
-      
-      console.log('debil');
-    }
-  }
+    closeMenu() {
+      this.isActive = false
+    },
+  },
 }
 </script>
 
 <style lang="scss" scoped>
 #nav {
+  .open-button {
+    position: relative;
+    max-width: 30px;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
 
   a {
     font-weight: bold;
@@ -79,18 +82,15 @@ export default {
     }
 
     &.router-link-exact-active {
-      color: #0CBFAC;
+      color: #0cbfac;
     }
   }
 
   .navigation {
-      position: fixed;
-      width: 100%;
-      z-index: 20;
-      background: rgba(255, 255, 255, 0.932);
-      padding-top: 10px;
-      padding-bottom: 10px;
-      border-radius: 0px 0px 20px 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 0px 0px 20px 20px;
+
 
     a {
       font-size: 20px;
@@ -101,7 +101,7 @@ export default {
       justify-content: end;
       align-items: center;
       height: 100%;
-    
+
       &::after {
         content: '';
         position: absolute;
@@ -116,7 +116,6 @@ export default {
     }
 
     .section-logo {
-
       display: flex;
       justify-content: start;
       align-items: center;
@@ -128,7 +127,6 @@ export default {
   }
 
   .mobile-section-navigation {
-
     display: flex;
     position: fixed;
     align-items: center;
@@ -139,26 +137,26 @@ export default {
     background: #121212c5;
     width: 100%;
     height: 100%;
+    display: none;
     z-index: 20;
 
-    .exit-button {
+    .close-button {
       position: absolute;
-      top: 40px;
-      right: 40px;
+      max-width: 30px;
+      top: 14px;
+      right: 30px;
 
-      svg {
-        width: 60px;
-        height: 60px;
+      &:hover {
+        cursor: pointer;
       }
-
     }
 
     .navigation-content {
       display: flex;
-        justify-content: center;
+      justify-content: center;
       align-items: center;
       flex-direction: column;
-      
+
       a {
         margin-right: 0px;
         font-size: 52px;
@@ -172,12 +170,8 @@ export default {
     }
   }
 
-  .isActive {
-    display: none;
-  }
-
-  .nonactve {
-    display: none;
+  .active {
+    display: flex;
   }
 }
 </style>

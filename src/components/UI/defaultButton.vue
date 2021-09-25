@@ -1,18 +1,16 @@
 <template>
   <button class="btn-hover color-1" href="#">
-
     <div class="social-text">
       <h4>{{ title }}</h4>
-      <a :href="`mailto:${mailLink}`" >{{mailLink}}</a>
-      <a :href="`tel:${phoneLink}`" >{{phoneLink}}</a>
+      <a :href="`mailto:${mailLink}`">{{ mailLink }}</a>
+      <a :href="`tel:${phoneLink}`">{{ phoneLink }}</a>
     </div>
   </button>
 </template>
 
 <script>
 export default {
-  props: ['title', 'mailLink', 'phoneLink']
-
+  props: ['title', 'mailLink', 'phoneLink'],
 }
 </script>
 

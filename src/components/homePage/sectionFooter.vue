@@ -45,7 +45,7 @@
         <div class="footer">
           <article class="footer-content">
             <h2>S nami už nič nezmeškáte!</h2>
-          <!--  <p>
+            <!--  <p>
               You can support us so we can develop other interesting functions 
               <br>for you, which you will be able to use just 
               with “one click” and make planning easier for you.
@@ -53,7 +53,8 @@
           </article>
 
           <div class="buttons-group">
-            <default-button title="Contact" class="first-button"> </default-button>
+            <default-button title="Contact" class="first-button">
+            </default-button>
           </div>
         </div>
       </div>
@@ -62,14 +63,13 @@
 </template>
 
 <script>
-import defaultButton from '../UI/defaultButton.vue';
+import defaultButton from '../UI/defaultButton.vue'
 
 export default {
   name: 'FooterSection',
   components: {
-    defaultButton
-  }
-
+    defaultButton,
+  },
 }
 </script>
 

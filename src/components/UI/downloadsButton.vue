@@ -1,12 +1,12 @@
 <template>
-  <button class="btn-hover color-1" href="#">
+  <button class="btn-hover color-1 flex no-underline rounded-2xl justify-center items-center" href="#">
     <div class="social-image">
       <img :src="require(`../../assets/svg/${buttonLogo}`)" alt="" />
     </div>
 
-    <div class="social-text">
-      <p>{{ text }}</p>
-      <h4>{{ title }}</h4>
+    <div class="social-text text-left">
+      <p class="mt-0 mb-0 ">{{ text }}</p>
+      <h4 class="mt-0 mb-0 font-bold">{{ title }}</h4>
     </div>
   </button>
 </template>
@@ -14,18 +14,11 @@
 <script>
 export default {
   props: ['title', 'text', 'buttonLogo'],
-
 }
 </script>
 
 <style lang="scss" scoped>
 button {
-  text-decoration: none;
-  display: flex;
-  background-color: black;
-  border-radius: 20px;
-  justify-content: center;
-  align-items: center;
   padding: 10px 30px 10px 30px;
 }
 
@@ -63,21 +56,13 @@ button {
 }
 
 .social-text {
-  text-align: left;
 
-  h4 {
-    text-decoration: none;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    color: white;
-    font-size: 24px;
-    font-weight: 500;
-  }
-
+ h4 {
+   color: white
+ }
 
   p {
-    margin-top: 0px;
-    margin-bottom: 0px;
+
     color: white;
   }
 }
@@ -89,50 +74,41 @@ button {
   }
 }
 
-
-
 // RESPONSIVE
 
 @media (max-width: 1450px) {
+  .social-image {
+    img {
+      width: 30px;
+    }
+  }
 
-   .social-image {                        
-          img {
-            width: 30px;
-        }  
+  .social-text {
+    p {
+      font-size: 18px;
     }
 
-
-     .social-text {
-      
-      p {
-        font-size: 18px;
-      }
-
-      h4 {
-        font-size: 22px;
-      }
+    h4 {
+      font-size: 22px;
     }
+  }
 }
 
 @media (max-width: 1400px) {
-  
   .social-text {
     p {
       font-size: 16px;
-    } 
+    }
   }
 }
 
 @media (max-width: 1200px) {
-  
   button {
     padding: 10px 20px 10px 20px;
   }
 }
 
-
 @media (max-width: 1100px) {
-  
   .social-text {
     p {
       font-size: 14px;
@@ -140,9 +116,7 @@ button {
   }
 }
 
-
 @media (max-width: 1050px) {
-  
   .social-text {
     p {
       display: none;
@@ -151,49 +125,42 @@ button {
 }
 
 @media (max-width: 900px) {
-   
-   button {
-      width: 240px;
-    }
+  button {
+    width: 240px;
+  }
 
-    .social-text {
-       p {
-          display: block;
-      }
+  .social-text {
+    p {
+      display: block;
+    }
   }
 }
 
 @media (max-width: 550px) {
-   button {
-      width: max-content;
+  button {
+    width: max-content;
   }
 }
 
-@media (max-width: 450px) { 
-    button {
-      padding: 10px 15px 10px 15px;
-    }
-
-    .social-image {
-      padding-right: 10px;
-    }
-
-    .social-text {
-      h4 {
-        font-size: 18px;  
-    }
+@media (max-width: 450px) {
+  button {
+    padding: 10px 15px 10px 15px;
   }
 
-}
+  .social-image {
+    padding-right: 10px;
+  }
 
+  .social-text {
+    h4 {
+      font-size: 18px;
+    }
+  }
+}
 
 @media (max-width: 400px) {
-     button {
-        width: 220px;
-      }
+  button {
+    width: 220px;
+  }
 }
-
-
-
-
 </style>

@@ -125,6 +125,15 @@
                 background-position-x: -80px;
             }
         }
+
+        // CONTAGE PAGE
+
+    .contact-page {
+        .contact-land {
+            padding-top: 350px;
+            padding-bottom: 350px;
+        }
+    }
     }
 
 @media (min-width: 2300px) {
@@ -175,6 +184,15 @@
             }
         }
     }
+
+    // CONTAGE PAGE
+
+    .contact-page {
+        .contact-land {
+            padding-top: 300px;
+            padding-bottom: 300px;
+        }
+    }
 }
 
 @media (min-width: 2150px) and (max-width: 2400px) {
@@ -197,7 +215,41 @@
     }
 }
 
+@media (min-width: 2100px) {
+     // CONTACT PAGE
 
+     .contact-page {
+        .contact-land {
+            .billboard {
+                top: 50px;
+                width: 520px;
+                height: 470px;
+
+                .billboard-content {
+                    width: 496px;
+                    height: 214px;
+
+                    &::before {
+                        width: 200px;
+                        opacity: .6;
+                    }
+
+                    .billboard-contact {
+                        margin-top: 40px;
+
+                        .contac-mail {
+                            padding-top: 10px;
+                        }
+    
+                        a {
+                            font-size: 2.625rem; // 42px;
+                        }   
+                    }
+                }
+            }
+        }
+    }
+}
 
 @media (min-width: 2000px) and (max-width: 2500px) {
     .home {
@@ -285,6 +337,15 @@
                     bottom: 12%;
                     left: 50.5%;
                 }
+            }
+        }
+
+        // CONTAGE PAGE
+
+        .contact-page {
+            .contact-land {
+                padding-top: 250px;
+                padding-bottom: 250px;
             }
         }
     }
@@ -443,8 +504,40 @@
 }    
 
 @media (min-width: 1800px) and (max-width: 2300px) {
+
+    // HOMEPAGE
+
     .land2 {
         padding-bottom: 200px;
+    }
+
+    // ABOUT PAGE
+
+    .about {
+        .profile-section {
+            padding-bottom: 150px;
+            margin-bottom: 100px;
+            .column-30 {
+                &:nth-child(1),
+                &:nth-child(3) {
+                    top: 80px
+                }
+
+                &:nth-child(2) {
+                    top:80px
+                }
+            }
+        }
+    }
+
+    // CONTACT PAGE 
+
+    .contact-page {
+        
+        .hero-image{
+            padding-bottom: 100px;
+        }
+    
     }
 }
 
@@ -455,7 +548,6 @@
     .home {
         .land3 {
             padding-top: 300px;
-            margin-bottom: 100px;
             padding-bottom: 150px;
             
             .road2 {
@@ -464,8 +556,59 @@
             }
         }
     }
-    
+
+    // CONTAGE PAGE
+
+    .contact-page {
+        .contact-land {
+            padding-top: 220px;
+            padding-bottom: 220px;
+            margin-bottom: 150px;
+        }
+    }
+}
+
+@media (min-width: 1800px) {
+
+
+    // GLOBAL
+
+    #nav {
+        .navigation {
+            .section-navigation {
+                &::after {
+                    display: none;
+                }
+            }
+        }
+    }
+
+
     // CONTACT PAGE
+
+    .contact-page {
+        .hero-image {
+            .container {
+                .right-image {
+                    max-width: 120%;
+
+                    &::after {
+                        top: 250px;
+                        left: -4%;
+                    }
+                }
+            }
+        }
+
+        .contact-land {
+            margin-bottom: 100px;
+        }
+    }
+}
+
+@media (max-width: 1800px) {
+    
+        // CONTACT PAGE
 
     .contact-page {
 
@@ -478,41 +621,8 @@
             }
         }
     }
+
 }
-
-
-@media (max-width: 1800px) {
-
-
-        // ABOUT PAGE
-
-        .about {
-
-            .profile-section {
-                padding-bottom: 100px;
-
-                .column-30 {
-                    
-                    &:nth-child(1) {
-                        top: 20px
-                    }
-
-                    &:nth-child(2) {
-                        top: 60px
-                    }
-
-                    &:nth-child(3) {
-                        top: -10px
-                    }
-
-                    h3 {
-                        font-size: 82px;
-                    }
-                }
-            }
-
-        }
-    }
 
 
 @media (min-width: 1750px) {
@@ -696,22 +806,7 @@ s
 }
 
 
-@media (max-width: 1700px) {
 
-   
-
-}
-
-@media (min-width: 1650px) and (max-width: 2000px) {
-     // HOME PAGE
-    
-     .home {
-        .bg-right-section {
-            right: -100px;
-        }
-    }
-
-}
 
 @media (min-width: 1650px ) and ( max-width: 2000px) {
 
@@ -722,7 +817,15 @@ s
         .bg-left-section {
             left: -110px;
         }
+
+        .bg-right-section {
+            right: -100px;
+        }
     }
+    
+}
+
+@media (min-width: 1650px ) and ( max-width: 1800px) {
 
     // ABOUT PAGE
 
@@ -731,39 +834,20 @@ s
             padding-bottom: 100px;
 
             .column-30 {
-                &:nth-child(1) {
+                &:nth-child(1),
+                &:nth-child(3) {
                     top: 0px
                 }
 
                 &:nth-child(2) {
                     top: 30px
                 }
-
-                &:nth-child(3) {
-                    top: 0px
-                }
             }
         }
     }
-
 
     // CONTACT PAGE
 
-    .contact-page {
-        .contact-land {
-            padding-top: 150px;
-            padding-bottom: 150px;
-            background-position: unset;
-
-            .billboard {
-                top: -10px;
-            }
-        }
-    }
-    
-}
-
-@media (min-width: 1650px ) and ( max-width: 1800px) {
     .hero-image {
         .container {
             .telephone-both {
@@ -783,8 +867,20 @@ s
 }
 
 
+@media (min-width: 1600px) and (max-width: 2100px) {
+     // CONTACT PAGE
 
-@media (min-width: 1600px) and (max-width: 2000px) {
+     .contact-page {
+        .contact-land {
+            .billboard {
+                top: -10px;
+            }
+        }
+    }
+}
+
+
+@media (min-width: 1600px) and (max-width: 1800px) {
 
     
     // CONTACT PAGE 
@@ -793,7 +889,7 @@ s
         
 
         .contact-land {
-            padding-top: 150px;
+            padding-top: 200px;
             padding-bottom: 150px;
         }
     
@@ -860,6 +956,9 @@ s
 }
 
 @media (min-width: 1600px) {
+
+    // HOMEPAGE
+
     .land3 {
         .column-33 {
             &:nth-child(3) {
@@ -873,6 +972,14 @@ s
 
 @media (max-width: 1600px) {
 
+    // GLOBAL FOOTER
+
+    #app {
+    .land4 {
+        padding-top: 100px;
+    }
+}
+
     // HOMEPAGE
 
     .home { 
@@ -883,6 +990,11 @@ s
                     bottom: 11%;
                 }
             }
+        }
+        
+        .land3 {
+            padding-top: 180px;
+            margin-bottom: 100px;
         }
 
     }
@@ -939,8 +1051,7 @@ s
     // HOMEPAGE 
     
     .home {
-
-            .hero-building { 
+          .hero-building { 
                 .container { 
                     .forKids-pin  {
                         bottom: 30%;
@@ -1002,9 +1113,6 @@ s
             }
         }
 
-        .land3 {
-            padding-top: 180px;
-        }
     }
 }
 
@@ -1035,18 +1143,6 @@ s
             }
         }
     }
-    
-    // ABOUT PAGE
-    .about {
-        
-        .profile-section {
-            padding-top: 70px;
-            padding-bottom: 50px;
-        }
-
-    }
-
-
 }
 
 
@@ -1054,11 +1150,6 @@ s
 
 @media (max-width: 1450px) {
 
-    // HOMEPAGE
-    .container {
-        margin-left: 30px;
-        margin-right: 30px;
-    }
 
     // 
     // HOMEPAGE
@@ -1262,61 +1353,135 @@ s
 }
 
 
+@media (min-width: 1400px) {
 
+    // OUR SERVICE
 
-@media (max-width: 1400px) {
-    
-    // GLOBAL
-    .container {
-        padding-left: 30px;
-        padding-right: 30px;
-    }
+    .our-service {
+        .left-section {
+            padding-top: 120px;
+            padding-bottom: 120px;
 
-    // HOMEPAGE
-    
-    .home {
-        .hero-building { 
+            .service-image {
 
-                .presentation-pin {
-                    top: 16px;
+                &::before {
+                    width: 600px;
+                    right: -170px;
                 }
 
-                .culture-pin {
-                    top: 25px;
+                img {
+                    width: 280px;
                 }
+
+                .after-image {
+                    left: -80px;
+                }
+            }
+
+            .service-title {
+                top: 150px;
             
+                .funcoins-image {
+                    top: 26%;
+                    width: 80px;
+                    right: 25%;
+    
+                    &::after {
+                        width: 110px;
+                        height: 70px;
+                        right: -14px;
+                        bottom: -20px;
+                    }
+                }
+
+                .tresure-image {
+                    max-width: 180px;
+    
+                    &::after {
+                        width: 250px;
+                        height: 80px;
+                    }
+                }
+            }
+
+            .column-50 {
+                &:nth-child(1) {
+                    padding-right: 0px;
+                }
+            }
+
+            .concert-pop-tag {
+                top: 70px;
+            }
+
+            .forkids-zoo-tag {
+                top: 130px;
+            }
+
+            .culture-cinema-tag {
+                bottom: 90px;
+            }
         }
-    }
 
-    // ABOUT PAGE
-    .about {
-        
-        .profile-section {
-            margin-top: 50px;
+        .right-section {
+            padding-top: 120px;
+            padding-bottom: 120px;
 
-            .container {
-                .column-30 {
-                    &:nth-child(1) {
-                        top: -80px;
+            .column-50 {
+
+                &:nth-child(2) {
+                    padding-left: 0px;
+                }
+
+                .service-image {
+
+                    &::before {
+                        width: 600px;
+                        left: -120px;
                     }
-                    
-                    &:nth-child(2) {
-                        top: -40px;
+
+                    img {
+                        width: 300px;
                     }
 
-                    &:nth-child(3) {
-                        top: -110px;
+                    .before-image {
+                        top: -10px;
+                        left: -90px;
+                        img {
+                            width: 390px;
+                        }
+                    }
+
+                    .before-image-two {
+                        top: 0px;
+
+                        img {
+                            width: 300px;
+                        }
+                    }
+
+                    .after-image {
+                        top: 10px;
+
+                    }
+
+                    .after-image-two {
+                        top: 10px;
+
+                        img {
+                           width: 320px;
+                        }
                     }
                 }
             }
         }
-
-        .land4 {
-            padding-top: 0px;
-        }
     }
 
+}
 
+
+@media (max-width: 1400px) {
+    
     // CONTACT PAGE
 
     .contact-page {
@@ -1335,178 +1500,25 @@ s
 
 }
 
-@media (max-width: 1350px) {
-
-    // HOMEPAGE
-
-    .home { 
-
-        .land {
-
-            .sports-pin {
-                top: -46%;
-            }
-        }
-
-        .land4 {
-            padding-top: 100px;
-        }
-    }
-
-    // OUR SERVICE PAGE
+@media (min-width: 1200px) and (max-width: 1380px) {
+    // OUR SERVICE
 
     .our-service {
+        .right-section {
 
-        .container {
-            .left-section {
-
-                p {
-                    font-size: 16px;
-                    padding-right: 50px;
-                
-                }
-
-                .culture-cinema-tag{
-                    bottom: 0px;
-                    width: 180px;
-
-                    &::before {
-                        width: 110px;
-                        height: 110px;
-                    }
-                }
-
-                .concert-pop-tag {
-                    width: 280px;
-                    &::before {
-                        width: 110px;
-                        height: 110px;
-                    }
-                }
-
-                .forkids-zoo-tag {
-                    width: 280px;
-
-                    &::before {
-                        width: 110px;
-                        height: 110px;
-                    }
-                }
-
-                .tresure-image {
-                    max-width: 130px;
-                    right: -3%;
-
-
-                    &::after {
-                        bottom: -9px;
-                        right: -100px;      
-                    }
-                }
-
-                
-
-                .service-image {
-                    img {
-                        width: 220px;
-                    }
-
-                    &::before {
-                        width: 500px;
-                        height: 160px;
-                        bottom: -50px;
-                        right: -170px;
-                    }
-
-                    .after-image {
-                        left: -50px;
-                    }
-
-                    .before-image {
-                        left: 100px;
-                    }
-
-                    .column-50 {
-                        .service-text {
-                            padding-right: 30px;
-                        }
-                    }
-                }
+            .like-image {
+                left: 100px;
             }
 
-            .right-section {
-
-                p {
-                    font-size: 16px;
-                    padding-left: 50px;
-                }
-                
-                .service-image {
-
+            .service-title {
+                h3 {
                     &::before {
-                        width: 500px;
-                        height: 160px;
-                        bottom: -50px;
-                        right: -170px;
-                    }
-
-                    .after-image {
-
-                        left: 100px;
-
-                        img {
-                            width: 250px;
-                        }
-                    }
-                    .before-image {
-                        
-                        left: -60px;
-
-                       img {
-                            width: 320px;
-                       }
-                    }
-
-                    .after-image-two {
-                        left: 100px;
-
-                        img {
-                            width: 250px;
-                        }   
-                    }
-
-                    .before-image-two {
-                        left: -50px;
-
-                        img {
-                            width: 240px;
-                        }
+                        left: 120px;
                     }
                 }
             }
         }
-
-        .land4 {
-            padding-top: 80px;
-        }
-    }
-}
-
-@media (min-width: 1300px) {
-    .home {
-
-       .bg-left-section {
-
-           .concert-pin {
-               top: -23%;
-               left: 44%;
-           }
-
-           .party-pin{
-               left: 17%;
-               top: -3%;
-           }
-       }
+        
     }
 }
 
@@ -1634,30 +1646,6 @@ s
 @media (max-width: 1250px) {
 
     .home {
-         .hero-building {
-             
-                .container {
-                    
-                    .forKids-pin {
-                        bottom: 38%;
-                        left: 50.4%;
-                        
-                        img {
-                            max-width: 70px;
-                        }   
-                    }
-                }
-
-                .column-50 {
-                    .presentation-pin img,
-                    .science-pin img,
-                    .culture-pin img {
-                        max-width: 60px;
-                    }
-                    
-
-                }
-            }
 
             .land {
 
@@ -1800,17 +1788,6 @@ s
 
      .our-service {
             .container {
-                .hero-section {
-                    .hero-text {
-                        h2 {
-                            font-size: 42px;
-                        }
-
-                        p {
-                            font-size: 16px;
-                        }
-                    }
-                }
 
                 .right-section {
                     .like-image{ 
@@ -1864,27 +1841,6 @@ s
 @media (max-width: 1150px) {
 
     .home {
-        .hero-building {
-            
-            .container {
-
-                .social-text h4 {
-                    font-size: 18px;
-                }
-
-                .hero-content {
-                    .hero-text {
-                        h1 {
-                            font-size: 42px;
-                        }
-
-                        p {
-                            font-size: 18px;
-                        }
-                    }
-                }
-            }
-        }
 
         .land {
             .sports-pin {
@@ -1966,6 +1922,27 @@ s
 }
 
 @media (max-width: 1100px) {
+    // GLOBAL
+
+    #app {
+
+        h1 {
+            font-size: 2.625rem; // 42px;
+            font-weight: 1000;
+            margin-bottom: 10px;
+        }
+
+        .hero-text {
+            p {
+                font-size: 1.125rem; // 18px;
+                font-weight: 600px;
+            }
+        }
+    }
+
+
+    //  HOMEPAGE
+
     .home {
 
         .land {
@@ -2035,7 +2012,7 @@ s
         .container {
 
             h2 {
-                font-size: 48px;
+                font-size: 2.625rem; // 42px
             }
 
             .left-section {    
@@ -2046,14 +2023,16 @@ s
                     }
                 }
 
-                .tresure-image {
-                    top: 70px;
+
+                .culture-cinema-tag {
+                    transform: translateX(-150px);
+                    -webkit-transform: translateX(-150px);
+                    -moz-transform: translateX(-150px);
+                    -ms-transform: translateX(-150px);
+                    -o-transform: translateX(-150px);
                 }
 
-                .funcoins-image {
-                    top: 15%;
-                    right: 13%;
-                }
+               
 
             }
             .right-section {
@@ -2152,6 +2131,9 @@ s
 }
 
 @media (max-width: 1000px) {
+
+    // HOMEPAGE
+
     .home {
 
         .hero-building {
@@ -2188,20 +2170,6 @@ s
 
         .land4 {
             padding-top: 0px;
-        }
-    }
-
-    // OUR SERVICE PAGE
-
-    .our-service {
-        .container {
-            .hero-section {
-                .hero-text {
-                    h2 {
-                        font-size: 32px;
-                    }
-                }
-            }
         }
     }
 }
@@ -2350,6 +2318,10 @@ s
     
     #app {
         #nav {
+            .open-button {
+                display: none;
+            }
+
             .mobile-section-navigation {
                 display: none;
             }
@@ -2359,9 +2331,24 @@ s
 
 @media (max-width: 900px) {
 
-    .navigation {
-        display: none;
+    // GLOBAL
+
+    #nav {
+        .navigation {
+            .column-70 {
+
+                display: flex;
+                justify-content: end;
+                align-items: center;
+
+                .section-navigation {   
+                    display: none;
+                }
+            }
+        }
     }
+
+    // HOMEPAGE
 
 
     .home {
@@ -2372,6 +2359,10 @@ s
 
             .container {
                 margin-top: 40px;
+                
+                .relax-section {
+                    top: 250px;
+                }
 
                 &::before {
                     position: absolute;
@@ -2528,11 +2519,11 @@ s
                     padding-right: 80px;
                 }
 
-                .column-30 {
+                .column-50 {
                     width: 100%;
                 }
 
-                .column-70 {
+                .column-50 {
                     width: 100%;
 
                     &::before {
@@ -2596,16 +2587,9 @@ s
         .container {
             .hero-section {
                 flex-direction: column-reverse;
-                padding-top: 30px;
+                padding-bottom: 0px;
 
-
-                .hero-text {
-                    h2 {
-                        font-size: 42px;
-                    }
-                }
-
-                .column-70 {
+                .column-50 {
                     width: 100%;
 
                     .right-hero-section {
@@ -2628,28 +2612,60 @@ s
                     }
                 }
 
-                .column-30 {
+                .column-50 {
                     width: 100%;
 
                     .hero-text {
-                        padding-left: 80px;
-                        padding-right: 80px;
+                        padding-left: 50px;
+                        padding-right: 50px;
                         text-align: center;
                         z-index: 10;
                         position: relative;
-                        margin-top: -180px;
+                        top: -180px;
                     }
                 }
             }
 
+            .left-section:nth-child(2) {
+                padding-top: 0px;
+            }
+
             .left-section {
+
+                    .forkids-zoo-tag,
+                    .concert-pop-tag,
+                    .culture-cinema-tag {
+                        width: 120px;
+                        height: 110px;
+
+                        &::before {
+                            width: 110px;
+                            height: 110px;
+                        }
+                    }
+
+                    .forkids-zoo-tag p,
+                    .concert-pop-tag p,
+                    .culture-cinema-tag p {
+                        font-size: 1rem;
+                    }
+
+                    .forkids-zoo-tag {
+                        top: -70px;
+                    }
+
+                    .concert-pop-tag {
+                        top: -120px;
+                        transform: translateX(-80px);
+                        -webkit-transform: translateX(-80px);
+                        -moz-transform: translateX(-80px);
+                        -ms-transform: translateX(-80px);
+                        -o-transform: translateX(-80px);
+                    }
+                    
 
                 .column-50:nth-child(1) {
                     .service-image {
-                        img {
-                            width: 220px;
-                        }
-
                         &::before {
                             bottom: -40px;
                         }
@@ -2683,48 +2699,9 @@ s
                     }
                 }
 
-                .concert-pop-tag {
-                    width: 240px;
-                    top: -50px;
-
-                    &::before {
-                        width: 80px;
-                        height: 80px;
-                    }
-                }
-
-                .forkids-zoo-tag {
-                    width: 230px;
-                    top: -10px;
-
-                    &::before {
-                        width: 80px;
-                        height: 80px;
-                    }
-                }
-
-                .culture-cinema-tag {
-                    width: 160px;
-                    bottom: -30px;
-
-                    &::before {
-                        width: 90px;
-                        height: 90px;
-                    }
-                }
-
-                .concert-pop-tag {
-                    width: 230px;
-                    top: -50px;
-                }
 
                 .service-title {
-
                     h2 {
-
-
-                        font-size: 42px;
-
                         &::before {
                             width: 100px;
                             height: 180px;
@@ -2732,25 +2709,10 @@ s
                             left: -30px;
                         }
                     }
+
                 }
 
-                .tresure-image {
-                    top: 40px;
-                    max-width: 100px;
-
-                    &::after {
-                        width: 220px;
-                    }
-                }
-                .functions-image {
-                    width: 50px;
-
-                    &::after {
-                        width: 70px;
-                        height: 30px;
-                        bottom: -4px;
-                    }
-                }
+        
             }
 
             .right-section {
@@ -2920,12 +2882,6 @@ s
                     &:after {
                         width: 400px;
                         height: 90px;
-                    }
-
-
-                    .relax-pin {
-                        left: 22%;
-                        max-width: 70px;
                     }
                 }
             }
@@ -3130,11 +3086,7 @@ s
         }
 
         .land {
-            margin-top: 90px;
-
-            .hero-building {
-                padding-bottom: 0px;
-            }
+            margin-top: 250px;
 
 
             .road {
@@ -3456,6 +3408,14 @@ s
 
         .container {
 
+            .service-title {
+                h3 {
+                    &::before {
+                       left: unset;
+                    }
+                }
+            }
+
             .right-section {
                 flex-direction: column-reverse;
                 padding-bottom: 60px;
@@ -3506,20 +3466,6 @@ s
                     margin-bottom: 50px;
                 }
 
-                .forkids-zoo-tag {
-                    width: 230px;
-                    top: -50px;
-                    right: 60px;
-                }
-
-                .concert-pop-tag {
-                    top: 100px;
-                }
-
-                .culture-cinema-tag {
-                    bottom: 30%;
-                    right: 51%
-                }
 
                 .funcoins-image {
                     top: 50%;
@@ -3569,6 +3515,28 @@ s
                     padding-left: 80px;
                     padding-right: 80px;
                 }
+
+                .concert-pop-tag {
+                    transform: translateX(60px);
+                    -webkit-transform: translateX(60px);
+                    -moz-transform: translateX(60px);
+                    -ms-transform: translateX(60px);
+                    -o-transform: translateX(60px);
+                }
+                
+                .forkids-zoo-tag {
+                    top: 10px;
+                }
+
+                .culture-cinema-tag {
+                    transform: translateX(40px);
+                    -webkit-transform: translateX(40px);
+                    -moz-transform: translateX(40px);
+                    -ms-transform: translateX(40px);
+                    -o-transform: translateX(40px);
+                    bottom: unset;
+                    top: 35%;
+}
             }
         }
     }
@@ -3717,10 +3685,6 @@ s
                     padding-left: 30px;
                     padding-right: 30px;
                 }
-
-                .culture-cinema-tag {
-                    bottom: 32%;
-                }
             }
 
             .right-section {
@@ -3834,14 +3798,6 @@ s
                         }
                     }
                 }
-
-                .forkids-zoo-tag {
-                    right: -10px;
-                }
-
-                .concert-pop-tag {
-                    left: -60px;
-                }
             }
 
             .right-section {
@@ -3862,6 +3818,14 @@ s
 
 
 @media (max-width: 600px) {
+
+    // GLOBAL
+
+    #app {
+        h1{
+            font-size: 2rem; // 32px
+        }
+    }
 
     // HOMEPAGE
 
@@ -3919,27 +3883,24 @@ s
         .container {
             .hero-section {
 
-                .column-70 {
+                padding-top: 60px;
+
+                .column-50 {
+                    .hero-text {
+                        top: -140px;
+                        padding-left: 0px;
+                        padding-right: 0px;
+                    }
+
                     .right-hero-section {
+
+
                         &::after {
-                            height: 100px;
+                            height: 180px;
                         }
                     }
                 }
-
-                .column-30 {
-                    .hero-text {
-                        margin-top: -80px;
-                    }
-                }
-
-                .hero-text {
-                    h2 {
-                        font-size: 36px;
-                    }
-                }
             }
-
 
             .left-section {
                 .service-title {
@@ -4210,6 +4171,9 @@ s
 
 @media (max-width: 500px) {
 
+    // HOMEPAGE
+
+
     .home {
 
         .hero-building {
@@ -4307,35 +4271,8 @@ s
 
     .our-service {
         .container {
-            .hero-section {
-                .hero-text {
-                    h2 {
-                        font-size: 32px;
-                    }
-                }
-            }
 
             .left-section {
-                .concert-pop-tag {
-                    left: -70px;
-                    width: 210px;
-                    &::before {
-                        top: 60px;
-                        left: 70px;
-                    }
-                }
-
-                .culture-cinema-tag {
-                    bottom: 35%;
-                    right: 45%;
-                    width: 140px;
-                    &::before {
-                        width: 80px;
-                        height: 80px;
-                        top: 20px;
-                        left: 30px;
-                    }
-                }
 
                 .tresure-image {
                     right: -1%;
@@ -4350,6 +4287,28 @@ s
                             }
                         }
                     }
+                }
+
+                .culture-cinema-tag,
+                .forkids-zoo-tag,
+                .concert-pop-tag,
+                .culture-cinema-tag::before,
+                .forkids-zoo-tag::before,
+                .concert-pop-tag::before  {
+                    width: 100px;
+                    height: 90px;
+                }
+
+                .concert-pop-tag {
+                    transform: translateX(0px);
+                    -webkit-transform: translateX(0px);
+                    -moz-transform: translateX(0px);
+                    -ms-transform: translateX(0px);
+                    -o-transform: translateX(0px);
+                }
+
+                .forkids-zoo-tag {
+                    right: -20px;
                 }
             }
 
@@ -4576,62 +4535,36 @@ s
 
   .our-service {
       .container {
-          .hero-section {
-            &::before {
-                position: absolute;
-                content: "";
-                background: linear-gradient(0deg, white 0%, rgba(255, 255, 255, 0.821149) 48%, rgba(255, 255, 255, 0) 100%);
-                width: 100%;
-                height: 130px;
-                top: 40%;
-                left: 0px;
-                z-index: 10;
-              }
-              .column-70 {
-                  
-                  .right-hero-section {
-                      height: 300px;
 
-                      img {
-                         width: 440px;
-                       right: -25px;
-                          position: absolute;
-                      }
-                  }
-              }
+        .hero-section {
+            .column-50 {
+                .hero-text {
+                    top: -100px;
+                }
 
-              .column-30 {
-                  margin-top: -50px;
-              }
-          }
+                .right-hero-section {
+                    &::after {
+                        height: 100px;
+                    }
+                }
+            }
+        }
 
           .left-section {
-              
-              .culture-cinema-tag {
-                bottom: 45%;
-                right: -20%;
-              }
-
-              .forkids-zoo-tag {
-                  top: -80px;
-              }
+            .culture-cinema-tag {
+                transform: translateX(-20px);
+                -webkit-transform: translateX(-20px);
+                -moz-transform: translateX(-20px);
+                -ms-transform: translateX(-20px);
+                -o-transform: translateX(-20px);
+                top: 28%;
+}
 
               .funcoins-image {
                 top: 45%;
                 right: 42%;
             }
 
-            .concert-pop-tag {
-                left: -70px;
-                width: 180px;
-
-                &::before {
-                    top: 60px;
-                    left: 70px;
-                    height: 60px;
-                    width: 60px;
-                }
-            }
 
             .funcoins-image {
                 top: 39%;
@@ -4684,6 +4617,9 @@ s
                       }
                   }
               }
+
+              
+
           }
 
           .right-section {
@@ -4792,6 +4728,9 @@ s
 
 
 @media (min-width: 320px) and (max-width: 500px) {
+
+    // HOMEPAGE
+
     .home {
         .land {
 

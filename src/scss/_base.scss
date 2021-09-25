@@ -24,6 +24,10 @@ textarea{overflow:auto;}
 
 @import '../scss/variables';
 
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 html{
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
@@ -34,35 +38,25 @@ html{
 *, *:before, *:after{
 	-webkit-box-sizing: inherit;
 	box-sizing: inherit;
-    font-size: 16px;
 }
 
 body {
     font-family: $main-font;
     margin: 0px;
-    font-size: 1rem; //
 }
 
-.group:before,
-.group:after{
-    content: " ";
-    display: table;
+button {
+    font-family: $main-font;
 }
 
-.group:after{
-    clear: both;
-}
-
-.group{
-    *zoom: 1;
-}
 
 
 h1 {
     color: $blacky-color;
     font-family: $main-font;
     font-size: 3.25rem; // 52px
-    font-weight: 800;
+    font-weight: 1000;
+    line-height: 1.2;
 }
 
 h2 {
@@ -78,50 +72,45 @@ h3 {
     font-weight: 800;
 }
 
+h4 {
+    font-family: $main-font;
+}
 
 p {
     font-family: $main-font;
-    font-size: $body-font-size;
     color: $blacky-color;
     line-height: 1.5;
     font-weight: 500;
-    font-size: 1rem;
 }
 
 
-img {
-    width: 100%;
-}
-
-.container {
+/*.container {
     max-width: 1400px;
     display: flex;
 	flex-wrap: wrap;
     margin: 0 auto;
+}*/
 
-
-    .column-100 {
-        width: 100%;
-    }
-
-    .column-70 {
-        width: 70%;
-    }
-    
-    .column-50 {
-        width: 50%;
-    }
-
-    .column-30 {
-        width: 30%;
-    }
-
-    .column-33 {
-        width: 33.3333%;
-    }
-
-
+.column-100 {
+    width: 100%;
 }
+
+.column-70 {
+    width: 70%;
+}
+
+.column-50 {
+    width: 50%;
+}
+
+.column-30 {
+    width: 30%;
+}
+
+.column-33 {
+    width: 33.3333%;
+}
+
 
 
 
@@ -136,3 +125,6 @@ img {
         margin-top: 10px;
     }
 }
+
+
+

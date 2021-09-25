@@ -1,19 +1,18 @@
 <template>
   <div class="home">
-
     <div class="hero-building">
-      <div class="container">
+      <div class="container mx-auto px-4">
         <section-hero />
       </div>
     </div>
 
-    <div class="land">
-      <section class="road">
-        <img src="@/assets/svg/road-part-1.svg" alt="">
+    <div class="land relative bg-no-repeat">
+      <section class="road relative ">
+        <img src="@/assets/svg/road-part-1.svg" alt="" />
       </section>
       <section-one />
     </div>
-    
+
     <div class="land2">
       <section-two />
     </div>
@@ -23,17 +22,17 @@
         <img src="@/assets/svg/road-part-2.svg" alt="" />
       </div>
 
-        <section-three />
+      <section-three />
     </div>
 
-  <footer>
-    <section-footer />
-  </footer>
+    <footer>
+      <section-footer />
+    </footer>
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
+
 import sectionHero from '@/components/homePage/sectionHero.vue'
 import sectionOne from '@/components/homePage/sectionOne.vue'
 import sectionTwo from '@/components/homePage/sectionTwo.vue'
@@ -53,7 +52,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-
 .hero-building {
   background: url('~@/assets/svg/first-part-building-test.svg');
   background-size: 60%;
@@ -66,21 +64,18 @@ export default {
   position: relative;
   padding-bottom: 150px;
   margin-top: 100px;
-
 }
 
 .land {
-  position: relative;
   background-image: url('~@/assets/svg/land1.svg');
   background-size: 110%;
-  background-repeat: no-repeat;
   width: 100%;
   height: 100%;
   background-position: bottom;
   padding-bottom: 0px;
   padding-top: 150px;
 
-    &::before {
+  &::before {
     position: absolute;
     content: '';
     background: radial-gradient(
@@ -98,15 +93,15 @@ export default {
     filter: blur(10px);
   }
 
-   .road {
+  .road {
     position: absolute;
-    width: 102%;
+    width: 106%;
     left: 0px;
-    top: -230px;
+    top: -290px;
     z-index: 9;
-    left: -20px;
+    left: -70px;
 
-        &::after {
+    &::after {
       content: '';
       position: absolute;
       background-image: url('~@/assets/svg/home/cycling-man.svg');
@@ -117,7 +112,7 @@ export default {
       width: 230px;
       height: 230px;
     }
-   }
+  }
 }
 
 .land2 {
@@ -145,7 +140,7 @@ export default {
   padding-bottom: 120px;
   padding-top: 200px;
   top: 40px;
-  
+
   &::before {
     position: absolute;
     content: '';
@@ -164,7 +159,7 @@ export default {
     filter: blur(10px);
   }
 
-    .road2 {
+  .road2 {
     position: absolute;
     object-fit: cover;
     width: 100%;
@@ -174,5 +169,4 @@ export default {
     left: -20px;
   }
 }
-
 </style>
