@@ -1,7 +1,7 @@
 <template>
   <div class="land4">
-    <div class="container">
-      <div class="column-50">
+    <div class="md:container md:mx-auto grid grid-cols-2 gap-4">
+      <section>
         <div class="billboard">
           <div class="billboard-content">
             <video
@@ -39,9 +39,9 @@
             </div>
           </div>
         </div>
-      </div>
+      </section>
 
-      <div class="column-50">
+      <section>
         <div class="footer">
           <article class="footer-content">
             <h2>S nami už nič nezmeškáte!</h2>
@@ -57,7 +57,7 @@
             </default-button>
           </div>
         </div>
-      </div>
+      </section>
     </div>
   </div>
 </template>

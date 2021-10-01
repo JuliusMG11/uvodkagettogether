@@ -1,7 +1,7 @@
 <template>
   <div class="home">
     <div class="hero-building relative z-10">
-      <div class="container mx-auto px-4">
+      <div class="md:container md:mx-auto mx-auto px-4">
         <section-hero />
       </div>
     </div>

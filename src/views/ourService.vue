@@ -1,8 +1,8 @@
 <template>
   <div class="our-service">
     <div class="container">
-      <div class="hero-section">
-        <div class="column-50">
+      <div class="md:container md:mx-auto px-4 flex justify-center items-center grid grid-cols-2 gap-4">
+        <section>
           <div class="hero-text">
             <h1>See what you will find in our new app Gettogether</h1>
             <p>
@@ -12,12 +12,12 @@
               he world of entertainment, sports or leisure activities.
             </p>
           </div>
-        </div>
-        <div class="column-50">
+        </section>
+        <section>
           <div class="right-hero-section">
             <img src="@/assets/svg/our-service/hero-background.svg" alt="" />
           </div>
-        </div>
+        </section>
       </div>
 
       <div class="left-section">

@@ -1,10 +1,8 @@
 <template>
   <div class="about">
-    <div class="container">
-      <div class="content-section">
-        <div class="column-30">
-          <div class="hero-text">
-            <h2>Our team</h2>
+    <div class="md:container md:mx-auto px-4 flex justify-center items-center grid grid-cols-2 gap-4">
+        <section class="text-left">
+            <h2 class="mt-0 mb-0">Our team</h2>
             <p>
               We are a great group of people who came up with the idea that
               everyone has the right to have a fun and even more idea is to have
@@ -14,50 +12,48 @@
               somebody´s day when looking for a treasure with a certain prize.
               Our point is for everyone to find what they enjoy.
             </p>
-          </div>
-        </div>
+        </section>
 
-        <div class="column-70">
-          <div class="hero-section">
+        <section class="">
+          <div class="hero-section relative flex justify-end">
             <div class="hero-image">
               <img src="@/assets/png/about/hero-image.png" alt="" />
             </div>
           </div>
-        </div>
-      </div>
+        </section>
     </div>
 
     <div class="profile-section">
-      <div class="container">
-        <div class="column-30">
+      <div class="cmd:container md:mx-auto grid grid-cols-3 gap-4">
+        <section>
           <div class="team-content">
-            <div class="profile-image">
+            <div class="profile-image relative z-5 ">
               <img src="@/assets/svg/about/roman-avatar.svg" alt="" />
             </div>
           </div>
 
           <h3>Roman</h3>
-        </div>
+        </section>
 
-        <div class="column-30">
+        <section>
           <div class="team-content">
-            <div class="profile-image">
+            <div class="profile-image relative z-5">
               <img src="@/assets/svg/about/simona-avatar.svg" alt="" />
             </div>
           </div>
 
           <h3>Simona</h3>
-        </div>
+        </section>
 
-        <div class="column-30">
+        <section>
           <div class="team-content">
-            <div class="profile-image">
+            <div class="profile-image relative z-5">
               <img src="@/assets/svg/about/julius-avatar.svg" alt="" />
             </div>
           </div>
 
           <h3>Julius</h3>
-        </div>
+        </section>
       </div>
     </div>
 
@@ -78,29 +74,10 @@ export default {
 <style lang="scss" scoped>
 @import url('../scss/_variables.scss');
 
-.container {
-  align-items: center;
-  justify-content: center;
-
-  .content-section {
-    display: flex;
-    align-items: center;
-
-    .hero-title {
-      h2 {
-        margin-top: 0px;
-        margin-bottom: 10px;
-      }
-    }
-  }
-}
 
 .hero-section {
-  position: relative;
   padding-bottom: 100px;
   padding-top: 80px;
-  display: flex;
-  justify-content: end;
 
   .hero-image {
     max-width: 90%;
@@ -112,10 +89,6 @@ export default {
   background-size: 100%;
   background-repeat: no-repeat;
   padding-top: 100px;
-
-  .column-30 {
-    justify-content: center;
-    position: relative;
 
     .profile-image {
       max-width: 100%;
@@ -131,8 +104,6 @@ export default {
       top: -70px;
 
       .profile-image {
-        position: relative;
-        z-index: 6;
         width: 320px;
       }
 
@@ -161,6 +132,5 @@ export default {
       position: relative;
       bottom: -20px;
     }
-  }
 }
 </style>
