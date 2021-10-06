@@ -6,8 +6,7 @@ module.exports = {
       'white': '#ffffff',
     },
     backgroundSize: {
-      'cover': 'cover',
-      '50%': '50%',
+      
     },
     extend: {
       backgroundImage: {

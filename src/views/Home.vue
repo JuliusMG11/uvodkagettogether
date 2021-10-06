@@ -1,9 +1,9 @@
 <template>
   <div class="home">
 
-    <div class="hero-building relative z-10 mt-28 mb-24 bg-home-hero-bg bg-no-repeat cover bg-auto bg-right">
+    <div class="hero-building relative z-10 mt-28 mb-24">
 
-    <div class="hero-building relative z-10">
+    <div class=" relative z-10">
       <div class="md:container md:mx-auto mx-auto px-4">
 
         <section-hero />
@@ -60,9 +60,17 @@ export default {
 
 <style lang="scss" scoped>
 
-.bg-home-hero-bg {
-  background-size: 60%;
+.hero-building  {
+ background-image: url('~@/assets/svg/first-part-building-test.svg');
+ background-size: 60%;
+ background-position-x: 100%;
+ background-repeat: no-repeat;
+
 }
+
+/*.bg-home-hero-bg {
+  background-size: 60%;
+}*/
 
 .land {
   background-image: url('~@/assets/svg/land1.svg');
