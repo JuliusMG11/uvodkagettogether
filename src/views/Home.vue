@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <div class="hero-building relative z-10">
+    <div class="hero-building relative z-10 mt-28 mb-24 bg-home-hero-bg bg-no-repeat cover bg-auto bg-right">
       <div class="container mx-auto px-4">
         <section-hero />
       </div>
@@ -54,21 +54,15 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.hero-building {
-  background: url('~@/assets/svg/first-part-building-test.svg');
+
+.bg-home-hero-bg {
   background-size: 60%;
-  background-repeat: no-repeat;
-  background-position: right;
-  background-position-y: 30px;
-  padding-bottom: 150px;
-  margin-top: 100px;
 }
 
 .land {
   background-image: url('~@/assets/svg/land1.svg');
   background-size: 110%;
-  width: 100%;
-  height: 100%;
+
 
   &::before {
     position: absolute;

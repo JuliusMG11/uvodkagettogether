@@ -63,6 +63,7 @@
 </template>
 
 <script>
+
 import downloadsButton from '../UI/downloadsButton.vue'
 
 export default {
@@ -73,6 +74,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import '../../scss/_responsive.scss';
 
 .presentation-pin {
   top: 20px;
@@ -95,9 +97,14 @@ export default {
 
 
   .forKids-pin {
-    bottom: 30%;
-    left: 49.8%;
     animation: 2s ease-in-out infinite forKids-animation;
+
+    @include breakpoint(laptop) {
+        bottom: 11%;
+        left: 50%;
+    }
+
+  
   }
 
  

@@ -5,9 +5,13 @@ module.exports = {
     colors: {
       'white': '#ffffff',
     },
+    backgroundSize: {
+      'cover': 'cover',
+      '50%': '50%',
+    },
     extend: {
       backgroundImage: {
-        'section-one': "url('/src/assets/svg/concert-bg.svg')",
+        'home-hero-bg': "url('/img/first-part-building-test.d26c3985.svg')",
       },
     },
   },
@@ -16,14 +20,6 @@ module.exports = {
     },
   },
   screens: {
-    'tablet': '640px',
-    // => @media (min-width: 640px) { ... }
-
-    'laptop': '1024px',
-    // => @media (min-width: 1024px) { ... }
-
-    'desktop': '1280px',
-    // => @media (min-width: 1280px) { ... }
   },
   plugins: [],
 }
