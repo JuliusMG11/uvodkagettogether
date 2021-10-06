@@ -35,6 +35,7 @@
       <section-footer />
     </footer>
   </div>
+  </div>
 </template>
 
 <script>
