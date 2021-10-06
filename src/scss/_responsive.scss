@@ -1883,17 +1883,11 @@ s
         
         .land {
             .title-servicing {
-                bottom: -120px;
+                bottom: -80px;
             }
 
             .bg-right-section {
                 bottom: 140px;
-            }
-    
-            .bg-left-section {
-                img {
-                    bottom: 100px;
-                }
             }
             
         }
@@ -2225,7 +2219,7 @@ s
 
     .home {
         .land {
-            margin-top: 250px;
+            margin-top: 150px;
         }
     }
 }
@@ -2903,21 +2897,11 @@ s
 
         .land {
             background-position: center;
-            background-size: 101%;
 
 
             .title-servicing {
                 left: 100px;
 
-                h2 {
-                    font-size: 4.5rem; // 72px;
-
-                    &::after {
-                        bottom: -1px;
-                        width: 450px;
-                        height: 160px;
-                    }
-                }
             }
 
             .concert-pin,
@@ -2933,14 +2917,7 @@ s
             }
 
             .bg-left-section {
-                height: unset;
-                right: 10px;
-                top: -80px;
-
-                img {
-                    width: 70%;
-
-                }
+                top: -50px;
             }
 
             .road {

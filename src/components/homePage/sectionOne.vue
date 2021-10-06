@@ -11,7 +11,7 @@
         </div>
 
         <figure class="relative z-20 max-w-lg -top-28">
-            <img src="@/assets/svg/concert.svg" alt="" />
+          <img src="@/assets/svg/concert.svg" alt="" />
         </figure>
       </div>
 
@@ -64,12 +64,9 @@ export default {
   animation: 2s ease-in-out infinite sports-animation;
 }
 
-
-
 .bg-left-section {
   background-image: url('~@/assets/svg/concert-bg.svg');
   background-size: 100%;
-
 
   .concert-pin {
     animation: 2s ease-in-out infinite concert-animation;
@@ -87,12 +84,11 @@ export default {
 }
 
 .title-servicing {
-
   transform: rotate(-18deg);
 
   h2 {
     font-size: 6.375rem; // 102px
-    color: white;  
+    color: white;
 
     &::after {
       content: '';
