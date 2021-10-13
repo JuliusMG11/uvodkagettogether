@@ -1,17 +1,15 @@
 <template>
   <div class="home">
 
-    <div class="hero-building relative z-10 mt-28 mb-24">
+    <div class="hero-building bg-home-hero bg-no-repeat relative z-10 mt-28 mb-44">
 
-    <div class=" relative z-10">
       <div class="md:container md:mx-auto mx-auto px-4">
-
         <section-hero />
-      </div>
+    </div>
     </div>
 
-    <div class="land relative bg-no-repeat bg-bottom pt-40">
-      <section class="road absolute -top-52 z-10">
+    <div class="bg-land-one relative bg-no-repeat bg-center pt-16 pb-24">
+      <section class="road absolute z-10">
         <figure>
           <img src="@/assets/svg/road-part-1.svg" alt="" />
         </figure>
@@ -19,11 +17,11 @@
       <section-one />
     </div>
 
-    <div class="land2">
+    <div class="bg-land-two relative bg-no-repeat bg-center top-44 pt-96">
       <section-two />
     </div>
 
-    <div class="land3">
+    <div class="bg-land-three relative bg-no-repeat bg-bottom  ">
       <div class="road2">
         <img src="@/assets/svg/road-part-2.svg" alt="" />
       </div>
@@ -34,7 +32,6 @@
     <footer>
       <section-footer />
     </footer>
-  </div>
   </div>
 </template>
 
@@ -59,12 +56,31 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import '../scss/_responsive.scss';
 
 .hero-building  {
- background-image: url('~@/assets/svg/first-part-building-test.svg');
  background-size: 60%;
  background-position-x: 100%;
- background-repeat: no-repeat;
+
+ // RESPO
+
+
+  @include breakpoint(laptop) {
+    padding-bottom: 6rem;
+  }
+
+  @include breakpoint(bigScreen) {
+    padding-bottom: 12rem;
+    margin-top: 10rem;
+  }
+
+  @include breakpoint(heroLarger) {
+    padding-bottom: 16rem;
+  }
+
+  @include breakpoint(bigerScreen) {
+    padding-bottom: 20rem;
+  }
 
 }
 
@@ -72,9 +88,8 @@ export default {
   background-size: 60%;
 }*/
 
-.land {
-  background-image: url('~@/assets/svg/land1.svg');
-  background-size: 110%;
+.bg-land-one {
+  background-size: 100%;
 
 
   &::before {
@@ -87,9 +102,9 @@ export default {
       rgba(249, 217, 14, 0) 74%,
       rgba(249, 217, 14, 0) 84%
     );
-    width: 200px;
-    height: 200px;
-    top: 20px;
+    width: 150px;
+    height: 150px;
+    top: 170px;
     left: -50px;
     border-radius: 50%;
     filter: blur(10px);
@@ -98,6 +113,7 @@ export default {
   .road {
     width: 106%;
     left: -60px;
+    top: -20rem;
 
     &::after {
       content: '';
@@ -106,35 +122,25 @@ export default {
       background-size: 100%;
       background-repeat: no-repeat;
       bottom: 10%;
-      left: 15%;
+      left: 16%;
       width: 230px;
       height: 230px;
     }
+
+    // RESPO
+
+      @include breakpoint(laptop) {
+        top: -22rem;
+      }
   }
 }
 
-.land2 {
-  position: relative;
-  background-image: url('~@/assets/svg/land2.svg');
-  background-size: 104%;
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 100%;
-  background-position: bottom;
-  padding-bottom: 0px;
-  padding-top: 300px;
-  top: 180px;
-  background-position-y: -80px;
+.bg-land-two{
+  background-size: 102%;
 }
 
-.land3 {
-  position: relative;
-  background-image: url('~@/assets/svg/land3-new.svg');
+.bg-land-three {
   background-size: 101%;
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 100%;
-  background-position: bottom;
   padding-bottom: 120px;
   padding-top: 200px;
   top: 40px;

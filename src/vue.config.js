@@ -2,8 +2,9 @@ module.exports = {
   css: {
     loaderOptions: {
       sass: {
-        additionalData: `
+        data: `
             @import "@/scss/_variables.scss";
+            @import "@/scss/_responsive.scss";
           `,
       },
     },

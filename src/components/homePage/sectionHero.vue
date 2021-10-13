@@ -146,5 +146,17 @@ export default {
       left: 30%;
       animation: 2s ease-in-out infinite relax-animation;
     }
+
+  // RESPONSIVE
+
+    @include breakpoint(computer) {
+        max-width: 100%;
+    }
+
+    @include breakpoint(bigerScreen) {
+        max-width: 120%;
+    }
+
+
   }
 </style>

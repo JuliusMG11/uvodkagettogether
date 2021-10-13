@@ -1,44 +1,39 @@
 <template>
   <div class="our-service">
-    <div class="container">
-      <div class="md:container md:mx-auto px-4 flex justify-center items-center grid grid-cols-2 gap-4">
-        <section>
-          <div class="hero-text">
-            <h1>See what you will find in our new app Gettogether</h1>
+      <div class="md:container md:mx-auto px-4 flex justify-center items-center grid grid-cols-2 gap-4 pt-24 bt-24">
+        <section class="hero-text">
+            <h1 class="mb-4">See what you will find in our new app Gettogether</h1>
             <p>
               In Gettogether you will find many interesting functions from
               registration through the calendar to an overview of events and
               many other interesting options. You will not get lost with us in
               he world of entertainment, sports or leisure activities.
             </p>
-          </div>
         </section>
-        <section>
-          <div class="right-hero-section">
+        <section class="right-hero-section">
             <img src="@/assets/svg/our-service/hero-background.svg" alt="" />
-          </div>
         </section>
       </div>
 
-      <div class="left-section">
-        <div class="column-50">
+      <div class="left-section md:container md:mx-auto px-4 flex relative grid grid-cols-2 pt-20">
+        <section class="flex justify-center pr-16">
           <div class="service-image">
-            <div class="after-image">
+            <figure class="after-image absolute z-20 top-0 -left-8">
               <img src="@/assets/png/home/registration-category.png" alt="" />
-            </div>
+            </figure>
 
-            <div class="before-image">
+            <figure class="before-image relative z-10 left-28 -top-8">
               <img src="@/assets/png/home/register.png" alt="" />
-            </div>
+            </figure>
           </div>
-        </div>
+        </section>
 
-        <div class="column-50">
-          <div class="concert-pop-tag">
+        <section class="column-50 align-left">
+          <div class="concert-pop-tag absolute">
             <p>Pop Music</p>
           </div>
 
-          <div class="culture-cinema-tag">
+          <div class="culture-cinema-tag absolute">
             <p>Cinema</p>
           </div>
 
@@ -57,13 +52,13 @@
             </p>
           </div>
 
-          <div class="forkids-zoo-tag">
+          <div class="forkids-zoo-tag absolute">
             <p>Zoo</p>
           </div>
-        </div>
+        </section>
       </div>
 
-      <div class="right-section">
+      <div class="right-section  md:container md:mx-auto px-4 flex relative grid grid-cols-2 pt-20">
         <div class="column-50">
           <div class="like-image">
             <img src="@/assets/svg/our-service/like.svg" alt="" />
@@ -162,8 +157,7 @@
             </div>
           </div>
         </div>
-      </div>
-    </div>
+      </div> 
 
     <footer-section />
   </div>
@@ -188,10 +182,6 @@ p {
 }
 
 .hero-section {
-  display: flex;
-  align-items: center;
-  padding-top: 120px;
-  padding-bottom: 60px;
 
   .hero-text {
     h2 {
@@ -215,12 +205,7 @@ p {
 }
 
 .right-section {
-  text-align: right;
-  padding-top: 100px;
-  padding-bottom: 100px;
-  display: flex;
-  position: relative;
-  align-items: center;
+
 
   .like-image {
     position: absolute;
@@ -362,20 +347,6 @@ p {
 }
 
 .left-section {
-  text-align: left;
-  padding-top: 100px;
-  padding-bottom: 100px;
-  display: flex;
-  position: relative;
-  align-items: center;
-
-  .column-50 {
-    &:nth-child(1) {
-      display: flex;
-      justify-content: center;
-      padding-right: 50px;
-    }
-  }
 
   .service-image {
     perspective: 1000px;
@@ -385,23 +356,13 @@ p {
 
     img {
       width: 220px;
-      z-index: 6;
-      position: relative;
     }
 
     .before-image {
-      z-index: 5;
-      position: relative;
-      left: 100px;
-      top: -20px;
       transform: rotateY(-18deg) rotateZ(3deg);
     }
 
     .after-image {
-      position: absolute;
-      top: 20px;
-      left: -50px;
-      z-index: 8;
       transform: rotateY(18deg) rotateZ(-3deg);
     }
 
@@ -426,7 +387,6 @@ p {
   .culture-cinema-tag,
   .concert-pop-tag,
   .forkids-zoo-tag {
-    position: absolute;
     z-index: 4;
     background-size: 100%;
     background-repeat: no-repeat;

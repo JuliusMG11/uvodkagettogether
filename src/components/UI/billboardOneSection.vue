@@ -50,7 +50,6 @@ export default {
   height: 470px;
   z-index: 20;
   position: relative;
-  top: -80px;
   right: 40px;
 
   &::after {
