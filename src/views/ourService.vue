@@ -2,7 +2,7 @@
   <div class="our-service">
       <div class="md:container md:mx-auto px-4 flex justify-center items-center grid grid-cols-2 gap-4 pt-24 bt-24">
         <section class="hero-text">
-            <h1 class="mb-4">See what you will find in our new app Gettogether</h1>
+            <h2 class="mb-0 mt-0 text-xxl">See what you will find in our new app Gettogether</h2>
             <p>
               In Gettogether you will find many interesting functions from
               registration through the calendar to an overview of events and
@@ -10,12 +10,12 @@
               he world of entertainment, sports or leisure activities.
             </p>
         </section>
-        <section class="right-hero-section">
+        <section class="right-hero-section relative -right-2">
             <img src="@/assets/svg/our-service/hero-background.svg" alt="" />
         </section>
       </div>
 
-      <div class="left-section md:container md:mx-auto px-4 flex relative grid grid-cols-2 pt-20">
+      <div class="left-section md:container md:mx-auto px-4 relative grid grid-cols-2 items-center pt-20">
         <section class="flex justify-center pr-16">
           <div class="service-image">
             <figure class="after-image absolute z-20 top-0 -left-8">
@@ -28,12 +28,12 @@
           </div>
         </section>
 
-        <section class="column-50 align-left">
-          <div class="concert-pop-tag absolute">
+        <section class="text-left relative">
+          <div class="concert-pop-tag bg-pop-circle absolute z-10 -top-40">
             <p>Pop Music</p>
           </div>
 
-          <div class="culture-cinema-tag absolute">
+          <div class="culture-cinema-tag bg-culture-circle absolute z-10 top-40 -left-40">
             <p>Cinema</p>
           </div>
 
@@ -52,17 +52,17 @@
             </p>
           </div>
 
-          <div class="forkids-zoo-tag absolute">
+          <div class="forkids-zoo-tag bg-forkids-circle  absolute z-10 -top-28 -right-10">
             <p>Zoo</p>
           </div>
         </section>
       </div>
 
-      <div class="right-section  md:container md:mx-auto px-4 flex relative grid grid-cols-2 pt-20">
-        <div class="column-50">
-          <div class="like-image">
+      <div class="right-section  md:container md:mx-auto px-4 relative grid grid-cols-2 items-center pt-20 pb-20">
+        <section class="text-left relative">
+          <figure class="like-image transform -rotate-45 absolute -top-8 -left-12">
             <img src="@/assets/svg/our-service/like.svg" alt="" />
-          </div>
+          </figure>
 
           <div class="service-title">
             <h3>Favorite location and events</h3>
@@ -75,45 +75,45 @@
               never lose it and at the same time you can find it easy.
             </p>
           </div>
-        </div>
+        </section>
 
-        <div class="column-50">
+        <section class="flex justify-center">
           <div class="service-image">
-            <div class="after-image">
+            <figure class="after-image relative z-20 left-24 top-2">
               <img src="@/assets/png/our-service/detail-event.png" alt="" />
-            </div>
+            </figure>
 
-            <div class="before-image">
+            <figure class="before-image absolute z-10 -left-20 -top-2">
               <img src="@/assets/png/our-service/liked.png" alt="" />
-            </div>
+            </figure>
           </div>
-        </div>
+        </section>
       </div>
 
-      <div class="left-section">
-        <div class="column-50">
+      <div class="left-section md:container md:mx-auto px-4 relative grid grid-cols-2 items-center pt-20 pb-20">
+        <section class="flex justify-center">
           <div class="service-image">
-            <div class="after-image">
+            <figure class="after-image absolute z-20 top-0 -left-8">
               <img src="@/assets/png/our-service/detail-mission.png" alt="" />
-            </div>
+            </figure>
 
-            <div class="before-image">
+            <figure class="before-image relative z-10 left-28 -top-8">
               <img src="@/assets/png/our-service/map-mission.png" alt="" />
-            </div>
+            </figure>
           </div>
-        </div>
+        </section>
 
-        <div class="column-50">
+        <section class="text-left relative pb-32">
           <div class="service-title">
-            <div class="tresure-image">
+            <figure class="tresure-image relative w-32 -top-8 right-6 transform -rotate-12">
               <img src="@/assets/svg/our-service/tresure.svg" alt="" />
-            </div>
+            </figure>
 
-            <div class="funcoins-image">
-              <img src="@/assets/svg/our-service/funcoins.svg" alt="" />
-            </div>
+            <figure class="funcoins-image absolute transform rotate-12 top-8 right-6">
+              <img class="w-16" src="@/assets/svg/our-service/funcoins.svg" alt="" />
+            </figure>
 
-            <h3>Game</h3>
+            <h3 class="relative">Game</h3>
           </div>
 
           <div class="sevice-text">
@@ -128,12 +128,12 @@
               planning many other interactive games to made your day.
             </p>
           </div>
-        </div>
+        </section>
       </div>
 
-      <div class="right-section">
-        <div class="column-50">
-          <div class="service-title-calendar">
+      <div class="right-section  md:container md:mx-auto px-4 flex relative grid grid-cols-2 items-center pt-20">
+        <section class="text-left relative">
+          <div class="service-title">
             <h3>Calendar</h3>
           </div>
 
@@ -144,19 +144,19 @@
               button, the event will be marked into your calendar.
             </p>
           </div>
-        </div>
+        </section>
 
-        <div class="column-50">
+        <section class="flex justify-center">
           <div class="service-image">
-            <div class="after-image-two">
+            <figure class="after-image-two relative z-20 left-28 -top-8">
               <img src="@/assets/png/our-service/calendar-day.png" alt="" />
-            </div>
+            </figure>
 
-            <div class="before-image-two">
+            <figure class="before-image-two absolute z-10 top-0 -left-8">
               <img src="@/assets/png/our-service/calendar-mounth.png" alt="" />
-            </div>
+            </figure>
           </div>
-        </div>
+        </section>
       </div> 
 
     <footer-section />
@@ -164,7 +164,7 @@
 </template>
 
 <script>
-import FooterSection from '../components/FooterSection.vue'
+import FooterSection from '../components/homePage/sectionFooter.vue'
 
 export default {
   components: {
@@ -176,53 +176,8 @@ export default {
 <style lang="scss" scoped>
 @import url('../scss/_animation.scss');
 
-p {
-  line-height: 1.5;
-  font-weight: 500;
-}
-
-.hero-section {
-
-  .hero-text {
-    h2 {
-      margin-top: 0px;
-      margin-bottom: 10px;
-    }
-
-    p {
-      font-size: 18px;
-      line-height: 1.5;
-      font-weight: 500;
-    }
-  }
-
-  .right-hero-section {
-    max-width: 100%;
-    right: -30px;
-    position: relative;
-    height: auto;
-  }
-}
 
 .right-section {
-
-
-  .like-image {
-    position: absolute;
-    top: -20px;
-    max-width: 30%;
-    transform: rotate(-20deg);
-    max-width: 100%;
-  }
-
-  .column-50 {
-    position: relative;
-
-    &:nth-child(2) {
-      display: flex;
-      justify-content: center;
-      padding-left: 50px;
-    }
 
     .service-image {
       perspective: 1000px;
@@ -232,15 +187,10 @@ p {
 
       img {
         width: 220px;
-        z-index: 6;
-        position: relative;
+       
       }
 
       .after-image {
-        z-index: 8;
-        position: relative;
-        left: 100px;
-        top: 10px;
         transform: rotateY(-18deg) rotateZ(3deg);
         -webkit-transform: rotateY(-18deg) rotateZ(3deg);
         -moz-transform: rotateY(-18deg) rotateZ(3deg);
@@ -249,37 +199,26 @@ p {
       }
 
       .before-image {
-        position: absolute;
-        top: -10px;
-        left: -80px;
-        z-index: 5;
         transform: rotateY(18deg) rotateZ(-3deg);
 
+        img {
+          width: 300px;
+        }
+      }
+
+      .after-image-two {
+        transform: rotateY(-18deg) rotateZ(3deg);
         img {
           width: 280px;
         }
       }
 
-      .after-image-two {
-        z-index: 8;
-        position: relative;
-        left: 100px;
-        top: 20px;
-        transform: rotateY(-18deg) rotateZ(3deg);
-        img {
-          width: 240px;
-        }
-      }
-
       .before-image-two {
-        position: absolute;
-        top: -20px;
-        left: -50px;
-        z-index: 5;
+  
         transform: rotateY(18deg) rotateZ(-3deg);
 
         img {
-          width: 220px;
+          width: 240px;
         }
       }
 
@@ -300,14 +239,9 @@ p {
         box-shadow: 0px 10px 0px #125956;
       }
     }
-  }
-
+  
   .service-title {
     h3 {
-      margin-bottom: 20px;
-      margin-top: 10px;
-      z-index: 6;
-      position: relative;
 
       &::before {
         position: absolute;
@@ -324,29 +258,10 @@ p {
       }
     }
   }
-
-  .service-title-calendar {
-    color: #121212;
-
-    h3 {
-      &::before {
-        position: absolute;
-        content: '';
-        background-image: url('~@/assets/svg/our-service/funny-things.svg');
-        background-repeat: no-repeat;
-        background-size: 100%;
-        width: 110px;
-        height: 180px;
-        top: -50px;
-        right: 20%;
-        z-index: 5;
-        transform: rotate(50deg);
-      }
-    }
-  }
 }
 
 .left-section {
+
 
   .service-image {
     perspective: 1000px;
@@ -387,9 +302,7 @@ p {
   .culture-cinema-tag,
   .concert-pop-tag,
   .forkids-zoo-tag {
-    z-index: 4;
     background-size: 100%;
-    background-repeat: no-repeat;
     width: 140px;
     height: 122px;
     display: flex;
@@ -421,9 +334,6 @@ p {
   }
 
   .concert-pop-tag {
-    top: -20px;
-    background-image: url('~@/assets/svg/our-service/tags/concert-popmusic-new.svg');
-
     &::before {
       background: #0ec8ff;
       width: 130px;
@@ -434,10 +344,6 @@ p {
   }
 
   .culture-cinema-tag {
-    bottom: 20px;
-    background-image: url('~@/assets/svg/our-service/tags/culture-cinema.svg');
-    transform: translateX(-120px);
-
     &::before {
       background: #196dfc;
       width: 150px;
@@ -448,9 +354,6 @@ p {
   }
 
   .forkids-zoo-tag {
-    background-image: url('~@/assets/svg/our-service/tags/forkids-zoo.svg');
-    top: 50px;
-    right: 50px;
 
     &::before {
       background: #feb426;
@@ -462,15 +365,16 @@ p {
   }
 
   .service-title {
-    color: #121212;
+
+    &:nth-child(1) {
+      h3 {
+        &::before {
+          bottom: -70px;
+        }
+      }
+    }
 
     .tresure-image {
-      position: absolute;
-      top: 90px;
-      max-width: 100px;
-      right: 5%;
-      transform: rotate(20deg);
-      z-index: 8;
 
       &::after {
         content: '';
@@ -487,11 +391,6 @@ p {
     }
 
     .funcoins-image {
-      position: absolute;
-      top: 22%;
-      width: 50px;
-      right: 18%;
-      transform: rotate(-10deg);
 
       &::after {
         content: '';
@@ -508,9 +407,6 @@ p {
     }
 
     h3 {
-      margin-top: 0px;
-      z-index: 6;
-      position: relative;
 
       &::before {
         position: absolute;
@@ -520,7 +416,7 @@ p {
         background-size: 100%;
         width: 110px;
         height: 180px;
-        bottom: -60px;
+        bottom: 60px;
         left: -20px;
         z-index: 5;
         transform: rotate(50deg);

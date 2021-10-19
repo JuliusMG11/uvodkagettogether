@@ -56,6 +56,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import '../scss/_variables.scss';
 @import '../scss/_responsive.scss';
 
 .hero-building  {
@@ -65,9 +66,15 @@ export default {
  // RESPO
 
 
-  @include breakpoint(laptop) {
-    padding-bottom: 6rem;
+  @media (max-width: $bp-laptop) {
+    padding-bottom: 5rem
   }
+
+  @media (max-width: 1750px) {
+    padding-bottom: 8rem;
+    margin-bottom: 8rem;
+  }
+
 
   @include breakpoint(bigScreen) {
     padding-bottom: 12rem;
@@ -124,13 +131,14 @@ export default {
       bottom: 10%;
       left: 16%;
       width: 230px;
-      height: 230px;
+      height: 250px;
     }
 
     // RESPO
 
       @include breakpoint(laptop) {
         top: -22rem;
+        padding-top: 6rem;
       }
   }
 }

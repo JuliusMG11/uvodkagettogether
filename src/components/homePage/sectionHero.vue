@@ -41,7 +41,7 @@
           </article>
       </section>
 
-      <section>
+      <section class="relative">
         <figure class="presentation-pin absolute w-16">
         <img src="@/assets/svg/category-pins/presentation-pin.svg" alt="" />
       </figure>
@@ -77,20 +77,20 @@ export default {
 @import '../../scss/_responsive.scss';
 
 .presentation-pin {
-  top: 20px;
-  left: 50%;
+  top: 0rem;
+  left: 4rem;
   animation: 2s ease-in-out infinite presentation-animation;
 }
 
 .science-pin {
-  top: -5px;
+  top: -3rem;
   animation: 2s ease-in-out infinite science-animation;
-  right: 27.8%;
+  right: 17rem;
 }
 
 .culture-pin {
-  top: 30px;
-  right: 13%;
+  top: 0rem;
+  right: 7rem;
   animation: 2s ease-in-out infinite culture-animation;
 }
 
@@ -98,10 +98,11 @@ export default {
 
   .forKids-pin {
     animation: 2s ease-in-out infinite forKids-animation;
+    bottom: 3rem;
+    left: -0.6rem;
 
     @include breakpoint(laptop) {
-        bottom: 11%;
-        left: 50%;
+      
     }
 
   

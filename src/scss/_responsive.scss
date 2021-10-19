@@ -1,12 +1,12 @@
 // Breakpoints
 
 $bp-extraSmall: 31.25em; // 500px
-$bp-small: 48em; // 768px
-$bp-medium: 64em; // 1024px
-$bp-large: 1536px;
-$bp-xLarge: 1850px;
-$bp-2k: 2048px; // 2k
-$bp-xxLarge: 160em; // 2560px
+$bp-mobile: 48em; // 768px
+$bp-taablet: 64em; // 1024px
+$bp-laptop: 1536px;
+$bp-computer: 1850px;
+$bp-bigScreen: 2048px; // 2k
+$bp-bigerScreen: 160em; // 2560px
 
 
 // HOME HERO SECTION RESPONSIVE BREAKPOINT
@@ -19,34 +19,34 @@ BREAKPOINTS
 
 @mixin breakpoint($point) {
     @if $point == bigerScreen {
-        @media (min-width: $bp-xxLarge) { 
+        @media (min-width: $bp-bigerScreen) { 
           @content ; 
         }
    }
 
    @else if $point == bigScreen {
-        @media (min-width: $bp-2k) { 
+        @media (min-width: $bp-bigScreen) { 
         @content ; 
         }   
     }
 
     @else if $point == computer {
-        @media (min-width: $bp-xLarge) { 
+        @media (min-width: $bp-computer) { 
           @content ; 
         }   
    }
      @else if $point == laptop {
-        @media (min-width: $bp-large) { 
+        @media (min-width: $bp-laptop) { 
           @content ; 
         }
    }
     @else if $point == tablet {
-        @media (min-width: $bp-medium)  { 
+        @media (min-width: $bp-tablet)  { 
           @content ; 
         }
    }
    @else if $point == mobile {
-        @media (max-width: $bp-small)  { 
+        @media (max-width: $bp-mobile)  { 
           @content ; 
         }
    }

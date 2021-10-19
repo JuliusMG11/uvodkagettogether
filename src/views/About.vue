@@ -23,11 +23,11 @@
         </section>
     </div>
 
-    <div class="profile-section">
-      <div class="cmd:container md:mx-auto grid grid-cols-3 gap-4">
-        <section>
-          <div class="team-content">
-            <div class="profile-image relative z-5 ">
+    <div class="profile-section relative bg-about bg-center bg-no-repeat pt-32">
+      <div class="md:container md:mx-auto grid grid-cols-3 gap-4">
+        <section class="relative -top-24">
+          <div class="relative flex justify-center -bottom-8 ">
+            <div class="profile-image relative z-5">
               <img src="@/assets/svg/about/roman-avatar.svg" alt="" />
             </div>
           </div>
@@ -35,9 +35,9 @@
           <h3>Roman</h3>
         </section>
 
-        <section>
-          <div class="team-content">
-            <div class="profile-image relative z-5">
+        <section class="relative top-8">
+          <div class="relative flex justify-center -bottom-8">
+            <div class="profile-image relative z-5 w-3/4">
               <img src="@/assets/svg/about/simona-avatar.svg" alt="" />
             </div>
           </div>
@@ -45,8 +45,8 @@
           <h3>Simona</h3>
         </section>
 
-        <section>
-          <div class="team-content">
+        <section class="relative -top-24">
+          <div class="relative flex justify-center -bottom-8">
             <div class="profile-image relative z-5">
               <img src="@/assets/svg/about/julius-avatar.svg" alt="" />
             </div>
@@ -62,7 +62,7 @@
 </template>
 
 <script>
-import FooterSection from '../components/FooterSection.vue'
+import FooterSection from '../components/homePage/sectionFooter.vue'
 
 export default {
   components: {
@@ -85,36 +85,8 @@ export default {
 }
 
 .profile-section {
-  background-image: url('~@/assets/png/about/team-land.png');
   background-size: 100%;
-  background-repeat: no-repeat;
-  padding-top: 100px;
 
-    .profile-image {
-      max-width: 100%;
-      width: 200px;
-    }
-
-    &:nth-child(1) {
-      top: -70px;
-    }
-
-    &:nth-child(2) {
-      left: 20px;
-      top: -70px;
-
-      .profile-image {
-        width: 320px;
-      }
-
-      h3 {
-        z-index: 5;
-      }
-    }
-
-    &:nth-child(3) {
-      top: -90px;
-    }
 
     h3 {
       top: -70px;
@@ -124,13 +96,6 @@ export default {
       margin-bottom: 0px;
       font-weight: 1000;
       color: white;
-    }
-
-    .team-content {
-      display: flex;
-      justify-content: center;
-      position: relative;
-      bottom: -20px;
     }
 }
 </style>

@@ -16,25 +16,25 @@
             </video>
             <div class="grid grid-cols-2 gap-4">
               <section class="span-2">
-                <div class="billboard-qrcode">
+                <figure class="billboard-qrcode">
                   <img src="@/assets/svg/qr-code.svg" alt="" />
-                </div>
+                </figure>
 
                 <div class="relative flex flex-col z-20">
               
                     <h2 class="text-2xl">Stahuj na</h2>
 
-                    <div class="logo-downloads">
+                    <figure class="logo-downloads">
                       <img src="@/assets/svg/logo-downloads.svg" alt="" />
-                    </div>
+                    </figure>
           
                 </div>
               </section>
 
               <section class="column-30">
-                <div>
+                <figure>
                   <img src="" href="" />
-                </div>
+                </figure>
               </section>
             </div>
           </div>
