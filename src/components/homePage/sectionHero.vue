@@ -101,12 +101,40 @@ export default {
     bottom: 3rem;
     left: -0.6rem;
 
-    @include breakpoint(laptop) {
-      
+    @include breakpoint (laptop) {
+        bottom: -1rem;
+        left: -0.5rem;
     }
 
-  
-  }
+    @media (min-width: 1700px) {
+        bottom: -5rem;
+        left: -0.2rem;
+    }
+
+    @include breakpoint(computer) {
+        bottom: -3rem;
+        left: 0rem;
+    }
+
+    @include breakpoint(bigScreen) {
+        bottom: -7rem;
+        left: 0rem;
+    }
+    
+    @media (min-width: 2200px) {
+        bottom: -11rem;
+        left: .2rem;
+    }
+
+    @media (min-width: 2400px) {
+        bottom: -14rem;
+        left: .5rem;
+    }
+
+      @include breakpoint(bigerScreen) {
+        bottom: -16rem;
+      }
+    }
 
  
 

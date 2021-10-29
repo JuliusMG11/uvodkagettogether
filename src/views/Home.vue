@@ -1,7 +1,7 @@
 <template>
   <div class="home">
 
-    <div class="hero-building bg-home-hero bg-no-repeat relative z-10 mt-28 mb-44">
+    <div class="hero-building bg-home-hero bg-no-repeat relative z-10 mt-40 mb-44">
 
       <div class="md:container md:mx-auto mx-auto px-4">
         <section-hero />
@@ -56,8 +56,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '../scss/_variables.scss';
-@import '../scss/_responsive.scss';
 
 .hero-building  {
  background-size: 60%;
@@ -75,14 +73,19 @@ export default {
     margin-bottom: 8rem;
   }
 
+  @media (max-width: $bp-bigScreen) {
+    padding-bottom: 8rem;
+  }
+
 
   @include breakpoint(bigScreen) {
     padding-bottom: 12rem;
     margin-top: 10rem;
+    margin-bottom: 6rem;
   }
 
   @include breakpoint(heroLarger) {
-    padding-bottom: 16rem;
+    padding-bottom: 18rem;
   }
 
   @include breakpoint(bigerScreen) {
@@ -98,6 +101,32 @@ export default {
 .bg-land-one {
   background-size: 100%;
 
+
+  @include breakpoint(laptop) {
+    padding-bottom: 9rem;
+  }
+
+  @media (min-width: 1700px) {
+    padding-bottom: 11rem;
+  }
+
+  @include breakpoint(computer) {
+    padding-top: 11rem;
+    padding-bottom: 13rem;
+  }
+
+   @include breakpoint(bigScreen) {
+    padding-top: 13rem;
+    padding-bottom: 15rem;
+  }
+
+  @media (min-width: 2400px) {
+    padding-top: 20rem;
+  }
+
+  @include breakpoint(bigerScreen) {
+
+  }
 
   &::before {
     position: absolute;
@@ -122,6 +151,20 @@ export default {
     left: -60px;
     top: -20rem;
 
+    @include breakpoint(laptop) {
+      top: -24rem;
+    }
+
+    @include breakpoint(computer) {
+      img {
+        width: 110%;
+      }
+    }
+
+    @include breakpoint(bigerScreen) {
+        left: -20px;
+    }
+
     &::after {
       content: '';
       position: absolute;
@@ -132,19 +175,55 @@ export default {
       left: 16%;
       width: 230px;
       height: 250px;
+
+      @include breakpoint(computer) {
+        bottom: 12%;
+        left: 16%;
+        width: 310px;
+        height: 320px;
+      }
     }
 
-    // RESPO
-
-      @include breakpoint(laptop) {
-        top: -22rem;
-        padding-top: 6rem;
-      }
   }
 }
 
 .bg-land-two{
   background-size: 102%;
+
+
+   // RESPONSIVE
+
+  @include breakpoint(tablet) {
+    margin-bottom: 3rem;
+  }
+
+  @media (min-width: 1700px) {
+    margin-top: 2rem;
+    background-position: bottom;
+  }
+
+  @media (min-width: 1800px) {
+    padding-top: 26rem;
+    margin-top: 6rem;
+  }
+
+  @media (min-width: 1950px) {
+    padding-top: 28rem;
+  }
+
+  @include breakpoint(bigScreen) {
+    padding-top: 34rem;
+    margin-top: 8rem;
+  }
+
+  @media (min-width: 2300px) {
+    padding-top: 38rem;
+  }
+
+  @include breakpoint(bigerScreen) {
+    padding-top: 48rem;
+  }
+
 }
 
 .bg-land-three {
@@ -152,6 +231,30 @@ export default {
   padding-bottom: 120px;
   padding-top: 200px;
   top: 40px;
+
+  // RESPONSIVE
+
+  @include breakpoint(tablet) {
+    margin-bottom: 60px;
+  }
+
+  @media (min-width: 1700px) {
+    margin-top: 13rem;
+  }
+
+
+  @include breakpoint(bigScreen) {
+      padding-top: 17rem;
+  }
+
+  @media (min-width: 2300px) {
+    padding-top: 24rem;
+  }
+
+  @include breakpoint(bigerSCreen) {
+    padding-top: 26rem;
+  }
+  
 
   &::before {
     position: absolute;
@@ -179,6 +282,26 @@ export default {
     top: -120px;
     z-index: 9;
     left: -20px;
+
+    @include breakpoint(tablet) {
+      top: -10rem;
+      width: 90%;
+    }
+
+    @media (min-width: 1700px) {
+      top: -18rem;
+      width: 100%;
+    }
+
+    @include breakpoint(bigScreen) {
+      top: -24rem;
+      left: -70px;
+
+      img {
+        width: 90%;
+      }
+    }
   }
+
 }
 </style>

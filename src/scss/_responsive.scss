@@ -1,8 +1,8 @@
-// Breakpoints
+/* Breakpoints */
 
 $bp-extraSmall: 31.25em; // 500px
 $bp-mobile: 48em; // 768px
-$bp-taablet: 64em; // 1024px
+$bp-tablet: 64em; // 1024px
 $bp-laptop: 1536px;
 $bp-computer: 1850px;
 $bp-bigScreen: 2048px; // 2k
@@ -59,6 +59,7 @@ BREAKPOINTS
         }
     }
  }
+
 
 
 @media (min-width: 1200px) and (max-width: 1380px) {

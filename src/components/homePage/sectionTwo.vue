@@ -69,6 +69,16 @@ article {
   .mobile-column {
     .mobile-image {
       max-width: 250px;
+
+      // RESPONSIVE
+
+      @include breakpoint(computer) {
+        max-width: 90%;
+      }
+
+      @include breakpoint(bigScreen) {
+        max-width: 100%;
+      }
     }
 
     .mobile-title {
@@ -82,9 +92,6 @@ article {
 
   &:nth-child(1) {
 
-    .background-title {
-      max-width: 250px;
-    }
 
     &::after {
       content: '';
@@ -112,6 +119,16 @@ article {
     .mobile-column {
       .mobile-image {
         max-width: 340px;
+
+          // RESPONSIVE
+
+        @include breakpoint(computer) {
+          max-width: 90%;
+        }
+
+         @include breakpoint(bigScreen) {
+          max-width: 100%;
+        }
       }
     }
   }

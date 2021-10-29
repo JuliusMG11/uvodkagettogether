@@ -64,6 +64,12 @@ export default {}
   max-width: 760px;
   z-index: 10;
 
+  // RESPONSIVE
+
+  @include breakpoint(computer) {
+    max-width: 90%;
+  }
+
   .mountain-pin {
     max-width: 70px;
     right: 10%;
@@ -165,6 +171,16 @@ article {
 
     .mobile-image {
       max-width: 250px;
+
+
+      // RESPONSIVE
+
+      @include breakpoint(computer) {
+        max-width: 90%;
+      }
+       @include breakpoint(bigScreen) {
+        max-width: 100%;
+      }
     }
   }
 }

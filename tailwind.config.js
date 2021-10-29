@@ -23,7 +23,7 @@ module.exports = {
         'land-three': "url('/img/land3-new.336bbff7.svg')",
         'footer': "url('/img/land4-new.b08c6d3b.svg')",
         'billboard-bg': "url('/img/billboard-one.35d86720.svg')",
-
+        'land-one-billboard': "url(/img/billboard-one.35d86720.svg)",
         // OUR SERVICE PAGE
         'pop-circle': "url('/img/concert-popmusic-new.a26a4faf.svg')",
         'culture-circle': "url('/img/culture-cinema.16b5309e.svg')",

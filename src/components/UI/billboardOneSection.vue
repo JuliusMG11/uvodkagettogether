@@ -1,5 +1,5 @@
 <template>
-  <div class="billboard">
+  <div class="billboard relative bg-land-one-billboard bg-no-repeat z-20">
     <div class="billboard-content">
       <video playsinline autoplay muted loop poster="polina.jpg" id="bgvid">
         <source src="@/assets/festival-video.mp4" type="video/mp4" />
@@ -40,17 +40,23 @@ export default {
 </script>
 
 <style scoped lang="scss">
-@import url('../../scss/_animation.scss');
 
 .billboard {
-  background: url('~@/assets/svg/billboard-one.svg');
   background-size: 100%;
-  background-repeat: no-repeat;
   width: 420px;
   height: 470px;
-  z-index: 20;
-  position: relative;
-  right: 40px;
+
+
+  @include breakpoint(bigScreen) {
+      right: -4rem;
+      bottom: -3rem;
+      width: 500px;
+      height: 540px;
+  }
+
+  @include breakpoint(bigerScreen) {
+    right: -11rem;
+  }
 
   &::after {
     content: '';
@@ -79,6 +85,13 @@ export default {
     padding-right: 20px;
     padding-top: 20px;
     overflow: hidden;
+
+     @include breakpoint(bigScreen) {
+       width: 450px;
+        height: 197px;
+        top: 21px;
+        left: 23px;
+      }
 
     &::before {
       content: 'STAHUJ NA';
